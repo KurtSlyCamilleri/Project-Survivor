@@ -353,6 +353,7 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.16f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.16f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
+"Assets/Scripts/CursorAim.cs"
 "Assets/Scripts/OldProjectScripts/Exterminatus/BackgroundAnimation.cs"
 "Assets/Scripts/OldProjectScripts/Exterminatus/BulletCollisionSys.cs"
 "Assets/Scripts/OldProjectScripts/Exterminatus/CharacterMovement.cs"
@@ -378,12 +379,12 @@
 "Assets/Scripts/OldProjectScripts/Rocks/GoAwayScript.cs"
 "Assets/Scripts/OldProjectScripts/Rocks/LeatherGather.cs"
 "Assets/Scripts/OldProjectScripts/Rocks/MainManu.cs"
-"Assets/Scripts/OldProjectScripts/Rocks/PlayerBehavior.cs"
 "Assets/Scripts/OldProjectScripts/Rocks/ResourceCounter.cs"
 "Assets/Scripts/OldProjectScripts/Rocks/StarvationScript.cs"
 "Assets/Scripts/OldProjectScripts/Rocks/StoneGather.cs"
 "Assets/Scripts/OldProjectScripts/Rocks/WaterGather.cs"
 "Assets/Scripts/OldProjectScripts/Rocks/WoodGather.cs"
+"Assets/Scripts/PlayerMovement.cs"
 -langversion:9.0
 
 /deterministic
