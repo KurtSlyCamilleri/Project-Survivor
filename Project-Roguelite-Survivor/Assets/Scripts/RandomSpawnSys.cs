@@ -39,70 +39,70 @@ public class RandomSpawnSys : MonoBehaviour
             spawnOne = Random.Range(0,10);
             if(spawnOne == 1)
             {
-                posNorth = new Vector3(x -7, transform.position.y + 1);
+                posNorth = new Vector3(x -7, transform.position.y + 7);
                 Instantiate(enemyOne, posNorth, Quaternion.identity);
                 yield return new WaitForSeconds(spawnRate1);
                 
             }
             else if(spawnOne == 2)
             {
-                posNorth = new Vector3(x-5, transform.position.y + 1);
+                posNorth = new Vector3(x-5, transform.position.y + 7);
                 Instantiate(enemyOne, posNorth, Quaternion.identity);
                 yield return new WaitForSeconds(spawnRate1);
                 
             }
             else if(spawnOne == 3)
             {
-                posNorth = new Vector3(x-3, transform.position.y + 1);
+                posNorth = new Vector3(x-3, transform.position.y + 7);
                 Instantiate(enemyOne, posNorth, Quaternion.identity);
                 yield return new WaitForSeconds(spawnRate1);
                 
             }
             else if(spawnOne == 4)
             {
-                posNorth = new Vector3(x-1, transform.position.y + 1);
+                posNorth = new Vector3(x-1, transform.position.y + 7);
                 Instantiate(enemyOne, posNorth, Quaternion.identity);
                 yield return new WaitForSeconds(spawnRate1);
                 
             }
             else if(spawnOne == 5)
             {
-                posNorth = new Vector3(x+1, transform.position.y + 1);
+                posNorth = new Vector3(x+1, transform.position.y + 7);
                 Instantiate(enemyOne, posNorth, Quaternion.identity);
                 yield return new WaitForSeconds(spawnRate1);
                 
             }
             else if(spawnOne == 6)
             {
-                posNorth = new Vector3(x+3, transform.position.y + 1);
+                posNorth = new Vector3(x+3, transform.position.y + 7);
                 Instantiate(enemyOne, posNorth, Quaternion.identity);
                 yield return new WaitForSeconds(spawnRate1);
                 
             }
             else if(spawnOne == 7)
             {
-                posNorth = new Vector3(x+5, transform.position.y + 1);
+                posNorth = new Vector3(x+5, transform.position.y + 7);
                 Instantiate(enemyOne, posNorth, Quaternion.identity);
                 yield return new WaitForSeconds(spawnRate1);
                 
             }
             else if(spawnOne == 8)
             {
-                posNorth = new Vector3(x+7, transform.position.y + 1);
+                posNorth = new Vector3(x+7, transform.position.y + 7);
                 Instantiate(enemyOne, posNorth, Quaternion.identity);
                 yield return new WaitForSeconds(spawnRate1);
                 
             }
             else if(spawnOne == 9)
             {
-                posNorth = new Vector3(x-9, transform.position.y + 1);
+                posNorth = new Vector3(x-9, transform.position.y + 7);
                 Instantiate(enemyOne, posNorth, Quaternion.identity);
                 yield return new WaitForSeconds(spawnRate1);
                 
             }
             else
             {
-                posNorth = new Vector3(x+9, transform.position.y + 1);
+                posNorth = new Vector3(x+9, transform.position.y + 7);
                 Instantiate(enemyOne, posNorth, Quaternion.identity);
                 yield return new WaitForSeconds(spawnRate1);
                 
