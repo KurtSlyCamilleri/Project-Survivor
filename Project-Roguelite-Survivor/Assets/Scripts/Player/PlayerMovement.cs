@@ -6,15 +6,14 @@ public class PlayerMovement : MonoBehaviour
 {
     //public GameObject Pause;
     public float speed = 0.5f;
-    Rigidbody rb;
     public GameObject Player;
 
     // Update is called once per frame
 
 
 
-    void Start () {
-        rb = GetComponent<Rigidbody>();
+    void Start () 
+    {
 
     }
 

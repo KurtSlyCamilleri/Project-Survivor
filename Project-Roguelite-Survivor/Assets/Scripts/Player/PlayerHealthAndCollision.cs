@@ -5,7 +5,7 @@ using TMPro;
 
 public class PlayerHealthAndCollision : MonoBehaviour
 {
-    public static int PlayerHealth = 100;
+    public int PlayerHealth = 100;
     public TextMeshProUGUI PlayerHealthUI;
     // Start is called before the first frame update
     void Start()
@@ -18,4 +18,20 @@ public class PlayerHealthAndCollision : MonoBehaviour
     {
         PlayerHealthUI.SetText("Health: " + PlayerHealth.ToString());
     }
+    void OnCollisionEnter(Collision targetObj)
+    {
+        if (targetObj.gameObject.tag == "Swarmer")
+        {
+            PlayerHealth -= 10;
+        }
+        if (targetObj.gameObject.tag == "Charger")
+        {
+            PlayerHealth -= 5;
+        }
+        if (targetObj.gameObject.tag == "Sponge")
+        {
+            PlayerHealth -= 25;
+        }
+    }
+
 }

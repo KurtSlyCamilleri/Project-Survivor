@@ -153,7 +153,7 @@ NavMeshObstacle:
   m_Enabled: 1
   serializedVersion: 3
   m_Shape: 1
-  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
+  m_Extents: {x: 0.5, y: 0.2, z: 0.5}
   m_MoveThreshold: 0.1
   m_Carve: 0
   m_CarveOnlyStationary: 1
@@ -369,7 +369,7 @@ NavMeshObstacle:
   m_Enabled: 1
   serializedVersion: 3
   m_Shape: 1
-  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
+  m_Extents: {x: 0.5, y: 0.2, z: 0.5}
   m_MoveThreshold: 0.1
   m_Carve: 0
   m_CarveOnlyStationary: 1
@@ -476,6 +476,7 @@ GameObject:
   - component: {fileID: 288914088}
   - component: {fileID: 288914089}
   - component: {fileID: 288914090}
+  - component: {fileID: 288914091}
   m_Layer: 0
   m_Name: TestPlayer
   m_TagString: Player
@@ -624,6 +625,20 @@ MonoBehaviour:
   Bullet: {fileID: 5161973660216669431, guid: fe0bf8cb2c4d70148928a55a849b31b8, type: 3}
   fireRate: 2
   Player: {fileID: 288914082}
+--- !u!114 &288914091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 288914082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef11e9d805ae56f4e8e2c446ce68c281, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerHealth: 100
+  PlayerHealthUI: {fileID: 1317170857}
 --- !u!1 &410046072
 GameObject:
   m_ObjectHideFlags: 0
@@ -777,7 +792,7 @@ MonoBehaviour:
   enemyOne: {fileID: 1541801139107317211, guid: f99f574987288354bb363998cc79136f, type: 3}
   enemyTwo: {fileID: 1541801139107317211, guid: 69dadb3a185d2ac48ab33d4c571ccb08, type: 3}
   enemyThree: {fileID: 1541801139107317211, guid: a97b0fe29c612e2408a1c36c4467cfe2, type: 3}
-  Player: {fileID: 1341993701}
+  Player: {fileID: 288914086}
   x: 0
   spawnOne: 0
   spawnTwo: 0
@@ -812,7 +827,7 @@ NavMeshObstacle:
   m_Enabled: 1
   serializedVersion: 3
   m_Shape: 1
-  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
+  m_Extents: {x: 0.5, y: 0.2, z: 0.5}
   m_MoveThreshold: 0.1
   m_Carve: 0
   m_CarveOnlyStationary: 1
@@ -934,7 +949,7 @@ NavMeshObstacle:
   m_Enabled: 1
   serializedVersion: 3
   m_Shape: 1
-  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
+  m_Extents: {x: 0.5, y: 0.2, z: 0.5}
   m_MoveThreshold: 0.1
   m_Carve: 0
   m_CarveOnlyStationary: 1
@@ -1056,7 +1071,7 @@ NavMeshObstacle:
   m_Enabled: 1
   serializedVersion: 3
   m_Shape: 1
-  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
+  m_Extents: {x: 0.5, y: 0.2, z: 0.5}
   m_MoveThreshold: 0.1
   m_Carve: 0
   m_CarveOnlyStationary: 1
@@ -1668,8 +1683,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1341993701}
   - component: {fileID: 1341993700}
-  - component: {fileID: 1341993699}
-  - component: {fileID: 1341993702}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1677,27 +1690,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!65 &1341993699
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1341993698}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.053408034, y: 0.102580674, z: 0.05127825}
-  m_Center: {x: -0.00081508234, y: 0.00010559335, z: 0.0007532984}
 --- !u!114 &1341993700
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1711,7 +1703,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0.5
-  Player: {fileID: 1341993698}
+  Player: {fileID: 288914082}
 --- !u!4 &1341993701
 Transform:
   m_ObjectHideFlags: 0
@@ -1728,19 +1720,6 @@ Transform:
   - {fileID: 288914086}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1341993702
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1341993698}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2616d2e0ac6f18f489169b642093da78, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PlayerHealthUI: {fileID: 1317170857}
 --- !u!1 &1633900808
 GameObject:
   m_ObjectHideFlags: 0
@@ -1839,7 +1818,7 @@ NavMeshObstacle:
   m_Enabled: 1
   serializedVersion: 3
   m_Shape: 1
-  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
+  m_Extents: {x: 0.5, y: 0.2, z: 0.5}
   m_MoveThreshold: 0.1
   m_Carve: 0
   m_CarveOnlyStationary: 1
@@ -1961,7 +1940,7 @@ NavMeshObstacle:
   m_Enabled: 1
   serializedVersion: 3
   m_Shape: 1
-  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
+  m_Extents: {x: 0.5, y: 0.2, z: 0.5}
   m_MoveThreshold: 0.1
   m_Carve: 0
   m_CarveOnlyStationary: 1
