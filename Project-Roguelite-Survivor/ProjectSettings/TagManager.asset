@@ -10,12 +10,11 @@ TagManager:
   - Exp
   - Enemy
   - ShotgunBullet
-  - Bullet
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Ground
   - Water
   - UI
   - 

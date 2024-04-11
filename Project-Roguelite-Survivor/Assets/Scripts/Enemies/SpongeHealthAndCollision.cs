@@ -18,6 +18,9 @@ public class SpongeHealthAndCollision : MonoBehaviour
             if (SpongeHealth <= 0)
             {
                 Instantiate(ExpDrop, SpongePos, Quaternion.identity);
+                Instantiate(ExpDrop, SpongePos, Quaternion.identity);
+                Instantiate(ExpDrop, SpongePos, Quaternion.identity);
+                Instantiate(ExpDrop, SpongePos, Quaternion.identity);
                 Sponge.GetComponent<BoxCollider>().enabled = false;
                 Destroy(gameObject);
             }

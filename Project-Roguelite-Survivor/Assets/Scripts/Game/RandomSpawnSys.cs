@@ -39,61 +39,61 @@ public class RandomSpawnSys : MonoBehaviour
             spawnOne = Random.Range(0,10);
             if(spawnOne == 1)
             {
-                posPlayer = new Vector3(posPlayer.x, posPlayer.y, posPlayer.z - 4);
+                posPlayer = new Vector3(posPlayer.x, posPlayer.y , posPlayer.z - 4);
                 Instantiate(enemyOne, posPlayer, Quaternion.identity);
                 yield return new WaitForSeconds(spawnRate1);
             }
             else if (spawnOne == 2)
             {
-                posPlayer = new Vector3(posPlayer.x - 4, posPlayer.y, posPlayer.z);
+                posPlayer = new Vector3(posPlayer.x - 4, posPlayer.y , posPlayer.z);
                 Instantiate(enemyOne, posPlayer, Quaternion.identity);
                 yield return new WaitForSeconds(spawnRate1);
             }
             else if (spawnOne == 3)
             {
-                posPlayer = new Vector3(posPlayer.x - 4, posPlayer.y, posPlayer.z - 4);
+                posPlayer = new Vector3(posPlayer.x - 4, posPlayer.y , posPlayer.z - 4);
                 Instantiate(enemyOne, posPlayer, Quaternion.identity);
                 yield return new WaitForSeconds(spawnRate1);
             }
             else if (spawnOne == 4)
             {
-                posPlayer = new Vector3(posPlayer.x, posPlayer.y, posPlayer.z + 4);
+                posPlayer = new Vector3(posPlayer.x, posPlayer.y , posPlayer.z + 4);
                 Instantiate(enemyOne, posPlayer, Quaternion.identity);
                 yield return new WaitForSeconds(spawnRate1);
             }
             else if (spawnOne == 5)
             {
-                posPlayer = new Vector3(posPlayer.x + 4, posPlayer.y, posPlayer.z);
+                posPlayer = new Vector3(posPlayer.x + 4, posPlayer.y , posPlayer.z);
                 Instantiate(enemyOne, posPlayer, Quaternion.identity);
                 yield return new WaitForSeconds(spawnRate1);
             }
             else if (spawnOne == 6)
             {
-                posPlayer = new Vector3(posPlayer.x + 4, posPlayer.y, posPlayer.z + 4);
+                posPlayer = new Vector3(posPlayer.x + 4, posPlayer.y , posPlayer.z + 4);
                 Instantiate(enemyOne, posPlayer, Quaternion.identity);
                 yield return new WaitForSeconds(spawnRate1);
             }
             else if (spawnOne == 7)
             {
-                posPlayer = new Vector3(posPlayer.x + 4, posPlayer.y, posPlayer.z - 4);
+                posPlayer = new Vector3(posPlayer.x + 4, posPlayer.y , posPlayer.z - 4);
                 Instantiate(enemyOne, posPlayer, Quaternion.identity);
                 yield return new WaitForSeconds(spawnRate1);
             }
             else if (spawnOne == 8)
             {
-                posPlayer = new Vector3(posPlayer.x - 4, posPlayer.y, posPlayer.z + 4);
+                posPlayer = new Vector3(posPlayer.x - 4, posPlayer.y , posPlayer.z + 4);
                 Instantiate(enemyOne, posPlayer, Quaternion.identity);
                 yield return new WaitForSeconds(spawnRate1);
             }
             else if (spawnOne == 9)
             {
-                posPlayer = new Vector3(posPlayer.x + 6, posPlayer.y, posPlayer.z);
+                posPlayer = new Vector3(posPlayer.x + 6, posPlayer.y , posPlayer.z);
                 Instantiate(enemyOne, posPlayer, Quaternion.identity);
                 yield return new WaitForSeconds(spawnRate1);
             }
             else
             {
-                posPlayer = new Vector3(posPlayer.x - 6, posPlayer.y, posPlayer.z - 4);
+                posPlayer = new Vector3(posPlayer.x - 6, posPlayer.y , posPlayer.z - 4);
                 Instantiate(enemyOne, posPlayer, Quaternion.identity);
                 yield return new WaitForSeconds(spawnRate1);
             }
@@ -108,61 +108,61 @@ public class RandomSpawnSys : MonoBehaviour
             spawnTwo = Random.Range(0,10);
             if (spawnTwo == 1)
             {
-                posPlayer = new Vector3(posPlayer.x, posPlayer.y, posPlayer.z - 4);
+                posPlayer = new Vector3(posPlayer.x, posPlayer.y , posPlayer.z - 4);
                 Instantiate(enemyTwo, posPlayer, Quaternion.identity);
                 yield return new WaitForSeconds(spawnRate2);
             }
             else if (spawnTwo == 2)
             {
-                posPlayer = new Vector3(posPlayer.x - 4, posPlayer.y, posPlayer.z);
+                posPlayer = new Vector3(posPlayer.x - 4, posPlayer.y , posPlayer.z);
                 Instantiate(enemyTwo, posPlayer, Quaternion.identity);
                 yield return new WaitForSeconds(spawnRate2);
             }
             else if (spawnTwo == 3)
             {
-                posPlayer = new Vector3(posPlayer.x - 4, posPlayer.y, posPlayer.z - 4);
+                posPlayer = new Vector3(posPlayer.x - 4, posPlayer.y , posPlayer.z - 4);
                 Instantiate(enemyTwo, posPlayer, Quaternion.identity);
                 yield return new WaitForSeconds(spawnRate2);
             }
             else if (spawnTwo == 4)
             {
-                posPlayer = new Vector3(posPlayer.x, posPlayer.y, posPlayer.z + 4);
+                posPlayer = new Vector3(posPlayer.x, posPlayer.y , posPlayer.z + 4);
                 Instantiate(enemyTwo, posPlayer, Quaternion.identity);
                 yield return new WaitForSeconds(spawnRate2);
             }
             else if (spawnTwo == 5)
             {
-                posPlayer = new Vector3(posPlayer.x + 4, posPlayer.y, posPlayer.z);
+                posPlayer = new Vector3(posPlayer.x + 4, posPlayer.y , posPlayer.z);
                 Instantiate(enemyTwo, posPlayer, Quaternion.identity);
                 yield return new WaitForSeconds(spawnRate2);
             }
             else if (spawnTwo == 6)
             {
-                posPlayer = new Vector3(posPlayer.x + 4, posPlayer.y, posPlayer.z + 4);
+                posPlayer = new Vector3(posPlayer.x + 4, posPlayer.y , posPlayer.z + 4);
                 Instantiate(enemyTwo, posPlayer, Quaternion.identity);
                 yield return new WaitForSeconds(spawnRate2);
             }
             else if (spawnTwo == 7)
             {
-                posPlayer = new Vector3(posPlayer.x + 4, posPlayer.y, posPlayer.z - 4);
+                posPlayer = new Vector3(posPlayer.x + 4, posPlayer.y , posPlayer.z - 4);
                 Instantiate(enemyTwo, posPlayer, Quaternion.identity);
                 yield return new WaitForSeconds(spawnRate2);
             }
             else if (spawnTwo == 8)
             {
-                posPlayer = new Vector3(posPlayer.x - 4, posPlayer.y, posPlayer.z + 4);
+                posPlayer = new Vector3(posPlayer.x - 4, posPlayer.y , posPlayer.z + 4);
                 Instantiate(enemyTwo, posPlayer, Quaternion.identity);
                 yield return new WaitForSeconds(spawnRate2);
             }
             else if (spawnTwo == 9)
             {
-                posPlayer = new Vector3(posPlayer.x + 6, posPlayer.y, posPlayer.z);
+                posPlayer = new Vector3(posPlayer.x + 6, posPlayer.y , posPlayer.z);
                 Instantiate(enemyTwo, posPlayer, Quaternion.identity);
                 yield return new WaitForSeconds(spawnRate2);
             }
             else
             {
-                posPlayer = new Vector3(posPlayer.x - 6, posPlayer.y, posPlayer.z - 4);
+                posPlayer = new Vector3(posPlayer.x - 6, posPlayer.y , posPlayer.z - 4);
                 Instantiate(enemyTwo, posPlayer, Quaternion.identity);
                 yield return new WaitForSeconds(spawnRate2);
             }
@@ -176,61 +176,61 @@ public class RandomSpawnSys : MonoBehaviour
             spawnThree = Random.Range(0,10);
             if (spawnThree == 1)
             {
-                posPlayer = new Vector3(posPlayer.x, posPlayer.y, posPlayer.z - 4);
+                posPlayer = new Vector3(posPlayer.x, posPlayer.y , posPlayer.z - 4);
                 Instantiate(enemyThree, posPlayer, Quaternion.identity);
                 yield return new WaitForSeconds(spawnRate3);
             }
             else if (spawnThree == 2)
             {
-                posPlayer = new Vector3(posPlayer.x - 4, posPlayer.y, posPlayer.z);
+                posPlayer = new Vector3(posPlayer.x - 4, posPlayer.y , posPlayer.z);
                 Instantiate(enemyThree, posPlayer, Quaternion.identity);
                 yield return new WaitForSeconds(spawnRate3);
             }
             else if (spawnThree == 3)
             {
-                posPlayer = new Vector3(posPlayer.x - 4, posPlayer.y, posPlayer.z - 4);
+                posPlayer = new Vector3(posPlayer.x - 4, posPlayer.y , posPlayer.z - 4);
                 Instantiate(enemyThree, posPlayer, Quaternion.identity);
                 yield return new WaitForSeconds(spawnRate3);
             }
             else if (spawnThree == 4)
             {
-                posPlayer = new Vector3(posPlayer.x, posPlayer.y, posPlayer.z + 4);
+                posPlayer = new Vector3(posPlayer.x, posPlayer.y , posPlayer.z + 4);
                 Instantiate(enemyThree, posPlayer, Quaternion.identity);
                 yield return new WaitForSeconds(spawnRate3);
             }
             else if (spawnThree == 5)
             {
-                posPlayer = new Vector3(posPlayer.x + 4, posPlayer.y, posPlayer.z);
+                posPlayer = new Vector3(posPlayer.x + 4, posPlayer.y , posPlayer.z);
                 Instantiate(enemyThree, posPlayer, Quaternion.identity);
                 yield return new WaitForSeconds(spawnRate3);
             }
             else if (spawnThree == 6)
             {
-                posPlayer = new Vector3(posPlayer.x + 4, posPlayer.y, posPlayer.z + 4);
+                posPlayer = new Vector3(posPlayer.x + 4, posPlayer.y , posPlayer.z + 4);
                 Instantiate(enemyThree, posPlayer, Quaternion.identity);
                 yield return new WaitForSeconds(spawnRate3);
             }
             else if (spawnThree == 7)
             {
-                posPlayer = new Vector3(posPlayer.x + 4, posPlayer.y, posPlayer.z - 4);
+                posPlayer = new Vector3(posPlayer.x + 4, posPlayer.y , posPlayer.z - 4);
                 Instantiate(enemyThree, posPlayer, Quaternion.identity);
                 yield return new WaitForSeconds(spawnRate3);
             }
             else if (spawnThree == 8)
             {
-                posPlayer = new Vector3(posPlayer.x - 4, posPlayer.y, posPlayer.z + 4);
+                posPlayer = new Vector3(posPlayer.x - 4, posPlayer.y , posPlayer.z + 4);
                 Instantiate(enemyThree, posPlayer, Quaternion.identity);
                 yield return new WaitForSeconds(spawnRate3);
             }
             else if (spawnThree == 9)
             {
-                posPlayer = new Vector3(posPlayer.x + 6, posPlayer.y, posPlayer.z);
+                posPlayer = new Vector3(posPlayer.x + 6, posPlayer.y , posPlayer.z);
                 Instantiate(enemyThree, posPlayer, Quaternion.identity);
                 yield return new WaitForSeconds(spawnRate3);
             }
             else
             {
-                posPlayer = new Vector3(posPlayer.x - 6, posPlayer.y, posPlayer.z - 4);
+                posPlayer = new Vector3(posPlayer.x - 6, posPlayer.y , posPlayer.z - 4);
                 Instantiate(enemyThree, posPlayer, Quaternion.identity);
                 yield return new WaitForSeconds(spawnRate3);
             }

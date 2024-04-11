@@ -18,6 +18,7 @@ public class ChargerHealthAndCollision : MonoBehaviour
             if (ChargerHealth <= 0)
             {
                 Instantiate(ExpDrop, ChargerPos, Quaternion.identity);
+                Instantiate(ExpDrop, ChargerPos, Quaternion.identity);
                 Charger.GetComponent<BoxCollider>().enabled = false;
                 Destroy(gameObject);
             }
