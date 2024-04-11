@@ -601,7 +601,7 @@ Transform:
   m_GameObject: {fileID: 462243926}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.99337417, y: -6.6705985, z: 11.460804}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -620,9 +620,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyOne: {fileID: 1541801139107317211, guid: f99f574987288354bb363998cc79136f, type: 3}
-  enemyTwo: {fileID: 0}
-  enemyThree: {fileID: 0}
-  Player: {fileID: 0}
+  enemyTwo: {fileID: 1541801139107317211, guid: 69dadb3a185d2ac48ab33d4c571ccb08, type: 3}
+  enemyThree: {fileID: 1541801139107317211, guid: a97b0fe29c612e2408a1c36c4467cfe2, type: 3}
+  Player: {fileID: 1341993701}
   x: 0
   spawnOne: 0
   spawnTwo: 0
@@ -727,7 +727,7 @@ Transform:
   m_GameObject: {fileID: 1321121778}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.06, z: 0}
+  m_LocalPosition: {x: 0, y: -0.04, z: 0}
   m_LocalScale: {x: 40, y: 0.1, z: 20}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -953,7 +953,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0.5
-  Player: {fileID: 0}
+  Player: {fileID: 1341993698}
 --- !u!4 &1341993701
 Transform:
   m_ObjectHideFlags: 0
