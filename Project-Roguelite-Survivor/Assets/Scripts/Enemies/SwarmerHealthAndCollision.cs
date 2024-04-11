@@ -12,9 +12,9 @@ public class SwarmerHealthAndCollision : MonoBehaviour
 
     void OnTriggerEnter(Collider targetObj)
     {
-        if (targetObj.gameObject.tag == "Bullet")
+        if (targetObj.gameObject.tag == "ShotgunBullet")
         {
-            SwarmerHealth -= 10;
+            SwarmerHealth -= 25;
             if (SwarmerHealth <= 0)
             {
                 Instantiate(ExpDrop, SwarmerPos, Quaternion.identity);

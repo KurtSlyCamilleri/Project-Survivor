@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 6057802937300990251}
   - component: {fileID: 8409441212146518723}
   - component: {fileID: 7553604842050996805}
+  - component: {fileID: -3627620585140802743}
   - component: {fileID: 2183472837360910818}
   m_Layer: 0
   m_Name: Charger
@@ -150,6 +151,21 @@ MonoBehaviour:
   enemy: {fileID: 2183472837360910818}
   player: {fileID: 0}
   target: {fileID: 0}
+--- !u!114 &-3627620585140802743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1541801139107317211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe5427a580ffeed40be909be670bfe9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Charger: {fileID: 1541801139107317211}
+  ExpDrop: {fileID: 4256714270845501797, guid: a6e382625ebae2a48b262a00e6fa443f, type: 3}
+  ChargerPos: {x: 0, y: 0, z: 0}
 --- !u!195 &2183472837360910818
 NavMeshAgent:
   m_ObjectHideFlags: 0

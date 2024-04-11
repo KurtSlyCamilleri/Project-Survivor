@@ -7,8 +7,10 @@ TagManager:
   - Charger
   - Sponge
   - Swarmer
-  - Bullet
   - Exp
+  - Enemy
+  - ShotgunBullet
+  - Bullet
   layers:
   - Default
   - TransparentFX

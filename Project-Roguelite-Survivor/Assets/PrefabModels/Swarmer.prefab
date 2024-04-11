@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 866438281082624466}
   - component: {fileID: 1367156370880849120}
   - component: {fileID: 8345264921169716698}
-  - component: {fileID: -8248644182543309592}
   - component: {fileID: 6057802937300990251}
   - component: {fileID: 8409441212146518723}
   - component: {fileID: 7553604842050996805}
+  - component: {fileID: -8248644182543309592}
   - component: {fileID: 2183472837360910818}
   m_Layer: 0
   m_Name: Swarmer
@@ -88,20 +88,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &-8248644182543309592
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1541801139107317211}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9cfa5960a45cc06418056f3398a7f694, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Swarmer: {fileID: 1541801139107317211}
-  ExpDrop: {fileID: 4256714270845501797, guid: a6e382625ebae2a48b262a00e6fa443f, type: 3}
 --- !u!65 &6057802937300990251
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -165,6 +151,23 @@ MonoBehaviour:
   enemy: {fileID: 2183472837360910818}
   player: {fileID: 0}
   target: {fileID: 0}
+--- !u!114 &-8248644182543309592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1541801139107317211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cfa5960a45cc06418056f3398a7f694, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Swarmer: {fileID: 1541801139107317211}
+  SwarmerHealth: 50
+  ExpDrop: {fileID: 4256714270845501797, guid: a6e382625ebae2a48b262a00e6fa443f, type: 3}
+  SwarmerDamage: 10
+  SwarmerPos: {x: 0, y: 0, z: 0}
 --- !u!195 &2183472837360910818
 NavMeshAgent:
   m_ObjectHideFlags: 0
