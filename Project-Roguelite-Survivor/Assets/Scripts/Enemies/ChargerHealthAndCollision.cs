@@ -5,7 +5,7 @@ using UnityEngine;
 public class ChargerHealthAndCollision : MonoBehaviour
 {
     public GameObject Charger;
-    public static int ChargerHealth = 30;
+    public int ChargerHealth = 30;
     public GameObject ExpDrop;
     public static int ChargerDamage = 5;
     public Vector3 ChargerPos;

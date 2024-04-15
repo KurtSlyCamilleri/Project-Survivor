@@ -15,9 +15,9 @@ public class RandomSpawnSys : MonoBehaviour
     public int spawnOne = 0;
     public int spawnTwo = 0;
     public int spawnThree = 0;
-    public static int spawnRate1 = 3;
-    public static int spawnRate2 = 6;
-    public static int spawnRate3 = 8;
+    public static int spawnRate1 = 5;
+    public static int spawnRate2 = 8;
+    public static int spawnRate3 = 12;
     Vector3 posPlayer = new Vector3(0, 0, 0);
 
     void Start()
@@ -39,7 +39,7 @@ public class RandomSpawnSys : MonoBehaviour
             spawnOne = Random.Range(0,10);
             if(spawnOne == 1)
             {
-                posPlayer = new Vector3(posPlayer.x, posPlayer.y , posPlayer.z - 4);
+                posPlayer = new Vector3(posPlayer.x, posPlayer.y, posPlayer.z - 4);
                 Instantiate(enemyOne, posPlayer, Quaternion.identity);
                 yield return new WaitForSeconds(spawnRate1);
             }

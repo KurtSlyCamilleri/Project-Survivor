@@ -5,7 +5,7 @@ using UnityEngine;
 public class SpongeHealthAndCollision : MonoBehaviour
 {
     public GameObject Sponge;
-    public static int SpongeHealth = 150;
+    public int SpongeHealth = 150;
     public GameObject ExpDrop;
     public static int SpongeDamage = 20;
     public Vector3 SpongePos;
