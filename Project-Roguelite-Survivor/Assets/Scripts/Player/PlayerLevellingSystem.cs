@@ -13,13 +13,14 @@ public class PlayerLevellingSystem : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        PlayerLevelUI.SetText("Level: " + PlayerLevel.ToString());
-        PlayerExpUI.SetText("Exp: " + PlayerExp.ToString() + "/" + LevelUpReq.ToString());
+        
     }
 
     // Update is called once per frame
     void Update()
     {
+        PlayerLevelUI.SetText("Level: " + PlayerLevel.ToString());
+        PlayerExpUI.SetText("Exp: " + PlayerExp.ToString() + "/" + LevelUpReq.ToString());
         if (PlayerExp == LevelUpReq)
         {
             PlayerLevel++;
@@ -30,8 +31,10 @@ public class PlayerLevellingSystem : MonoBehaviour
 
     void OnCollisionEnter(Collision targetObj)
     {
-        if (targetObj.gameObject.tag == "Exp")
+        Debug.Log("Exp Touched");
+        if (targetObj.gameObject.tag == "Experience")
         {
+            Debug.Log("Exp Gained");
             PlayerExp += 5;
         }
     }

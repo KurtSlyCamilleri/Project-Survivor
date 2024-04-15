@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -4603858646555420006}
   m_Layer: 0
   m_Name: ExpDrop
-  m_TagString: Exp
+  m_TagString: Experience
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

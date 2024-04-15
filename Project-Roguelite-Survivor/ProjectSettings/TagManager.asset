@@ -7,9 +7,9 @@ TagManager:
   - Charger
   - Sponge
   - Swarmer
-  - Exp
   - Enemy
   - ShotgunBullet
+  - Experience
   layers:
   - Default
   - TransparentFX
