@@ -16,19 +16,13 @@ public class Shotgun : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void OnShoot()
     {
         Vector3 gunPos = Player.transform.position;
-
-        if (Input.GetMouseButtonDown(0))
+        if (Time.time > fireRate + lastShot)
         {
-            if (Time.time > fireRate + lastShot)
-            {
-                
-                Instantiate(Bullet, gunPos, Quaternion.identity);
-                
-                lastShot = Time.time;
-            }
+            Instantiate(Bullet, gunPos, Quaternion.identity);
+            lastShot = Time.time;
         }
     }
 }

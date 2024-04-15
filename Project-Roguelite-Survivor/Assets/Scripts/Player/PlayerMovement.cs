@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
     //public GameObject Pause;
     public float speed = 0.5f;
     public GameObject Player;
+    private Vector3 motionVector = Vector3.zero;
 
     // Update is called once per frame
 
@@ -19,18 +21,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        
-
-        float vertical =Input.GetAxis("Vertical");
-        float horizontal =Input.GetAxis("Horizontal");
-
-
-        Vector3 motion12Vector = new Vector3(0, 0, vertical);
-        Vector3 motion13Vector = new Vector3(horizontal, 0, 0);
-
-
-        transform.Translate(motion12Vector *speed *Time.deltaTime);
-        transform.Translate(motion13Vector * speed * Time.deltaTime);
+        transform.Translate(motionVector * speed * Time.deltaTime);
 
 
 
@@ -40,6 +31,12 @@ public class PlayerMovement : MonoBehaviour
         //}
 
 
+    }
+
+    void OnMove(InputValue value)
+    {
+        var v2 = value.Get<Vector2>();
+        motionVector = new Vector3(v2.x, 0, v2.y);
     }
 
 
