@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using Unity.VisualScripting;
 
 public class RandomSpawnSys : MonoBehaviour
 {
@@ -9,18 +10,35 @@ public class RandomSpawnSys : MonoBehaviour
     public GameObject enemyOne;
     public GameObject enemyTwo;
     public GameObject enemyThree;
+    PlayerLevellingSystem PlayerLevelSys;
+    public int Stage = 5;
+    public int PlayerPower = 0;
     public Transform Player;
     public float x = 0f;
     public static float running = 0; 
-    public int spawnOne = 0;
-    public int spawnTwo = 0;
-    public int spawnThree = 0;
-    public static int spawnRate1 = 5;
-    public static int spawnRate2 = 8;
-    public static int spawnRate3 = 12;
+    public int spawnRate1 = 5;
+    public int spawnRate2 = 8;
+    public int spawnRate3 = 12;
 
+    void Update()
+    {
+        PlayerPower = PlayerLevelSys.PlayerLevel;
+
+        while(spawnRate1 > 2)
+        {
+            if (PlayerPower == Stage)
+            {
+                spawnRate1 -= 1;
+                spawnRate2 -= 1;
+                spawnRate3 -= 1;
+                Stage += 5;
+            }
+        }
+        
+    }
     void Start()
     {
+        PlayerLevelSys = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerLevellingSystem>();
         
         StartCoroutine(SpawnRoutine(enemyOne,
             new List<Vector3>()
