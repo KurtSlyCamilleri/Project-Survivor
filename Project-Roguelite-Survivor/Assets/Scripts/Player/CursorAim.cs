@@ -6,6 +6,7 @@ using UnityEngine.InputSystem;
 public class CursorAim : MonoBehaviour
 {
     public Camera cam;
+    public float sensitivity = 1f;
 
     // Start is called before the first frame update
     void Start()
@@ -31,7 +32,7 @@ public class CursorAim : MonoBehaviour
     {
         var v2 = value.Get<Vector2>();
         // Look at a Vector2 value
-        Vector3 direction = new Vector3(v2.x, 0, v2.y);
+        Vector3 direction = new Vector3(v2.x, 0, v2.y) * sensitivity;
         transform.rotation = Quaternion.LookRotation(direction);
     }
 }
