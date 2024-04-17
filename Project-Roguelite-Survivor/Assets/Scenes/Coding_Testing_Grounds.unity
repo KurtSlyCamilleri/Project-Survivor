@@ -852,7 +852,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 410046074}
-  sensitivity: 0.1
 --- !u!54 &288914089
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1854,7 +1853,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Actions: {fileID: -944628639613478452, guid: 15de543d02b3ad04c9ebeb6cb26fdc3d, type: 3}
-  m_NotificationBehavior: 1
+  m_NotificationBehavior: 0
   m_UIInputModule: {fileID: 0}
   m_DeviceLostEvent:
     m_PersistentCalls:
