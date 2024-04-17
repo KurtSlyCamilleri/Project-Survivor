@@ -1079,13 +1079,11 @@ MonoBehaviour:
   enemyOne: {fileID: 1541801139107317211, guid: f99f574987288354bb363998cc79136f, type: 3}
   enemyTwo: {fileID: 1541801139107317211, guid: 69dadb3a185d2ac48ab33d4c571ccb08, type: 3}
   enemyThree: {fileID: 1541801139107317211, guid: a97b0fe29c612e2408a1c36c4467cfe2, type: 3}
-  Stage: 0
-  PlayerPower: 0
   Player: {fileID: 288914086}
   x: 0
-  spawnRate1: 5
-  spawnRate2: 8
-  spawnRate3: 12
+  spawnOne: 0
+  spawnTwo: 0
+  spawnThree: 0
 --- !u!1 &716902779
 GameObject:
   m_ObjectHideFlags: 0
