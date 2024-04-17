@@ -10,9 +10,6 @@ TagManager:
   - Enemy
   - ShotgunBullet
   - Experience
-  - Grenade
-  - RCBomb
-  - Drone
   layers:
   - Default
   - TransparentFX
