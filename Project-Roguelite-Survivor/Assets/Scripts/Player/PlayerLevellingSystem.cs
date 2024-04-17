@@ -31,10 +31,11 @@ public class PlayerLevellingSystem : MonoBehaviour
 
     void OnCollisionEnter(Collision targetObj)
     {
+        Debug.Log("Exp Touched");
         if (targetObj.gameObject.tag == "Experience")
         {
+            Debug.Log("Exp Gained");
             PlayerExp += 5;
-            Destroy(targetObj.gameObject);
         }
     }
 
