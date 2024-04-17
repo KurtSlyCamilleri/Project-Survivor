@@ -24,15 +24,16 @@ public class RandomSpawnSys : MonoBehaviour
     {
         PlayerPower = PlayerLevelSys.PlayerLevel;
 
-
-            if (PlayerPower == Stage & spawnRate1 > 2)
+        while(spawnRate1 > 2)
+        {
+            if (PlayerPower == Stage)
             {
                 spawnRate1 -= 1;
                 spawnRate2 -= 1;
                 spawnRate3 -= 1;
                 Stage += 5;
             }
-        
+        }
         
     }
     void Start()
