@@ -13,7 +13,6 @@ TagManager:
   - Grenade
   - RCBomb
   - Drone
-  - PickUp
   layers:
   - Default
   - TransparentFX

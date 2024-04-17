@@ -366,8 +366,6 @@
 "Assets/Scripts/Game/Camerafollow.cs"
 "Assets/Scripts/Game/RandomSpawnSys.cs"
 "Assets/Scripts/Player/CursorAim.cs"
-"Assets/Scripts/Player/GrenadeBelt.cs"
-"Assets/Scripts/Player/GrenadeSystem.cs"
 "Assets/Scripts/Player/PlayerHealthAndCollision.cs"
 "Assets/Scripts/Player/PlayerLevellingSystem.cs"
 "Assets/Scripts/Player/PlayerMovement.cs"

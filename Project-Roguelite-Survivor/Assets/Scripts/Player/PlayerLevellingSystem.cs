@@ -29,7 +29,7 @@ public class PlayerLevellingSystem : MonoBehaviour
         }
     }
 
-    void OnTriggerEnter(Collider targetObj)
+    void OnCollisionEnter(Collision targetObj)
     {
         if (targetObj.gameObject.tag == "Experience")
         {

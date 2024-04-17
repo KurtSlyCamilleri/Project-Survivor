@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 2152013700732270036}
   - component: {fileID: 6727494710819236566}
   - component: {fileID: 4931455379058939077}
-  - component: {fileID: 1011085375313372999}
   m_Layer: 0
   m_Name: Grenade
   m_TagString: Grenade
@@ -64,7 +63,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 2a34a7308d71ff7489e79607eedc1aad, type: 2}
+  - {fileID: 2100000, guid: 3a4e72361876bce4db573855604263ed, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -115,7 +114,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1995540550898174375}
   serializedVersion: 4
-  m_Mass: 0.3
+  m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -134,18 +133,3 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &1011085375313372999
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1995540550898174375}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 732da7c1e45a2f343b9cf7909ffa05f7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Grenade: {fileID: 1995540550898174375}
-  nadeDirection: 0
