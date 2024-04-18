@@ -23,6 +23,17 @@ public class SwarmerHealthAndCollision : MonoBehaviour
             }
 
         }
+        if (targetObj.gameObject.tag == "NadeExplosion")
+        {
+            SwarmerHealth -= 100;
+            if (SwarmerHealth <= 0)
+            {
+                Instantiate(ExpDrop, SwarmerPos, Quaternion.identity);
+                Swarmer.GetComponent<BoxCollider>().enabled = false;
+                Destroy(gameObject);
+            }
+
+        }
     }
     // Start is called before the first frame update
     void Start()

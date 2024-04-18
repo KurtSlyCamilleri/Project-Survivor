@@ -24,6 +24,18 @@ public class ChargerHealthAndCollision : MonoBehaviour
             }
 
         }
+        if (targetObj.gameObject.tag == "NadeExplosion")
+        {
+            ChargerHealth -= 100;
+            if (ChargerHealth <= 0)
+            {
+                Instantiate(ExpDrop, ChargerPos, Quaternion.identity);
+                Instantiate(ExpDrop, ChargerPos, Quaternion.identity);
+                Charger.GetComponent<BoxCollider>().enabled = false;
+                Destroy(gameObject);
+            }
+
+        }
     }
 
     // Start is called before the first frame update
