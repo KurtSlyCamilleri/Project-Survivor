@@ -6,22 +6,41 @@ public class GrenadeSystem : MonoBehaviour
 {
     
     public GameObject Grenade;
-    public static int nadeVelocity = 2;
-
-    
+    public GameObject Explosion;
+    Vector3 areaZero;
+    public int nadeVelocity = 2;
+    public int nadeTimer = 20;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        
         Rigidbody rb = Grenade.GetComponent<Rigidbody>();
-        rb.AddForce(nadeVelocity * Vector3.forward, ForceMode.Impulse);
-    }
+        rb.AddRelativeForce(nadeVelocity * Vector3.forward, ForceMode.Impulse);
 
+    }
     // Update is called once per frame
     void Update()
     {
         
+    }
+
+    void OnCollisionEnter(Collision targetObj)
+    {
+        if (targetObj.gameObject.tag == "Ground")
+        {
+            StartCoroutine(TickTickBoom());
+            areaZero = gameObject.transform.position;
+        }
+    }
+
+    IEnumerator TickTickBoom()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(nadeTimer);
+            Instantiate(Explosion, areaZero, Quaternion.identity);
+            Destroy(gameObject);
+        }
     }
 }

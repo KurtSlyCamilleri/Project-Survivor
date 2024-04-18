@@ -10,6 +10,12 @@ TagManager:
   - Enemy
   - ShotgunBullet
   - Experience
+  - Grenade
+  - Drone
+  - NadeBelt
+  - Physical
+  - NadeExplosion
+  - Ground
   layers:
   - Default
   - TransparentFX
