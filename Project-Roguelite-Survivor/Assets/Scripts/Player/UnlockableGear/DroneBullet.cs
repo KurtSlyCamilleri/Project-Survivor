@@ -2,51 +2,56 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ShotgunBullet : MonoBehaviour
+public class DroneBullet : MonoBehaviour
 {
-    public GameObject Player;
-    public int shotgunBulletPen = 5;
-    public static float bulletVelocity = 4.0f;
+    public GameObject Drone;
+    public int droneBulletPen = 2;
+    public static float bulletVelocity = 2.0f;
+
 
     void OnBecameInvisible()
     {
-        Debug.Log("Invisible Bullet");
+        Debug.Log("Invisible Drone Bullet");
         Destroy(gameObject);
     }
 
     // Start is called before the first frame update
     void Start()
     {
-        Player = GameObject.FindWithTag("Player");
-        transform.rotation = Player.transform.rotation;
+        Drone = GameObject.FindWithTag("Drone");
+        transform.rotation = Drone.transform.rotation;
     }
 
     // Update is called once per frame
     void Update()
     {
         transform.position += transform.forward * bulletVelocity * Time.deltaTime;
-        if (shotgunBulletPen <= 0)
+        if (droneBulletPen <= 0)
         {
             Destroy(gameObject);
         }
     }
+
     void OnTriggerEnter(Collider targetObj)
     {
         if (targetObj.gameObject.tag == "Charger")
         {
-            shotgunBulletPen--;
+            Debug.Log("Charger Hit");
+            droneBulletPen--;
         }
         else if (targetObj.gameObject.tag == "Swarmer")
         {
-            shotgunBulletPen -= 2;
+            Debug.Log("Swarmer Hit");
+            droneBulletPen -= 2;
         }
         else if (targetObj.gameObject.tag == "Sponge")
         {
-            shotgunBulletPen -= 4;
+            Debug.Log("Sponge Hit");
+            droneBulletPen -= 4;
         }
         else if (targetObj.gameObject.tag == "Boss")
         {
-            shotgunBulletPen -= 8;
+            droneBulletPen -= 8;
         }
 
     }

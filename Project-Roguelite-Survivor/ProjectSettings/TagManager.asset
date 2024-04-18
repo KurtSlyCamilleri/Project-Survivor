@@ -16,6 +16,7 @@ TagManager:
   - Physical
   - NadeExplosion
   - Ground
+  - DroneBullet
   layers:
   - Default
   - TransparentFX

@@ -2,31 +2,31 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Shotgun : MonoBehaviour
+public class Drone : MonoBehaviour
 {
-    public GameObject Bullet;
-    public float fireRate = 2f;
+    public GameObject droneBullet;
+    public float fireRate = 0.5f;
     private float lastShot = 0.0f;
 
-    public GameObject Player;
+    public GameObject DroneObj;
     // Start is called before the first frame update
     void Start()
     {
-
+        DroneObj = GameObject.FindWithTag("Drone");
     }
 
     // Update is called once per frame
     void Update()
     {
-        Vector3 gunPos = Player.transform.position;
+        Vector3 dronePos = DroneObj.transform.position;
 
-        if (Input.GetMouseButton(0))
+        if (Input.GetMouseButton(1))
         {
             if (Time.time > fireRate + lastShot)
             {
-                
-                Instantiate(Bullet, gunPos, Quaternion.identity);
-                
+
+                Instantiate(droneBullet, dronePos, Quaternion.identity);
+
                 lastShot = Time.time;
             }
         }

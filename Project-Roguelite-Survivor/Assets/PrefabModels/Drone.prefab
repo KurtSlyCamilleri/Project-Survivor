@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1132582751136101237}
   - component: {fileID: 5176633011775099948}
   - component: {fileID: 2711095978934016176}
+  - component: {fileID: 4521958453810299814}
   m_Layer: 0
   m_Name: Drone
   m_TagString: Drone
@@ -83,3 +84,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &4521958453810299814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4224849626238296483}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17497fcbb476bff44b69ced37a955f1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  droneBullet: {fileID: 5161973660216669431, guid: 5d198bb3e263fa44f8fc226c8a866203, type: 3}
+  fireRate: 0.5
+  Player: {fileID: 0}
