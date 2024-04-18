@@ -18,6 +18,7 @@ TagManager:
   - Ground
   - DroneBullet
   - ShieldGen
+  - ShieldUI
   layers:
   - Default
   - TransparentFX

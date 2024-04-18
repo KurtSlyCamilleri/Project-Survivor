@@ -14,30 +14,40 @@ public class PlayerHealthAndCollision : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        StartCoroutine(ShieldSetting());
     }
 
     // Update is called once per frame
     void Update()
     {
         
-        if (PlayerShield < 0)
-        {
-            PlayerShield = 0;
-        }
+        
         PlayerHealthUI.SetText("Health: " + PlayerHealth.ToString());
         PlayerShieldUI.SetText("Shield: " + PlayerShield.ToString());
-        Debug.Log("1");
+
         ShieldG = GameObject.FindGameObjectWithTag("ShieldGen").GetComponent<ShieldGen>();
-        Debug.Log("2");
+
         ShieldStatus = ShieldG.ShieldEquipped;
-        Debug.Log("3");
-        PlayerShield = ShieldG.ShieldLevel;
-        Debug.Log("4");
-
-
+        if (ShieldStatus == true)
+        {
+            PlayerShieldUI.gameObject.SetActive(true);
+        }
     }
-    void OnCollisionEnter(Collision targetObj)
+
+    IEnumerator ShieldSetting()
+    {
+        while (true)
+        {
+            if (PlayerShield <= -1)
+            {
+                PlayerShield = 0;
+            }
+            yield return new WaitForSeconds(1);
+        }
+
+            
+    }
+        void OnCollisionEnter(Collision targetObj)
     {
         if(ShieldStatus == true)
         {
@@ -60,14 +70,17 @@ public class PlayerHealthAndCollision : MonoBehaviour
             {
                 if (targetObj.gameObject.tag == "Swarmer")
                 {
+                    Debug.Log("Swarmer Hit");
                     PlayerShield -= 10;
                 }
                 if (targetObj.gameObject.tag == "Charger")
                 {
+                    Debug.Log("Charger Hit");
                     PlayerShield -= 5;
                 }
                 if (targetObj.gameObject.tag == "Sponge")
                 {
+                    Debug.Log("Sponge Hit");
                     PlayerShield -= 25;
                 }
             }
