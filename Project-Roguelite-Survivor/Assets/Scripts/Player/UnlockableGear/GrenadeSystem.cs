@@ -10,6 +10,7 @@ public class GrenadeSystem : MonoBehaviour
     Vector3 areaZero;
     public int nadeVelocity = 2;
     public int nadeTimer = 20;
+    GameObject ShieldG;
 
 
     // Start is called before the first frame update

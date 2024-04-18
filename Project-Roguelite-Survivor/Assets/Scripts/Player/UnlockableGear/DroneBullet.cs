@@ -36,17 +36,17 @@ public class DroneBullet : MonoBehaviour
     {
         if (targetObj.gameObject.tag == "Charger")
         {
-            Debug.Log("Charger Hit");
+
             droneBulletPen--;
         }
         else if (targetObj.gameObject.tag == "Swarmer")
         {
-            Debug.Log("Swarmer Hit");
+
             droneBulletPen -= 2;
         }
         else if (targetObj.gameObject.tag == "Sponge")
         {
-            Debug.Log("Sponge Hit");
+
             droneBulletPen -= 4;
         }
         else if (targetObj.gameObject.tag == "Boss")
