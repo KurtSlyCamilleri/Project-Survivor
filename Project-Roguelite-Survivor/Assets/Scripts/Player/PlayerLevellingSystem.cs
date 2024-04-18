@@ -13,7 +13,7 @@ public class PlayerLevellingSystem : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -29,14 +29,13 @@ public class PlayerLevellingSystem : MonoBehaviour
         }
     }
 
-    void OnCollisionEnter(Collision targetObj)
+    void OnTriggerEnter(Collider targetObj)
     {
-        Debug.Log("Exp Touched");
         if (targetObj.gameObject.tag == "Experience")
         {
-            Debug.Log("Exp Gained");
             PlayerExp += 5;
+            Destroy(targetObj.gameObject);
         }
     }
 
-    }
+}

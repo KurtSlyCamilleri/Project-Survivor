@@ -164,6 +164,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Charger: {fileID: 1541801139107317211}
+  ChargerHealth: 30
   ExpDrop: {fileID: 4256714270845501797, guid: a6e382625ebae2a48b262a00e6fa443f, type: 3}
   ChargerPos: {x: 0, y: 0, z: 0}
 --- !u!195 &2183472837360910818
@@ -176,7 +177,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 0.7
+  m_Speed: 0.55
   m_Acceleration: 1
   avoidancePriority: 50
   m_AngularSpeed: 120

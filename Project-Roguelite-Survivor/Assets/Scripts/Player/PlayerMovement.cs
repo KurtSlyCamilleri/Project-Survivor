@@ -25,12 +25,11 @@ public class PlayerMovement : MonoBehaviour
         float horizontal =Input.GetAxis("Horizontal");
 
 
-        Vector3 motion12Vector = new Vector3(0, 0, vertical);
-        Vector3 motion13Vector = new Vector3(horizontal, 0, 0);
+        Vector3 motion12Vector = new Vector3(horizontal, 0, vertical);
+
 
 
         transform.Translate(motion12Vector *speed *Time.deltaTime);
-        transform.Translate(motion13Vector * speed * Time.deltaTime);
 
 
 
