@@ -81,9 +81,9 @@ public class RandomSpawnSys : MonoBehaviour
                 new Vector3(6, 0, 0),
                 new Vector3(-6, 0, -4)
             }, spawnRate3));
-        Debug.Log("1");
+
         PlayerLevelSys = GameObject.Find("CollectRadius").GetComponent<PlayerLevellingSystem>();
-        Debug.Log("2");
+
     }
 
     IEnumerator SpawnRoutine(GameObject enemy, List<Vector3> offsets, float spawnDelay)

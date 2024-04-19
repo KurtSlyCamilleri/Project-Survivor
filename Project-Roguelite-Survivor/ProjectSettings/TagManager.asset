@@ -24,6 +24,10 @@ TagManager:
   - BombPack
   - UpgradeUI
   - CollectRadius
+  - ShieldGearPanel
+  - GrenadeGearPanel
+  - DroneGearPanel
+  - BombGearPanel
   layers:
   - Default
   - TransparentFX

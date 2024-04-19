@@ -23,7 +23,6 @@ public class BombPack : MonoBehaviour
         if (Time.time > fireRate + lastShot)
         {
             Quaternion direction = Quaternion.Euler(0, 180 + Player.transform.eulerAngles.y, 0);
-            Debug.Log(direction);
             Instantiate(bombDrone, packPos, direction);
 
             lastShot = Time.time;

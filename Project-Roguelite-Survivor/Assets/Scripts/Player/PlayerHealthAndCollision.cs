@@ -8,7 +8,16 @@ public class PlayerHealthAndCollision : MonoBehaviour
     public TextMeshProUGUI PlayerShieldUI;
     ShieldGen ShieldG;
 
-    void OnCollisionEnter(Collision targetObj)
+    void Update()
+    {
+        if (ShieldG != null)
+        {
+            PlayerShieldUI.SetText("Shield: " + ShieldG.ShieldLevel);
+        }
+    }
+
+
+        void OnCollisionEnter(Collision targetObj)
     {
         // Might as well 
         Debug.Log("Hit by " + targetObj.gameObject.tag);
@@ -29,7 +38,7 @@ public class PlayerHealthAndCollision : MonoBehaviour
 
             // Deducts points from the shield and returns the leftover
             damage = ShieldG.Damage(damage);
-            PlayerShieldUI.SetText("Shield: " + ShieldG.ShieldLevel);
+            
         }
 
         SetHealth(PlayerHealth - damage);

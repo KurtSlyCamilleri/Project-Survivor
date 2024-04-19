@@ -9,7 +9,7 @@ public class GrenadeBelt : MonoBehaviour
     public int throwSpeed = 10;
     public Transform Belt;
     public int spawnRot = 0;
-    List<int> throwDirection = new List<int>() { 45, 90, 135, 180, 225, 270, 315, 360 };
+    List<int> throwDirection = new List<int>() { 1, 2 ,3 ,4 };
 
 
     // Start is called before the first frame update

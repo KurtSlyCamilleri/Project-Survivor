@@ -10,6 +10,13 @@ public class UpgradeManager : MonoBehaviour
     public GameObject bombDronePack;
     public GameObject Player;
     public Transform spawnID;
+    public GameObject ShieldGearPanel;
+    public GameObject GrenadeGearPanel;
+    public GameObject DroneGearPanel;
+    public GameObject BombGearPanel;
+    public GameObject NullPanel;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -37,6 +44,8 @@ public class UpgradeManager : MonoBehaviour
         {
             canvas.SetActive(false);
         }
+        Time.timeScale = 1;
+        ShieldGearPanel.gameObject.SetActive(false);
     }
     public void SpawnGrenade()
     {
@@ -53,6 +62,8 @@ public class UpgradeManager : MonoBehaviour
         {
             canvas.SetActive(false);
         }
+        Time.timeScale = 1;
+        GrenadeGearPanel.gameObject.SetActive(false);
     }
     public void SpawnGunDrone()
     {
@@ -69,6 +80,8 @@ public class UpgradeManager : MonoBehaviour
         {
             canvas.SetActive(false);
         }
+        Time.timeScale = 1;
+        DroneGearPanel.gameObject.SetActive(false);
     }
     public void SpawnBombDrone()
     {
@@ -85,5 +98,7 @@ public class UpgradeManager : MonoBehaviour
         {
             canvas.SetActive(false);
         }
+        Time.timeScale = 1;
+        BombGearPanel.gameObject.SetActive(false);
     }
 }
