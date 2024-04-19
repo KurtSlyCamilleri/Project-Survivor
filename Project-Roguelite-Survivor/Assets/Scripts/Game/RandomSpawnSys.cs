@@ -10,7 +10,7 @@ public class RandomSpawnSys : MonoBehaviour
     public GameObject enemyOne;
     public GameObject enemyTwo;
     public GameObject enemyThree;
-    PlayerLevellingSystem PlayerLevelSys;
+    public static PlayerLevellingSystem PlayerLevelSys;
     public int Stage = 5;
     public static int PlayerPower = 0;
     public Transform Player;
@@ -37,7 +37,7 @@ public class RandomSpawnSys : MonoBehaviour
     }
     void Start()
     {
-        PlayerLevelSys = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerLevellingSystem>();
+        PlayerLevelSys = GameObject.FindGameObjectWithTag("CollectRadius").GetComponent<PlayerLevellingSystem>();
 
         StartCoroutine(SpawnRoutine(enemyOne,
             new List<Vector3>()

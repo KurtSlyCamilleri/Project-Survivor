@@ -1,107 +1,52 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
 public class PlayerHealthAndCollision : MonoBehaviour
 {
     public int PlayerHealth = 100;
-    public int PlayerShield = 20;
     public TextMeshProUGUI PlayerHealthUI;
     public TextMeshProUGUI PlayerShieldUI;
     ShieldGen ShieldG;
-    public bool ShieldStatus = false;
-    // Start is called before the first frame update
-    void Start()
+
+    void OnCollisionEnter(Collision targetObj)
     {
-        StartCoroutine(ShieldSetting());
-    }
+        // Might as well 
+        Debug.Log("Hit by " + targetObj.gameObject.tag);
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-        
-        PlayerHealthUI.SetText("Health: " + PlayerHealth.ToString());
-        PlayerShieldUI.SetText("Shield: " + PlayerShield.ToString());
-
-        ShieldG = GameObject.FindGameObjectWithTag("ShieldGen").GetComponent<ShieldGen>();
-
-        ShieldStatus = ShieldG.ShieldEquipped;
-        if (ShieldStatus == true)
+        // Each character has a specific amount of damage to make.
+        // Consider moving these to a dedicated script instead.
+        var damage = 0;
+        switch (targetObj.gameObject.tag)
         {
-            PlayerShieldUI.gameObject.SetActive(true);
-        }
-    }
-
-    IEnumerator ShieldSetting()
-    {
-        while (true)
-        {
-            if (PlayerShield <= -1)
-            {
-                PlayerShield = 0;
-            }
-            yield return new WaitForSeconds(1);
+            case "Charger": damage = 5; break;
+            case "Sponge": damage = 25; break;
+            case "Swarmer": damage = 10; break;
         }
 
-            
-    }
-        void OnCollisionEnter(Collision targetObj)
-    {
-        if(ShieldStatus == true)
+        // Apply damage to the shield first, if we have one
+        if (ShieldG != null)
         {
-            if (PlayerShield <= 0)
-            {
-                if (targetObj.gameObject.tag == "Swarmer")
-                {
-                    PlayerHealth -= 10;
-                }
-                if (targetObj.gameObject.tag == "Charger")
-                {
-                    PlayerHealth -= 5;
-                }
-                if (targetObj.gameObject.tag == "Sponge")
-                {
-                    PlayerHealth -= 25;
-                }
-            }
-            else
-            {
-                if (targetObj.gameObject.tag == "Swarmer")
-                {
-                    Debug.Log("Swarmer Hit");
-                    PlayerShield -= 10;
-                }
-                if (targetObj.gameObject.tag == "Charger")
-                {
-                    Debug.Log("Charger Hit");
-                    PlayerShield -= 5;
-                }
-                if (targetObj.gameObject.tag == "Sponge")
-                {
-                    Debug.Log("Sponge Hit");
-                    PlayerShield -= 25;
-                }
-            }
+
+            // Deducts points from the shield and returns the leftover
+            damage = ShieldG.Damage(damage);
+            PlayerShieldUI.SetText("Shield: " + ShieldG.ShieldLevel);
         }
-        else
-        {
-            if (targetObj.gameObject.tag == "Swarmer")
-            {
-                PlayerHealth -= 10;
-            }
-            if (targetObj.gameObject.tag == "Charger")
-            {
-                PlayerHealth -= 5;
-            }
-            if (targetObj.gameObject.tag == "Sponge")
-            {
-                PlayerHealth -= 25;
-            }
-        }
-       
-        
+
+        SetHealth(PlayerHealth - damage);
     }
 
+    // Updates the health points and the related UI
+    private void SetHealth(int value)
+    {
+        PlayerHealth = value;
+        PlayerHealthUI.SetText("Health: " + PlayerHealth);
+    }
+
+    // Stores a reference to the ShieldGen script 
+    public void SetShield(ShieldGen shield)
+    {
+        ShieldG = shield;
+        PlayerShieldUI.gameObject.SetActive(true);
+        PlayerShieldUI.SetText("Shield: " + ShieldG.ShieldLevel);
+    }
 }
