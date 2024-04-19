@@ -51,19 +51,19 @@ public class PlayerLevellingSystem : MonoBehaviour
                     Debug.Log("Shield");
                     upgradeID.Remove(1);
                 }
-                if (upgradeID[chosenIndex] == 2)
+                else if (upgradeID[chosenIndex] == 2)
                 {
                     GrenadeGearPanel.gameObject.SetActive(true);
                     Debug.Log("Nade");
                     upgradeID.Remove(2);
                 }
-                if (upgradeID[chosenIndex] == 3)
+                else if(upgradeID[chosenIndex] == 3)
                 {
                     DroneGearPanel.gameObject.SetActive(true);
                     Debug.Log("Drone");
                     upgradeID.Remove(3);
                 }
-                if (upgradeID[chosenIndex] == 4)
+                else if(upgradeID[chosenIndex] == 4)
                 {
                     BombGearPanel.gameObject.SetActive(true);
                     Debug.Log("Bomb");

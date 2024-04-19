@@ -4475,6 +4475,11 @@ MonoBehaviour:
   bombDronePack: {fileID: 6463505520791828778, guid: 5ab65e687040c4944a52a30190df3f13, type: 3}
   Player: {fileID: 288914082}
   spawnID: {fileID: 0}
+  ShieldGearPanel: {fileID: 870875227}
+  GrenadeGearPanel: {fileID: 1356000000}
+  DroneGearPanel: {fileID: 1277223572}
+  BombGearPanel: {fileID: 355380963}
+  NullPanel: {fileID: 718446046}
 --- !u!115 &1505819824
 MonoScript:
   m_ObjectHideFlags: 0
@@ -5351,7 +5356,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerLevel: 0
-  PlayerExp: 0
+  PlayerExp: 100
   LevelUpReq: 100
   PlayerLevelUI: {fileID: 156732578}
   PlayerExpUI: {fileID: 1269784634}
