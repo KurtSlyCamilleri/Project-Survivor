@@ -11,7 +11,7 @@ public class DroneBullet : MonoBehaviour
 
     void OnBecameInvisible()
     {
-        Debug.Log("Invisible Drone Bullet");
+
         Destroy(gameObject);
     }
 

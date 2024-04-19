@@ -10,7 +10,7 @@ public class ShotgunBullet : MonoBehaviour
 
     void OnBecameInvisible()
     {
-        Debug.Log("Invisible Bullet");
+
         Destroy(gameObject);
     }
 

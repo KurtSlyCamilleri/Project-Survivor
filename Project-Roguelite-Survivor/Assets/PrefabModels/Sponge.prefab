@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 7553604842050996805}
   - component: {fileID: -1273447382622442429}
   - component: {fileID: 2183472837360910818}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sponge
   m_TagString: Sponge
   m_Icon: {fileID: 0}

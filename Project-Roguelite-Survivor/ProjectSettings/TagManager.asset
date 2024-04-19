@@ -19,6 +19,9 @@ TagManager:
   - DroneBullet
   - ShieldGen
   - ShieldUI
+  - BombDrone
+  - DroneExplosion
+  - BombPack
   layers:
   - Default
   - TransparentFX
@@ -26,7 +29,7 @@ TagManager:
   - Ground
   - Water
   - UI
-  - 
+  - Enemy
   - 
   - 
   - 

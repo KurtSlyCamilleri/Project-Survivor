@@ -48,6 +48,18 @@ public class ChargerHealthAndCollision : MonoBehaviour
             }
 
         }
+        if (targetObj.gameObject.tag == "DroneExplosion")
+        {
+            ChargerHealth -= 75;
+            if (ChargerHealth <= 0)
+            {
+                Instantiate(ExpDrop, ChargerPos, Quaternion.identity);
+                Instantiate(ExpDrop, ChargerPos, Quaternion.identity);
+                Charger.GetComponent<BoxCollider>().enabled = false;
+                Destroy(gameObject);
+            }
+
+        }
     }
 
     // Start is called before the first frame update

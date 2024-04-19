@@ -12,7 +12,7 @@ public class RandomSpawnSys : MonoBehaviour
     public GameObject enemyThree;
     PlayerLevellingSystem PlayerLevelSys;
     public int Stage = 5;
-    public int PlayerPower = 0;
+    public static int PlayerPower = 0;
     public Transform Player;
     public float x = 0f;
     public static float running = 0;

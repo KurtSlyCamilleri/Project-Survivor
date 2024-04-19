@@ -54,6 +54,20 @@ public class SpongeHealthAndCollision : MonoBehaviour
             }
 
         }
+        if (targetObj.gameObject.tag == "DroneExplosion")
+        {
+            SpongeHealth -= 75;
+            if (SpongeHealth <= 0)
+            {
+                Instantiate(ExpDrop, SpongePos, Quaternion.identity);
+                Instantiate(ExpDrop, SpongePos, Quaternion.identity);
+                Instantiate(ExpDrop, SpongePos, Quaternion.identity);
+                Instantiate(ExpDrop, SpongePos, Quaternion.identity);
+                Sponge.GetComponent<BoxCollider>().enabled = false;
+                Destroy(gameObject);
+            }
+
+        }
     }
     // Start is called before the first frame update
     void Start()
