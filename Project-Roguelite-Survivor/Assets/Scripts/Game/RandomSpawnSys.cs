@@ -16,16 +16,16 @@ public class RandomSpawnSys : MonoBehaviour
     public Transform Player;
     public float x = 0f;
     public static float running = 0;
-    public int spawnRate1 = 6;
-    public int spawnRate2 = 9;
-    public int spawnRate3 = 13;
+    public int spawnRate1 = 4;
+    public int spawnRate2 = 7;
+    public int spawnRate3 = 11;
 
     void Update()
     {
         PlayerPower = PlayerLevelSys.PlayerLevel;
 
 
-        if (PlayerPower == Stage && spawnRate1 > 2)
+        if (PlayerPower == Stage && spawnRate1 > 1)
         {
             spawnRate1 -= 1;
             spawnRate2 -= 1;
@@ -87,6 +87,17 @@ public class RandomSpawnSys : MonoBehaviour
     }
 
     IEnumerator SpawnRoutine(GameObject enemy, List<Vector3> offsets, float spawnDelay)
+    {
+        while (true)
+        {
+            int spawnId = Random.Range(0, offsets.Count);
+
+            Instantiate(enemy, Player.position + offsets[spawnId], Quaternion.identity);
+            yield return new WaitForSeconds(spawnDelay);
+
+        }
+    }
+    IEnumerator SpawnRoutine2(GameObject enemy, List<Vector3> offsets, float spawnDelay)
     {
         while (true)
         {

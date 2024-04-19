@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealthAndCollision : MonoBehaviour
 {
@@ -17,6 +18,11 @@ public class PlayerHealthAndCollision : MonoBehaviour
 
         void Update()
     {
+        if(PlayerHealth == 0)
+        {
+            SceneManager.LoadScene("Coding_Testing_Grounds");
+        }
+
         if (ShieldG != null)
         {
             PlayerShieldUI.SetText("Shield: " + ShieldG.ShieldLevel);
