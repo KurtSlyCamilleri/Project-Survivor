@@ -10,6 +10,7 @@ public class PlayerLevellingSystem : MonoBehaviour
     public int LevelUpReq = 100;
     public TextMeshProUGUI PlayerLevelUI;
     public TextMeshProUGUI PlayerExpUI;
+    public GameObject Upgrade_Basic_Pannel;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,6 +27,7 @@ public class PlayerLevellingSystem : MonoBehaviour
             PlayerLevel++;
             LevelUpReq += 50;
             PlayerExp = 0;
+            Upgrade_Basic_Pannel.gameObject.SetActive(!Upgrade_Basic_Pannel.gameObject.activeSelf);
         }
     }
 

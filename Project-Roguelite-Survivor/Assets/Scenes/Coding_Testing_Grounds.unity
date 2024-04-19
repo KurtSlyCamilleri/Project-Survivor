@@ -4332,7 +4332,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1445470032
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5278,6 +5278,7 @@ MonoBehaviour:
   LevelUpReq: 100
   PlayerLevelUI: {fileID: 156732578}
   PlayerExpUI: {fileID: 1269784634}
+  Upgrade_Basic_Pannel: {fileID: 1445470031}
 --- !u!1 &2006324167
 GameObject:
   m_ObjectHideFlags: 0
