@@ -23,6 +23,7 @@ TagManager:
   - DroneExplosion
   - BombPack
   - UpgradeUI
+  - CollectRadius
   layers:
   - Default
   - TransparentFX
