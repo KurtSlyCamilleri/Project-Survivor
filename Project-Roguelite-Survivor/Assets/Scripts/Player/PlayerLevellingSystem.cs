@@ -17,8 +17,17 @@ public class PlayerLevellingSystem : MonoBehaviour
     public GameObject DroneGearPanel;
     public GameObject BombGearPanel;
     public GameObject NullPanel;
+
+    public GameObject HealthUpgrade_Panel;
+    public GameObject MovementUpgrade_Panel;
+    public GameObject PickUp_Panel;
     List<int> upgradeID = new List<int>() { 1, 2, 3, 4 };
+    List<int> playerupgradeID = new List<int>() { 1, 2, 3 };
+
     int chosenIndex;
+    int chosenIndex2;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -42,40 +51,59 @@ public class PlayerLevellingSystem : MonoBehaviour
 
             if (upgradeID.Count != 0)
             {
-                Debug.Log("PreRan");
+
                 chosenIndex = Random.Range(0, upgradeID.Count);
-                Debug.Log("PostRan");
+
                 if (upgradeID[chosenIndex] == 1)
                 {
                     ShieldGearPanel.gameObject.SetActive(true);
-                    Debug.Log("Shield");
+
                     upgradeID.Remove(1);
                 }
                 else if (upgradeID[chosenIndex] == 2)
                 {
                     GrenadeGearPanel.gameObject.SetActive(true);
-                    Debug.Log("Nade");
+
                     upgradeID.Remove(2);
                 }
-                else if(upgradeID[chosenIndex] == 3)
+                else if (upgradeID[chosenIndex] == 3)
                 {
                     DroneGearPanel.gameObject.SetActive(true);
-                    Debug.Log("Drone");
+
                     upgradeID.Remove(3);
                 }
-                else if(upgradeID[chosenIndex] == 4)
+                else if (upgradeID[chosenIndex] == 4)
                 {
                     BombGearPanel.gameObject.SetActive(true);
-                    Debug.Log("Bomb");
+
                     upgradeID.Remove(4);
                 }
             }
             else
             {
-                Debug.Log("Null");
                 NullPanel.gameObject.SetActive(true);
             }
+
+            if (playerupgradeID.Count != 0)
+            {
+                chosenIndex2 = Random.Range(0, playerupgradeID.Count);
+
+                if (playerupgradeID[chosenIndex2] == 1)
+                {
+                    HealthUpgrade_Panel.gameObject.SetActive(true);
+
+                }
+                else if (playerupgradeID[chosenIndex2] == 2)
+                {
+                    MovementUpgrade_Panel.gameObject.SetActive(true);
+                }
+                else if (playerupgradeID[chosenIndex2] == 3)
+                {
+                    PickUp_Panel.gameObject.SetActive(true);
+                }
+            }
         }
+
     }
 
     void OnTriggerEnter(Collider targetObj)

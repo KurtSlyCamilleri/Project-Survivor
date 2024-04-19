@@ -16,6 +16,10 @@ public class UpgradeManager : MonoBehaviour
     public GameObject BombGearPanel;
     public GameObject NullPanel;
 
+    public GameObject HealthUpgrade_Panel;
+    public GameObject MovementUpgrade_Panel;
+    public GameObject PickUp_Panel;
+
 
     // Start is called before the first frame update
     void Start()
@@ -100,5 +104,44 @@ public class UpgradeManager : MonoBehaviour
         }
         Time.timeScale = 1;
         BombGearPanel.gameObject.SetActive(false);
+    }
+
+    public void AddHealth()
+    {
+        
+
+        GameObject[] canvasList = GameObject.FindGameObjectsWithTag("UpgradeUI");
+        foreach (GameObject canvas in canvasList)
+        {
+            canvas.SetActive(false);
+        }
+        Time.timeScale = 1;
+        HealthUpgrade_Panel.gameObject.SetActive(false);
+    }
+
+    public void AddSpeed()
+    {
+
+
+        GameObject[] canvasList = GameObject.FindGameObjectsWithTag("UpgradeUI");
+        foreach (GameObject canvas in canvasList)
+        {
+            canvas.SetActive(false);
+        }
+        Time.timeScale = 1;
+        MovementUpgrade_Panel.gameObject.SetActive(false);
+    }
+
+    public void AddRadius()
+    {
+
+
+        GameObject[] canvasList = GameObject.FindGameObjectsWithTag("UpgradeUI");
+        foreach (GameObject canvas in canvasList)
+        {
+            canvas.SetActive(false);
+        }
+        Time.timeScale = 1;
+        PickUp_Panel.gameObject.SetActive(false);
     }
 }
