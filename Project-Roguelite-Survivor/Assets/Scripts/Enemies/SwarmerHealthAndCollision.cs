@@ -9,12 +9,13 @@ public class SwarmerHealthAndCollision : MonoBehaviour
     public GameObject ExpDrop;
     public int SwarmerDamage = 10;
     public Vector3 SwarmerPos;
+    public int shotgunBulletDMG = 25;
 
     void OnTriggerEnter(Collider targetObj)
     {
         if (targetObj.gameObject.tag == "ShotgunBullet")
         {
-            SwarmerHealth -= 25;
+            SwarmerHealth -= shotgunBulletDMG;
             if (SwarmerHealth <= 0)
             {
                 Instantiate(ExpDrop, SwarmerPos, Quaternion.identity);

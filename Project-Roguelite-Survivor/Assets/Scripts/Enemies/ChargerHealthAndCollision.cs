@@ -9,12 +9,13 @@ public class ChargerHealthAndCollision : MonoBehaviour
     public GameObject ExpDrop;
     public static int ChargerDamage = 5;
     public Vector3 ChargerPos;
+    public int shotgunBulletDMG = 25;
 
     void OnTriggerEnter(Collider targetObj)
     {
         if (targetObj.gameObject.tag == "ShotgunBullet")
         {
-            ChargerHealth -= 25;
+            ChargerHealth -= shotgunBulletDMG;
             if (ChargerHealth <= 0)
             {
                 Instantiate(ExpDrop, ChargerPos, Quaternion.identity);

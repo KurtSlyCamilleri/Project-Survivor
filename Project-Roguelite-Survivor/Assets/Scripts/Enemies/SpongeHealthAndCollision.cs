@@ -9,12 +9,13 @@ public class SpongeHealthAndCollision : MonoBehaviour
     public GameObject ExpDrop;
     public static int SpongeDamage = 20;
     public Vector3 SpongePos;
+    public int shotgunBulletDMG = 25;
 
     void OnTriggerEnter(Collider targetObj)
     {
         if (targetObj.gameObject.tag == "ShotgunBullet")
         {
-            SpongeHealth -= 25;
+            SpongeHealth -= shotgunBulletDMG;
             if (SpongeHealth <= 0)
             {
                 Instantiate(ExpDrop, SpongePos, Quaternion.identity);

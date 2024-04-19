@@ -21,11 +21,23 @@ public class PlayerLevellingSystem : MonoBehaviour
     public GameObject HealthUpgrade_Panel;
     public GameObject MovementUpgrade_Panel;
     public GameObject PickUp_Panel;
+
+    public GameObject FireRate_Panel;
+    public GameObject SpraySpread_Panel;
+    public GameObject Piercing_Panel;
+    public GameObject Damage_Panel;
+    public GameObject Fullshot_Panel;
+
     List<int> upgradeID = new List<int>() { 1, 2, 3, 4 };
     List<int> playerupgradeID = new List<int>() { 1, 2, 3 };
+    List<int> shotgunupgradeID = new List<int>() { 1, 2, 3 , 4};
+
+    public int fireRateLimiter = 0;
+
 
     int chosenIndex;
     int chosenIndex2;
+    int chosenIndex3;
 
 
     // Start is called before the first frame update
@@ -112,7 +124,48 @@ public class PlayerLevellingSystem : MonoBehaviour
                 }
             }
 
-            //1
+            //Shotgun Upgrades
+            if (shotgunupgradeID.Count != 0)
+            {
+
+                chosenIndex3 = Random.Range(0, shotgunupgradeID.Count);
+                Debug.Log(shotgunupgradeID[chosenIndex3]);
+
+                if (shotgunupgradeID[chosenIndex3] == 1)
+                {
+
+                    FireRate_Panel.gameObject.SetActive(true);
+                    
+
+                }
+                else if (shotgunupgradeID[chosenIndex3] == 2)
+                {
+
+                    SpraySpread_Panel.gameObject.SetActive(true);
+
+                }
+                else if (shotgunupgradeID[chosenIndex3] == 3)
+                {
+
+                    Piercing_Panel.gameObject.SetActive(true);
+
+                }
+                else if (shotgunupgradeID[chosenIndex3] == 4)
+                {
+
+                    Damage_Panel.gameObject.SetActive(true);
+
+                }
+            }
+            else
+            {
+                Fullshot_Panel.gameObject.SetActive(true);
+            }
+
+        }
+        if (fireRateLimiter == 1)
+        {
+            shotgunupgradeID.Remove(1);
         }
 
     }
@@ -121,7 +174,7 @@ public class PlayerLevellingSystem : MonoBehaviour
     {
         if (targetObj.gameObject.tag == "Experience")
         {
-            PlayerExp += 5;
+            PlayerExp += 10;
             Destroy(targetObj.gameObject);
         }
     }
