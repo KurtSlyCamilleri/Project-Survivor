@@ -1730,6 +1730,7 @@ GameObject:
   m_Component:
   - component: {fileID: 462243928}
   - component: {fileID: 462243929}
+  - component: {fileID: 462243930}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -1773,6 +1774,21 @@ MonoBehaviour:
   spawnRate1: 6
   spawnRate2: 9
   spawnRate3: 13
+--- !u!114 &462243930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 462243926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd9f8b02d4630784492ef9c2ee257e21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shieldPack: {fileID: 2287964293651122963, guid: 01ab66367c0537c42a9a01224c63ff80, type: 3}
+  Player: {fileID: 288914082}
+  spawnID: {fileID: 0}
 --- !u!1 &475660394
 GameObject:
   m_ObjectHideFlags: 0
@@ -3078,7 +3094,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1255659080}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 462243930}
+        m_TargetAssemblyTypeName: UpgradeManager, Assembly-CSharp
+        m_MethodName: SpawnShield
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1255659080
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3537,11 +3565,11 @@ GameObject:
   - component: {fileID: 1445470033}
   m_Layer: 5
   m_Name: Upgrade_Basic_Pannel
-  m_TagString: Untagged
+  m_TagString: UpgradeUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1445470032
 RectTransform:
   m_ObjectHideFlags: 0
