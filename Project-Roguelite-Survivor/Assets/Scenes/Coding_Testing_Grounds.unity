@@ -1546,6 +1546,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerHealth: 100
+  MaximumPlayerHealth: 100
   PlayerHealthUI: {fileID: 236977542}
   PlayerShieldUI: {fileID: 512052308}
 --- !u!1 &355380963
@@ -2025,10 +2026,10 @@ MonoBehaviour:
       - m_Target: {fileID: 1445470035}
         m_TargetAssemblyTypeName: UpgradeManager, Assembly-CSharp
         m_MethodName: AddHealth
-        m_Mode: 1
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 288914091}
+          m_ObjectArgumentAssemblyTypeName: PlayerHealthAndCollision, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -4689,7 +4690,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1445470032
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4775,9 +4776,9 @@ MonoBehaviour:
   DroneGearPanel: {fileID: 1277223572}
   BombGearPanel: {fileID: 355380963}
   NullPanel: {fileID: 718446046}
-  HealthUpgrade_Panel: {fileID: 0}
-  MovementUpgrade_Panel: {fileID: 0}
-  PickUp_Panel: {fileID: 0}
+  HealthUpgrade_Panel: {fileID: 847492039}
+  MovementUpgrade_Panel: {fileID: 2065191310}
+  PickUp_Panel: {fileID: 856506628}
 --- !u!115 &1505819824
 MonoScript:
   m_ObjectHideFlags: 0
@@ -5366,10 +5367,10 @@ MonoBehaviour:
       - m_Target: {fileID: 1445470035}
         m_TargetAssemblyTypeName: UpgradeManager, Assembly-CSharp
         m_MethodName: AddSpeed
-        m_Mode: 1
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 1341993700}
+          m_ObjectArgumentAssemblyTypeName: PlayerMovement, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -5931,9 +5932,9 @@ MonoBehaviour:
   DroneGearPanel: {fileID: 1277223572}
   BombGearPanel: {fileID: 355380963}
   NullPanel: {fileID: 718446046}
-  HealthUpgrade_Panel: {fileID: 0}
-  MovementUpgrade_Panel: {fileID: 0}
-  PickUp_Panel: {fileID: 0}
+  HealthUpgrade_Panel: {fileID: 847492039}
+  MovementUpgrade_Panel: {fileID: 2065191310}
+  PickUp_Panel: {fileID: 856506628}
 --- !u!1 &2006324167
 GameObject:
   m_ObjectHideFlags: 0

@@ -48,7 +48,7 @@ public class PlayerLevellingSystem : MonoBehaviour
             Time.timeScale = 0;
 
 
-
+            //Gear Unlocking
             if (upgradeID.Count != 0)
             {
 
@@ -84,24 +84,35 @@ public class PlayerLevellingSystem : MonoBehaviour
                 NullPanel.gameObject.SetActive(true);
             }
 
+            //Player Upgrades
             if (playerupgradeID.Count != 0)
             {
+
                 chosenIndex2 = Random.Range(0, playerupgradeID.Count);
+                Debug.Log(playerupgradeID[chosenIndex2]);
 
                 if (playerupgradeID[chosenIndex2] == 1)
                 {
+
                     HealthUpgrade_Panel.gameObject.SetActive(true);
+
 
                 }
                 else if (playerupgradeID[chosenIndex2] == 2)
                 {
+
                     MovementUpgrade_Panel.gameObject.SetActive(true);
+
                 }
                 else if (playerupgradeID[chosenIndex2] == 3)
                 {
+
                     PickUp_Panel.gameObject.SetActive(true);
+
                 }
             }
+
+            //1
         }
 
     }

@@ -4,6 +4,7 @@ using TMPro;
 public class PlayerHealthAndCollision : MonoBehaviour
 {
     public int PlayerHealth = 100;
+    public int MaximumPlayerHealth = 100;
     public TextMeshProUGUI PlayerHealthUI;
     public TextMeshProUGUI PlayerShieldUI;
     ShieldGen ShieldG;
@@ -14,6 +15,7 @@ public class PlayerHealthAndCollision : MonoBehaviour
         {
             PlayerShieldUI.SetText("Shield: " + ShieldG.ShieldLevel);
         }
+        PlayerHealthUI.SetText("Health: " + PlayerHealth);
     }
 
 

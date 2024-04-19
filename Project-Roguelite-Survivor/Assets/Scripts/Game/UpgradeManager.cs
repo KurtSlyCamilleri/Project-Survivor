@@ -20,6 +20,11 @@ public class UpgradeManager : MonoBehaviour
     public GameObject MovementUpgrade_Panel;
     public GameObject PickUp_Panel;
 
+    PlayerHealthAndCollision PlayerHealthScript;
+    PlayerMovement PlayerSpeedScript;
+
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -106,9 +111,11 @@ public class UpgradeManager : MonoBehaviour
         BombGearPanel.gameObject.SetActive(false);
     }
 
-    public void AddHealth()
+    public void AddHealth(PlayerHealthAndCollision health)
     {
-        
+        PlayerHealthScript = health;
+        PlayerHealthScript.MaximumPlayerHealth += 20;
+        PlayerHealthScript.PlayerHealth += 20;
 
         GameObject[] canvasList = GameObject.FindGameObjectsWithTag("UpgradeUI");
         foreach (GameObject canvas in canvasList)
@@ -119,9 +126,10 @@ public class UpgradeManager : MonoBehaviour
         HealthUpgrade_Panel.gameObject.SetActive(false);
     }
 
-    public void AddSpeed()
+    public void AddSpeed(PlayerMovement speed)
     {
-
+        PlayerSpeedScript = speed;
+        PlayerSpeedScript.speed += 0.1f;
 
         GameObject[] canvasList = GameObject.FindGameObjectsWithTag("UpgradeUI");
         foreach (GameObject canvas in canvasList)
@@ -134,7 +142,7 @@ public class UpgradeManager : MonoBehaviour
 
     public void AddRadius()
     {
-
+        GameObject.FindGameObjectWithTag("CollectRadius").GetComponent<SphereCollider>().radius += 2;
 
         GameObject[] canvasList = GameObject.FindGameObjectsWithTag("UpgradeUI");
         foreach (GameObject canvas in canvasList)
