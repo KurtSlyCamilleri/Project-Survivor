@@ -9,7 +9,13 @@ public class PlayerHealthAndCollision : MonoBehaviour
     public TextMeshProUGUI PlayerShieldUI;
     ShieldGen ShieldG;
 
-    void Update()
+    void Start()
+    {
+        PlayerHealth = 100;
+    }
+
+
+        void Update()
     {
         if (ShieldG != null)
         {

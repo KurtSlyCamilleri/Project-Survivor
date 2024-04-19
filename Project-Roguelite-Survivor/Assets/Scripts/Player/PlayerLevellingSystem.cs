@@ -28,26 +28,82 @@ public class PlayerLevellingSystem : MonoBehaviour
     public GameObject Damage_Panel;
     public GameObject Fullshot_Panel;
 
+    public GameObject HealthUpgrade_Panel2;
+    public GameObject MovementUpgrade_Panel2;
+    public GameObject PickUp_Panel2;
+    public GameObject FireRate_Panel2;
+    public GameObject SpraySpread_Panel2;
+    public GameObject Piercing_Panel2;
+    public GameObject Damage_Panel2;
+
     List<int> upgradeID = new List<int>() { 1, 2, 3, 4 };
     List<int> playerupgradeID = new List<int>() { 1, 2, 3 };
     List<int> shotgunupgradeID = new List<int>() { 1, 2, 3 , 4};
+    List<int> otherID = new List<int>() { 1, 2, 3, 4 , 5, 6, 7};
 
     public int fireRateLimiter = 0;
+    public int speedLimiter = 0;
 
 
     int chosenIndex;
     int chosenIndex2;
     int chosenIndex3;
+    int chosenIndex4;
+
+    public GameObject Charger;
+    public GameObject Swarmer;
+    public GameObject Sponge;
+    public GameObject shotgunBullet;
+
+    public int shottyDMG = 25;
+
+    public int XshotgunBulletPen = 5;
+    public float XshotgunBulletSpread = 0.1f;
+
+    ChargerHealthAndCollision ChargerScript;
+    SwarmerHealthAndCollision SwarmerScript;
+    SpongeHealthAndCollision SpongeScript;
+    ShotgunBullet ShotgunBulletScript;
+    public GameObject Play_Panel;
 
 
     // Start is called before the first frame update
     void Start()
     {
-
+        Time.timeScale = 0;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void DamageFixCharger(ChargerHealthAndCollision dmgCharger)
+    {
+        ChargerScript = dmgCharger;
+        ChargerScript.shotgunBulletDMG = 25;
+        Time.timeScale = 1;
+    }
+    public void DamageFixSwarmer(SwarmerHealthAndCollision dmgSwarmer)
+    {
+        SwarmerScript = dmgSwarmer;
+        SwarmerScript.shotgunBulletDMG = 25;
+    }
+    public void DamageFixSponge(SpongeHealthAndCollision dmgSponge)
+    {
+        SpongeScript = dmgSponge;
+        SpongeScript.shotgunBulletDMG = 25;
+    }
+    public void PierceFixShotty(ShotgunBullet pierceShotty)
+    {
+        ShotgunBulletScript = pierceShotty;
+        ShotgunBulletScript.shotgunBulletPen = 5;
+    }
+
+    public void SpreadFixShotty()
+    {
+        shotgunBullet.transform.localScale = new Vector3(0.1f , 0.01f, 0.02f);
+        Play_Panel.gameObject.SetActive(false);
+    }
+
+
+        // Update is called once per frame
+        void Update()
     {
         PlayerLevelUI.SetText("Level: " + PlayerLevel.ToString());
         PlayerExpUI.SetText("Exp: " + PlayerExp.ToString() + "/" + LevelUpReq.ToString());
@@ -162,10 +218,74 @@ public class PlayerLevellingSystem : MonoBehaviour
                 Fullshot_Panel.gameObject.SetActive(true);
             }
 
+            //other upgrades
+            if (otherID.Count != 0)
+            {
+
+                chosenIndex4 = Random.Range(0, otherID.Count);
+                Debug.Log(otherID[chosenIndex4]);
+
+                if (otherID[chosenIndex4] == 1)
+                {
+
+                    FireRate_Panel2.gameObject.SetActive(true);
+
+
+                }
+                else if (otherID[chosenIndex4] == 2)
+                {
+
+                    SpraySpread_Panel2.gameObject.SetActive(true);
+
+                }
+                else if (otherID[chosenIndex4] == 3)
+                {
+
+                    Piercing_Panel2.gameObject.SetActive(true);
+
+                }
+                else if (otherID[chosenIndex4] == 4)
+                {
+
+                    Damage_Panel2.gameObject.SetActive(true);
+
+                }
+                else if (otherID[chosenIndex4] == 5)
+                {
+
+                    HealthUpgrade_Panel2.gameObject.SetActive(true);
+
+
+                }
+                else if (otherID[chosenIndex4] == 6)
+                {
+                    PickUp_Panel2.gameObject.SetActive(true);
+                    
+
+
+                }
+                else if (otherID[chosenIndex4] == 7)
+                {
+
+                    MovementUpgrade_Panel2.gameObject.SetActive(true);
+
+                }
+            }
+            else
+            {
+                Fullshot_Panel.gameObject.SetActive(true);
+            }
+
         }
         if (fireRateLimiter == 1)
         {
             shotgunupgradeID.Remove(1);
+            otherID.Remove(1);
+        }
+        if (speedLimiter == 1)
+        {
+            playerupgradeID.Remove(2);
+            otherID.Remove(7);
         }
 
     }
