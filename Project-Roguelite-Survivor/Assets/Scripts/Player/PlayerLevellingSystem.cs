@@ -107,7 +107,7 @@ public class PlayerLevellingSystem : MonoBehaviour
     {
         PlayerLevelUI.SetText("Level: " + PlayerLevel.ToString());
         PlayerExpUI.SetText("Exp: " + PlayerExp.ToString() + "/" + LevelUpReq.ToString());
-        if (PlayerExp == LevelUpReq)
+        if (PlayerExp >= LevelUpReq)
         {
             PlayerLevel++;
             LevelUpReq += 50;
