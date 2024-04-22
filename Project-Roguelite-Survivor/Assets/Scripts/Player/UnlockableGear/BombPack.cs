@@ -7,6 +7,7 @@ public class BombPack : MonoBehaviour
     public GameObject bombDrone;
     public float fireRate = 8f;
     private float lastShot = 0.0f;
+    List<int> throwDirection2 = new List<int>() {-45, -25,-5, 5, 25, 45 };
 
     public GameObject Player;
     // Start is called before the first frame update
@@ -22,7 +23,8 @@ public class BombPack : MonoBehaviour
 
         if (Time.time > fireRate + lastShot)
         {
-            Quaternion direction = Quaternion.Euler(0, 180 + Player.transform.eulerAngles.y, 0);
+            int spawnIndex2 = Random.Range(0, throwDirection2.Count);
+            Quaternion direction = Quaternion.Euler(0, throwDirection2[spawnIndex2] + Player.transform.eulerAngles.y, 0);
             Instantiate(bombDrone, packPos, direction);
 
             lastShot = Time.time;

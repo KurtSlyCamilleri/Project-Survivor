@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DroneExplosion : MonoBehaviour
 {
-    public int droneExplosionLasting = 1;
+    public float droneExplosionLasting = 0.5f;
     // Start is called before the first frame update
     void Start()
     {

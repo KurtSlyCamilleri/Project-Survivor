@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GrenadeExplosionFade : MonoBehaviour
 {
-    public int nadeExplosionLasting = 2;
+    public float nadeExplosionLasting = 1.5f;
     // Start is called before the first frame update
     void Start()
     {
