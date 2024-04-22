@@ -18,7 +18,7 @@ public class PlayerHealthAndCollision : MonoBehaviour
 
         void Update()
     {
-        if(PlayerHealth == 0)
+        if(PlayerHealth <= 0)
         {
             SceneManager.LoadScene("Coding_Testing_Grounds");
         }
