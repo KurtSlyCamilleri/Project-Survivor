@@ -20,8 +20,7 @@ public class Shotgun : MonoBehaviour
     {
         Vector3 gunPos = Player.transform.position;
 
-        if (Input.GetMouseButton(0))
-        {
+
             if (Time.time > fireRate + lastShot)
             {
                 
@@ -29,6 +28,6 @@ public class Shotgun : MonoBehaviour
                 
                 lastShot = Time.time;
             }
-        }
+        
     }
 }

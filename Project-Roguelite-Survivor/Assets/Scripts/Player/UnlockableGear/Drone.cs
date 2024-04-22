@@ -20,8 +20,7 @@ public class Drone : MonoBehaviour
     {
         Vector3 dronePos = DroneObj.transform.position;
 
-        if (Input.GetMouseButton(1))
-        {
+
             if (Time.time > fireRate + lastShot)
             {
 
@@ -29,6 +28,6 @@ public class Drone : MonoBehaviour
 
                 lastShot = Time.time;
             }
-        }
+        
     }
 }

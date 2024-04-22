@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class CursorAim : MonoBehaviour
 {
@@ -13,9 +14,10 @@ public class CursorAim : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    private void OnLookDirection(InputValue value)
     {
-        Ray ray = cam.ScreenPointToRay(Input.mousePosition);
+        var position = value.Get<Vector2>();
+        Ray ray = cam.ScreenPointToRay(position);
         RaycastHit hit;
         if (Physics.Raycast(ray, out hit))
         {

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -8,8 +9,7 @@ public class PlayerMovement : MonoBehaviour
     public float speed = 0.5f;
     public GameObject Player;
 
-    // Update is called once per frame
-
+    private Vector3 motionVector = Vector3.zero;
 
 
     void Start () 
@@ -19,17 +19,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        
-
-        float vertical =Input.GetAxis("Vertical");
-        float horizontal =Input.GetAxis("Horizontal");
-
-
-        Vector3 motion12Vector = new Vector3(horizontal, 0, vertical);
-
-
-
-        transform.Translate(motion12Vector *speed *Time.deltaTime);
+        transform.Translate(motionVector *speed *Time.deltaTime);
 
 
 
@@ -41,23 +31,10 @@ public class PlayerMovement : MonoBehaviour
 
     }
 
-
-
-
-
-
-
-
-
-
-    //IEnumerator Dash()
-    //{
-    //    while(true) 
-    //    {
-    //stamina--;
-
-    //yield return new WaitForSeconds(3f);
-    //}
-    //}
+    private void OnMove(InputValue value)
+    {
+        var vector = value.Get<Vector2>();
+        motionVector = new Vector3(vector.x, 0, vector.y);
+    }
 
 }
