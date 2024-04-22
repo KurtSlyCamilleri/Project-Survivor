@@ -16,9 +16,9 @@ public class RandomSpawnSys : MonoBehaviour
     public Transform Player;
     public float x = 0f;
     public static float running = 0;
-    public int spawnRate1 = 4;
-    public int spawnRate2 = 7;
-    public int spawnRate3 = 11;
+    public int spawnRate1 = 8;
+    public int spawnRate2 = 25;
+    public int spawnRate3 = 40;
 
     void Update()
     {
@@ -27,9 +27,9 @@ public class RandomSpawnSys : MonoBehaviour
 
         if (PlayerPower == Stage && spawnRate1 > 1)
         {
-            spawnRate1 -= 1;
-            spawnRate2 -= 1;
-            spawnRate3 -= 1;
+            spawnRate1 -= 2;
+            spawnRate2 -= 2;
+            spawnRate3 -= 2;
             Stage += 5;
         }
 
@@ -53,6 +53,21 @@ public class RandomSpawnSys : MonoBehaviour
                 new Vector3(6, 0, 0),
                 new Vector3(-6, 0, -4)
             }, spawnRate1));
+
+        StartCoroutine(SpawnRoutine2(enemyOne,
+    new List<Vector3>()
+    {
+                new Vector3(0, 0, -4),
+                new Vector3(-4, 0, 0),
+                new Vector3(-4, 0, -4),
+                new Vector3(0, 0, 4),
+                new Vector3(4, 0, 0),
+                new Vector3(4, 0, 4),
+                new Vector3(4, 0, -4),
+                new Vector3(-4, 0, 4),
+                new Vector3(6, 0, 0),
+                new Vector3(-6, 0, -4)
+    }, spawnRate1));
 
         StartCoroutine(SpawnRoutine(enemyTwo, new List<Vector3>()
             {
@@ -102,6 +117,12 @@ public class RandomSpawnSys : MonoBehaviour
         while (true)
         {
             int spawnId = Random.Range(0, offsets.Count);
+
+            Instantiate(enemy, Player.position + offsets[spawnId], Quaternion.identity);
+
+            Instantiate(enemy, Player.position + offsets[spawnId], Quaternion.identity);
+
+            Instantiate(enemy, Player.position + offsets[spawnId], Quaternion.identity);
 
             Instantiate(enemy, Player.position + offsets[spawnId], Quaternion.identity);
             yield return new WaitForSeconds(spawnDelay);

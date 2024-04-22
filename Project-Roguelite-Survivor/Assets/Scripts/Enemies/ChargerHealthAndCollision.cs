@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class ChargerHealthAndCollision : MonoBehaviour
 {
@@ -66,12 +67,25 @@ public class ChargerHealthAndCollision : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        StartCoroutine(ChargeRoutine());
     }
 
     // Update is called once per frame
     void Update()
     {
+        
         ChargerPos = Charger.transform.position;
     }
+
+    IEnumerator ChargeRoutine()
+    {
+        while (true)
+        {
+            GetComponent<NavMeshAgent>().speed = 1.8f;
+            yield return new WaitForSeconds(3.5f);
+            GetComponent<NavMeshAgent>().speed = 0.51f;
+            yield return new WaitForSeconds(6f);
+        }
+    }
+
 }
