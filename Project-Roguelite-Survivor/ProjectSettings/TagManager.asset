@@ -28,6 +28,7 @@ TagManager:
   - GrenadeGearPanel
   - DroneGearPanel
   - BombGearPanel
+  - SpongeWave
   layers:
   - Default
   - TransparentFX

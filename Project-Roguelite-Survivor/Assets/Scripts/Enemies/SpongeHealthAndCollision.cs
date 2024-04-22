@@ -11,6 +11,10 @@ public class SpongeHealthAndCollision : MonoBehaviour
     public Vector3 SpongePos;
     public int shotgunBulletDMG = 25;
 
+    public GameObject Wave;
+    public float fireRate = 10f;
+    private float lastShot = 0.0f;
+
     void OnTriggerEnter(Collider targetObj)
     {
         if (targetObj.gameObject.tag == "ShotgunBullet")
@@ -80,5 +84,16 @@ public class SpongeHealthAndCollision : MonoBehaviour
     void Update()
     {
         SpongePos = Sponge.transform.position;
+
+        Vector3 gunPos = Sponge.transform.position;
+
+
+        if (Time.time > fireRate + lastShot)
+        {
+
+            Instantiate(Wave, gunPos + new Vector3 (0f, + 0.05f, 0f), Quaternion.identity);
+
+            lastShot = Time.time;
+        }
     }
 }

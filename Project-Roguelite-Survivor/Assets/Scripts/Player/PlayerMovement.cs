@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
@@ -35,6 +36,25 @@ public class PlayerMovement : MonoBehaviour
     {
         var vector = value.Get<Vector2>();
         motionVector = new Vector3(vector.x, 0, vector.y);
+    }
+
+    void OnTriggerEnter(Collider targetObj)
+    {
+        if (targetObj.gameObject.tag == "SpongeWave")
+        {
+            StartCoroutine(Slowed());
+            
+        }
+    }
+
+    IEnumerator Slowed()
+    {
+
+            speed = 0.45f;
+            yield return new WaitForSeconds(2.5f);
+            speed = 0.5f;
+            yield return new WaitForSeconds(0.5f);
+
     }
 
 }
