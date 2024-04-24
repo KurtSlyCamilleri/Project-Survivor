@@ -81,9 +81,9 @@ public class ChargerHealthAndCollision : MonoBehaviour
     {
         while (true)
         {
-            GetComponent<NavMeshAgent>().speed = 1.8f;
+            GetComponent<NavMeshAgent>().speed = 1.5f;
             yield return new WaitForSeconds(3.5f);
-            GetComponent<NavMeshAgent>().speed = 0.51f;
+            GetComponent<NavMeshAgent>().speed = 0.45f;
             yield return new WaitForSeconds(6f);
         }
     }

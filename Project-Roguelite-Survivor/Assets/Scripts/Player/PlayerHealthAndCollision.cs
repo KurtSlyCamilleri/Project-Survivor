@@ -1,6 +1,9 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
+using Unity.VisualScripting;
 
 public class PlayerHealthAndCollision : MonoBehaviour
 {
@@ -10,13 +13,14 @@ public class PlayerHealthAndCollision : MonoBehaviour
     public TextMeshProUGUI PlayerShieldUI;
     ShieldGen ShieldG;
 
+
     void Start()
     {
         PlayerHealth = 100;
     }
 
 
-        void Update()
+    void Update()
     {
         if(PlayerHealth <= 0)
         {
@@ -31,7 +35,7 @@ public class PlayerHealthAndCollision : MonoBehaviour
     }
 
 
-        void OnCollisionEnter(Collision targetObj)
+    void OnCollisionEnter(Collision targetObj)
     {
         // Might as well 
         Debug.Log("Hit by " + targetObj.gameObject.tag);
@@ -55,8 +59,12 @@ public class PlayerHealthAndCollision : MonoBehaviour
             
         }
 
-        SetHealth(PlayerHealth - damage);
+        
+
+
     }
+    
+
 
     // Updates the health points and the related UI
     private void SetHealth(int value)
