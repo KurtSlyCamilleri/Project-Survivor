@@ -10,7 +10,7 @@
                     "type": "Value",
                     "id": "9ba929e9-7553-43c1-8631-16c2fe35600b",
                     "expectedControlType": "Vector2",
-                    "processors": "",
+                    "processors": "NormalizeVector2",
                     "interactions": "",
                     "initialStateCheck": true
                 },
@@ -40,6 +40,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "Look At Controller",
+                    "type": "Value",
+                    "id": "92e97690-d8b0-4671-8c20-4d6aa1d87b37",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
                 }
             ],
             "bindings": [
@@ -111,17 +120,6 @@
                 },
                 {
                     "name": "",
-                    "id": "38290937-cdd6-44d2-8264-71bca8f8a065",
-                    "path": "<Gamepad>/rightStick",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Look Direction",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "0d29429c-8489-44e6-85ae-f03f66c523e3",
                     "path": "<Mouse>/position",
                     "interactions": "",
@@ -172,6 +170,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "Alt Fire",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "38290937-cdd6-44d2-8264-71bca8f8a065",
+                    "path": "<Gamepad>/rightStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Look At Controller",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
