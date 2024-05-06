@@ -6677,7 +6677,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1384191759}
-  - component: {fileID: 1384191760}
   m_Layer: 0
   m_Name: PlayerMesh
   m_TagString: Untagged
@@ -6702,27 +6701,6 @@ Transform:
   - {fileID: 1319980794}
   m_Father: {fileID: 288914086}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1384191760
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1384191758}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1.8902874, y: 2.0195878, z: 1.1931543}
-  m_Center: {x: -0.0067567825, y: 0.5097933, z: 0.096577145}
 --- !u!1 &1425086413
 GameObject:
   m_ObjectHideFlags: 0

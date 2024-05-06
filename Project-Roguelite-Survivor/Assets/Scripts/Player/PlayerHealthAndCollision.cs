@@ -58,8 +58,8 @@ public class PlayerHealthAndCollision : MonoBehaviour
             damage = ShieldG.Damage(damage);
             
         }
+        SetHealth(PlayerHealth - damage);
 
-        
 
 
     }
