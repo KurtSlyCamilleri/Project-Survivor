@@ -97,7 +97,7 @@ public class PlayerLevellingSystem : MonoBehaviour
 
     public void SpreadFixShotty()
     {
-        shotgunBullet.transform.localScale = new Vector3(0.1f , 0.01f, 0.02f);
+        shotgunBullet.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
         Play_Panel.gameObject.SetActive(false);
     }
 
