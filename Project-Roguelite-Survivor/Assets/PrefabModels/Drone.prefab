@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1132582751136101237}
-  - component: {fileID: 5176633011775099948}
   - component: {fileID: 2711095978934016176}
   - component: {fileID: 4521958453810299814}
   m_Layer: 0
@@ -31,17 +30,10 @@ Transform:
   m_LocalPosition: {x: 0.1502, y: 0.2, z: 0}
   m_LocalScale: {x: 0.06, y: 0.015, z: 0.04}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 9104523636516986119}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &5176633011775099948
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4224849626238296483}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &2711095978934016176
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -99,3 +91,77 @@ MonoBehaviour:
   droneBullet: {fileID: 5161973660216669431, guid: 5d198bb3e263fa44f8fc226c8a866203, type: 3}
   fireRate: 0.5
   DroneObj: {fileID: 4224849626238296483}
+--- !u!1001 &5297486068761637063
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1132582751136101237}
+    m_Modifications:
+    - target: {fileID: 4025575407970430400, guid: a38010fb572dea248b4dcb9ae900b8b5, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4025575407970430400, guid: a38010fb572dea248b4dcb9ae900b8b5, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4025575407970430400, guid: a38010fb572dea248b4dcb9ae900b8b5, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4025575407970430400, guid: a38010fb572dea248b4dcb9ae900b8b5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4025575407970430400, guid: a38010fb572dea248b4dcb9ae900b8b5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4025575407970430400, guid: a38010fb572dea248b4dcb9ae900b8b5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4025575407970430400, guid: a38010fb572dea248b4dcb9ae900b8b5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4025575407970430400, guid: a38010fb572dea248b4dcb9ae900b8b5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4025575407970430400, guid: a38010fb572dea248b4dcb9ae900b8b5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4025575407970430400, guid: a38010fb572dea248b4dcb9ae900b8b5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4025575407970430400, guid: a38010fb572dea248b4dcb9ae900b8b5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4025575407970430400, guid: a38010fb572dea248b4dcb9ae900b8b5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 4025575407970430400, guid: a38010fb572dea248b4dcb9ae900b8b5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4365790335143540602, guid: a38010fb572dea248b4dcb9ae900b8b5, type: 3}
+      propertyPath: m_Name
+      value: Colortest1-3-GunDrone
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a38010fb572dea248b4dcb9ae900b8b5, type: 3}
+--- !u!4 &9104523636516986119 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4025575407970430400, guid: a38010fb572dea248b4dcb9ae900b8b5, type: 3}
+  m_PrefabInstance: {fileID: 5297486068761637063}
+  m_PrefabAsset: {fileID: 0}

@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3826872920234427728}
-  - component: {fileID: 7801279151319262205}
   - component: {fileID: 5421799285573361035}
   - component: {fileID: 2095059766282447317}
   - component: {fileID: 6764601057615296371}
@@ -33,17 +32,12 @@ Transform:
   m_LocalPosition: {x: 0, y: 0.2, z: 0}
   m_LocalScale: {x: 0.05, y: 0.01, z: 0.02}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 2127512968157995760}
+  - {fileID: 4703148900606199309}
+  - {fileID: 1882256754750478611}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &7801279151319262205
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5161973660216669431}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &5421799285573361035
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -105,8 +99,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1.8015208, y: 1, z: 1}
+  m_Center: {x: 0.0014457107, y: 0, z: 0}
 --- !u!54 &6764601057615296371
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -147,3 +141,226 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Drone: {fileID: 0}
+  droneBulletPen: 2
+--- !u!1001 &4295315479545873384
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 3826872920234427728}
+    m_Modifications:
+    - target: {fileID: 2745638237409747224, guid: c7e79726aec10e34b9e34f1467515af4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2745638237409747224, guid: c7e79726aec10e34b9e34f1467515af4, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 2745638237409747224, guid: c7e79726aec10e34b9e34f1467515af4, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 2745638237409747224, guid: c7e79726aec10e34b9e34f1467515af4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2745638237409747224, guid: c7e79726aec10e34b9e34f1467515af4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2745638237409747224, guid: c7e79726aec10e34b9e34f1467515af4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2745638237409747224, guid: c7e79726aec10e34b9e34f1467515af4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2745638237409747224, guid: c7e79726aec10e34b9e34f1467515af4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2745638237409747224, guid: c7e79726aec10e34b9e34f1467515af4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2745638237409747224, guid: c7e79726aec10e34b9e34f1467515af4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2745638237409747224, guid: c7e79726aec10e34b9e34f1467515af4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2745638237409747224, guid: c7e79726aec10e34b9e34f1467515af4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2745638237409747224, guid: c7e79726aec10e34b9e34f1467515af4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3265575658972642210, guid: c7e79726aec10e34b9e34f1467515af4, type: 3}
+      propertyPath: m_Name
+      value: Colortest1-1-RifleBullet
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c7e79726aec10e34b9e34f1467515af4, type: 3}
+--- !u!4 &2127512968157995760 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2745638237409747224, guid: c7e79726aec10e34b9e34f1467515af4, type: 3}
+  m_PrefabInstance: {fileID: 4295315479545873384}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4324979452455090187
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 3826872920234427728}
+    m_Modifications:
+    - target: {fileID: 2745638237409747224, guid: c7e79726aec10e34b9e34f1467515af4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2745638237409747224, guid: c7e79726aec10e34b9e34f1467515af4, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 2745638237409747224, guid: c7e79726aec10e34b9e34f1467515af4, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 2745638237409747224, guid: c7e79726aec10e34b9e34f1467515af4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2745638237409747224, guid: c7e79726aec10e34b9e34f1467515af4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2745638237409747224, guid: c7e79726aec10e34b9e34f1467515af4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2745638237409747224, guid: c7e79726aec10e34b9e34f1467515af4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2745638237409747224, guid: c7e79726aec10e34b9e34f1467515af4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2745638237409747224, guid: c7e79726aec10e34b9e34f1467515af4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2745638237409747224, guid: c7e79726aec10e34b9e34f1467515af4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2745638237409747224, guid: c7e79726aec10e34b9e34f1467515af4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2745638237409747224, guid: c7e79726aec10e34b9e34f1467515af4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2745638237409747224, guid: c7e79726aec10e34b9e34f1467515af4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3265575658972642210, guid: c7e79726aec10e34b9e34f1467515af4, type: 3}
+      propertyPath: m_Name
+      value: Colortest1-1-RifleBullet (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c7e79726aec10e34b9e34f1467515af4, type: 3}
+--- !u!4 &1882256754750478611 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2745638237409747224, guid: c7e79726aec10e34b9e34f1467515af4, type: 3}
+  m_PrefabInstance: {fileID: 4324979452455090187}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7448538648052459285
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 3826872920234427728}
+    m_Modifications:
+    - target: {fileID: 2745638237409747224, guid: c7e79726aec10e34b9e34f1467515af4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2745638237409747224, guid: c7e79726aec10e34b9e34f1467515af4, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 2745638237409747224, guid: c7e79726aec10e34b9e34f1467515af4, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 2745638237409747224, guid: c7e79726aec10e34b9e34f1467515af4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2745638237409747224, guid: c7e79726aec10e34b9e34f1467515af4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2745638237409747224, guid: c7e79726aec10e34b9e34f1467515af4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2745638237409747224, guid: c7e79726aec10e34b9e34f1467515af4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2745638237409747224, guid: c7e79726aec10e34b9e34f1467515af4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2745638237409747224, guid: c7e79726aec10e34b9e34f1467515af4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2745638237409747224, guid: c7e79726aec10e34b9e34f1467515af4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2745638237409747224, guid: c7e79726aec10e34b9e34f1467515af4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2745638237409747224, guid: c7e79726aec10e34b9e34f1467515af4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2745638237409747224, guid: c7e79726aec10e34b9e34f1467515af4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3265575658972642210, guid: c7e79726aec10e34b9e34f1467515af4, type: 3}
+      propertyPath: m_Name
+      value: Colortest1-1-RifleBullet (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c7e79726aec10e34b9e34f1467515af4, type: 3}
+--- !u!4 &4703148900606199309 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2745638237409747224, guid: c7e79726aec10e34b9e34f1467515af4, type: 3}
+  m_PrefabInstance: {fileID: 7448538648052459285}
+  m_PrefabAsset: {fileID: 0}
