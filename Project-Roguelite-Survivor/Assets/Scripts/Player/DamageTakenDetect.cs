@@ -18,9 +18,15 @@ public class DamageTakenDetect : MonoBehaviour
         
     }
 
-    void OnTriggerEnter(Collider targetObj)
+    void OnCollisionEnter(Collision targetObj)
     {
-        StartCoroutine(DamageTakenRoutine());
+        switch (targetObj.gameObject.tag)
+        {
+            case "Charger": StartCoroutine(DamageTakenRoutine()); break;
+            case "Sponge": StartCoroutine(DamageTakenRoutine()); break;
+            case "Swarmer": StartCoroutine(DamageTakenRoutine()); break;
+        }
+        
     }
 
         IEnumerator DamageTakenRoutine()
