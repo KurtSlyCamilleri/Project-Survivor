@@ -29,6 +29,12 @@ TagManager:
   - DroneGearPanel
   - BombGearPanel
   - SpongeWave
+  - ChargerB
+  - ChargerC
+  - SwarmerB
+  - SwarmerC
+  - SpongeB
+  - SpongeC
   layers:
   - Default
   - TransparentFX

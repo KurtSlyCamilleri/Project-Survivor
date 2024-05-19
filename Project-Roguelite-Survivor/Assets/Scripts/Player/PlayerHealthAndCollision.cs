@@ -48,6 +48,12 @@ public class PlayerHealthAndCollision : MonoBehaviour
             case "Charger": damage = 5; break;
             case "Sponge": damage = 25; break;
             case "Swarmer": damage = 10; break;
+            case "ChargerB": damage = 8; break;
+            case "SpongeB": damage = 35; break;
+            case "SwarmerB": damage = 15; break;
+            case "ChargerC": damage = 10; break;
+            case "SpongeC": damage = 45; break;
+            case "SwarmerC": damage = 20; break;
         }
 
         // Apply damage to the shield first, if we have one

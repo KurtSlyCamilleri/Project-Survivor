@@ -246,6 +246,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Character-Enemies-1-DogEasy
       objectReference: {fileID: 0}
+    - target: {fileID: 1796162791320578862, guid: 80b53a777cfc23841840e0d856161de2, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
