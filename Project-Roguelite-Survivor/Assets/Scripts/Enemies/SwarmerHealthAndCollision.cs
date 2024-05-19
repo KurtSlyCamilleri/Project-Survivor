@@ -7,7 +7,6 @@ public class SwarmerHealthAndCollision : MonoBehaviour
     public GameObject Swarmer;
     public int SwarmerHealth = 50;
     public GameObject ExpDrop;
-    public int SwarmerDamage = 10;
     public Vector3 SwarmerPos;
     public int shotgunBulletDMG = 25;
 

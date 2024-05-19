@@ -7,7 +7,6 @@ public class SpongeHealthAndCollision : MonoBehaviour
     public GameObject Sponge;
     public int SpongeHealth = 150;
     public GameObject ExpDrop;
-    public static int SpongeDamage = 20;
     public Vector3 SpongePos;
     public int shotgunBulletDMG = 25;
 

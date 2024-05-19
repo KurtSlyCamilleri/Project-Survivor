@@ -156,7 +156,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Sponge: {fileID: 1541801139107317211}
-  SpongeHealth: 150
+  SpongeHealth: 170
   ExpDrop: {fileID: 4256714270845501797, guid: a6e382625ebae2a48b262a00e6fa443f, type: 3}
   SpongePos: {x: 0, y: 0, z: 0}
   shotgunBulletDMG: 25

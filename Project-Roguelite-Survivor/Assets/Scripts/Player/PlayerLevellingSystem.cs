@@ -53,6 +53,12 @@ public class PlayerLevellingSystem : MonoBehaviour
     public GameObject Charger;
     public GameObject Swarmer;
     public GameObject Sponge;
+    public GameObject ChargerB;
+    public GameObject SwarmerB;
+    public GameObject SpongeB;
+    public GameObject ChargerC;
+    public GameObject SwarmerC;
+    public GameObject SpongeC;
     public GameObject shotgunBullet;
 
     public int shottyDMG = 25;
@@ -89,6 +95,8 @@ public class PlayerLevellingSystem : MonoBehaviour
         SpongeScript = dmgSponge;
         SpongeScript.shotgunBulletDMG = 25;
     }
+
+
     public void PierceFixShotty(ShotgunBullet pierceShotty)
     {
         ShotgunBulletScript = pierceShotty;

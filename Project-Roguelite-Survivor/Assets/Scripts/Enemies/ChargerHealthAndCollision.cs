@@ -8,7 +8,6 @@ public class ChargerHealthAndCollision : MonoBehaviour
     public GameObject Charger;
     public int ChargerHealth = 30;
     public GameObject ExpDrop;
-    public static int ChargerDamage = 5;
     public Vector3 ChargerPos;
     public int shotgunBulletDMG = 25;
 

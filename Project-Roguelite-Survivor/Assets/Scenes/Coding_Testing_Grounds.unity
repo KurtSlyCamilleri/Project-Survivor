@@ -2591,12 +2591,12 @@ MonoBehaviour:
   enemyOne: {fileID: 1541801139107317211, guid: f99f574987288354bb363998cc79136f, type: 3}
   enemyTwo: {fileID: 1541801139107317211, guid: 69dadb3a185d2ac48ab33d4c571ccb08, type: 3}
   enemyThree: {fileID: 1541801139107317211, guid: a97b0fe29c612e2408a1c36c4467cfe2, type: 3}
-  enemyOneB: {fileID: 0}
-  enemyTwoB: {fileID: 0}
-  enemyThreeB: {fileID: 0}
-  enemyOneC: {fileID: 0}
-  enemyTwoC: {fileID: 0}
-  enemyThreeC: {fileID: 0}
+  enemyOneB: {fileID: 1541801139107317211, guid: bde7de58dceb7ca408c6333db62ef5f5, type: 3}
+  enemyTwoB: {fileID: 1541801139107317211, guid: 22b3617ffcd44d349a1da203bedd0e7a, type: 3}
+  enemyThreeB: {fileID: 1541801139107317211, guid: efe203b0ee244074d882e2d5ee0cbb57, type: 3}
+  enemyOneC: {fileID: 1541801139107317211, guid: 63fece3d6661f0f4e8fd7dcdd6d2487d, type: 3}
+  enemyTwoC: {fileID: 1541801139107317211, guid: b7517afe2e0cbd74fb3cfea8e81798ee, type: 3}
+  enemyThreeC: {fileID: 1541801139107317211, guid: 01fb73969f2302744a2d79c4d74adf87, type: 3}
   Stage: 1
   Difficulty: 1
   Player: {fileID: 288914086}
@@ -4535,6 +4535,78 @@ MonoBehaviour:
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: -1273447382622442429, guid: a97b0fe29c612e2408a1c36c4467cfe2, type: 3}
+          m_ObjectArgumentAssemblyTypeName: SpongeHealthAndCollision, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1445470035}
+        m_TargetAssemblyTypeName: UpgradeManager, Assembly-CSharp
+        m_MethodName: ChargerDamage
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: -3627620585140802743, guid: 22b3617ffcd44d349a1da203bedd0e7a, type: 3}
+          m_ObjectArgumentAssemblyTypeName: ChargerHealthAndCollision, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1445470035}
+        m_TargetAssemblyTypeName: UpgradeManager, Assembly-CSharp
+        m_MethodName: SwarmerDamage
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: -8248644182543309592, guid: bde7de58dceb7ca408c6333db62ef5f5, type: 3}
+          m_ObjectArgumentAssemblyTypeName: SwarmerHealthAndCollision, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1445470035}
+        m_TargetAssemblyTypeName: UpgradeManager, Assembly-CSharp
+        m_MethodName: SpongeDamage
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: -1273447382622442429, guid: efe203b0ee244074d882e2d5ee0cbb57, type: 3}
+          m_ObjectArgumentAssemblyTypeName: SpongeHealthAndCollision, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1445470035}
+        m_TargetAssemblyTypeName: UpgradeManager, Assembly-CSharp
+        m_MethodName: ChargerDamage
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: -3627620585140802743, guid: b7517afe2e0cbd74fb3cfea8e81798ee, type: 3}
+          m_ObjectArgumentAssemblyTypeName: ChargerHealthAndCollision, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1445470035}
+        m_TargetAssemblyTypeName: UpgradeManager, Assembly-CSharp
+        m_MethodName: SwarmerDamage
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: -8248644182543309592, guid: 63fece3d6661f0f4e8fd7dcdd6d2487d, type: 3}
+          m_ObjectArgumentAssemblyTypeName: SwarmerHealthAndCollision, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1445470035}
+        m_TargetAssemblyTypeName: UpgradeManager, Assembly-CSharp
+        m_MethodName: SpongeDamage
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: -1273447382622442429, guid: 01fb73969f2302744a2d79c4d74adf87, type: 3}
           m_ObjectArgumentAssemblyTypeName: SpongeHealthAndCollision, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -8611,6 +8683,78 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1445470035}
+        m_TargetAssemblyTypeName: UpgradeManager, Assembly-CSharp
+        m_MethodName: ChargerDamage2
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: -3627620585140802743, guid: 22b3617ffcd44d349a1da203bedd0e7a, type: 3}
+          m_ObjectArgumentAssemblyTypeName: ChargerHealthAndCollision, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1445470035}
+        m_TargetAssemblyTypeName: UpgradeManager, Assembly-CSharp
+        m_MethodName: SwarmerDamage2
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: -8248644182543309592, guid: bde7de58dceb7ca408c6333db62ef5f5, type: 3}
+          m_ObjectArgumentAssemblyTypeName: SwarmerHealthAndCollision, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1445470035}
+        m_TargetAssemblyTypeName: UpgradeManager, Assembly-CSharp
+        m_MethodName: SpongeDamage2
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: -1273447382622442429, guid: efe203b0ee244074d882e2d5ee0cbb57, type: 3}
+          m_ObjectArgumentAssemblyTypeName: SpongeHealthAndCollision, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1445470035}
+        m_TargetAssemblyTypeName: UpgradeManager, Assembly-CSharp
+        m_MethodName: ChargerDamage2
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: -3627620585140802743, guid: b7517afe2e0cbd74fb3cfea8e81798ee, type: 3}
+          m_ObjectArgumentAssemblyTypeName: ChargerHealthAndCollision, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1445470035}
+        m_TargetAssemblyTypeName: UpgradeManager, Assembly-CSharp
+        m_MethodName: SwarmerDamage2
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: -8248644182543309592, guid: 63fece3d6661f0f4e8fd7dcdd6d2487d, type: 3}
+          m_ObjectArgumentAssemblyTypeName: SwarmerHealthAndCollision, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1445470035}
+        m_TargetAssemblyTypeName: UpgradeManager, Assembly-CSharp
+        m_MethodName: SpongeDamage2
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: -1273447382622442429, guid: 01fb73969f2302744a2d79c4d74adf87, type: 3}
+          m_ObjectArgumentAssemblyTypeName: SpongeHealthAndCollision, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1998505038
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9774,6 +9918,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1973825544452381983, guid: ec33fe569f71a3c44afdf806ba4eea70, type: 3}
+      propertyPath: SpongeB
+      value: 
+      objectReference: {fileID: 1541801139107317211, guid: efe203b0ee244074d882e2d5ee0cbb57, type: 3}
+    - target: {fileID: 1973825544452381983, guid: ec33fe569f71a3c44afdf806ba4eea70, type: 3}
+      propertyPath: SpongeC
+      value: 
+      objectReference: {fileID: 1541801139107317211, guid: 01fb73969f2302744a2d79c4d74adf87, type: 3}
+    - target: {fileID: 1973825544452381983, guid: ec33fe569f71a3c44afdf806ba4eea70, type: 3}
+      propertyPath: ChargerB
+      value: 
+      objectReference: {fileID: 1541801139107317211, guid: 22b3617ffcd44d349a1da203bedd0e7a, type: 3}
+    - target: {fileID: 1973825544452381983, guid: ec33fe569f71a3c44afdf806ba4eea70, type: 3}
+      propertyPath: ChargerC
+      value: 
+      objectReference: {fileID: 1541801139107317211, guid: b7517afe2e0cbd74fb3cfea8e81798ee, type: 3}
+    - target: {fileID: 1973825544452381983, guid: ec33fe569f71a3c44afdf806ba4eea70, type: 3}
+      propertyPath: SwarmerB
+      value: 
+      objectReference: {fileID: 1541801139107317211, guid: bde7de58dceb7ca408c6333db62ef5f5, type: 3}
+    - target: {fileID: 1973825544452381983, guid: ec33fe569f71a3c44afdf806ba4eea70, type: 3}
+      propertyPath: SwarmerC
+      value: 
+      objectReference: {fileID: 1541801139107317211, guid: 63fece3d6661f0f4e8fd7dcdd6d2487d, type: 3}
     - target: {fileID: 1973825544452381983, guid: ec33fe569f71a3c44afdf806ba4eea70, type: 3}
       propertyPath: NullPanel
       value: 
