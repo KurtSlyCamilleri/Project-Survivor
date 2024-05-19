@@ -226,8 +226,7 @@ public class UpgradeManager : MonoBehaviour
 
         public void SpraySpread()
     {
-        shotgunBullet.transform.localScale = new Vector3(0.1f + shotgunSpreadInc, 0.01f,0.02f);
-        shotgunSpreadInc += 0.05f;
+        shotgunBullet.transform.localScale += new Vector3(0.02f, 0.02f, 0.02f);
         GameObject[] canvasList = GameObject.FindGameObjectsWithTag("UpgradeUI");
         foreach (GameObject canvas in canvasList)
         {
@@ -347,8 +346,7 @@ public class UpgradeManager : MonoBehaviour
 
     public void SpraySpread2()
     {
-        shotgunBullet.transform.localScale = new Vector3(0.1f + shotgunSpreadInc, 0.01f, 0.02f);
-        shotgunSpreadInc += 0.05f;
+        shotgunBullet.transform.localScale += new Vector3(0.02f, 0.02f, 0.02f);
         GameObject[] canvasList = GameObject.FindGameObjectsWithTag("UpgradeUI");
         foreach (GameObject canvas in canvasList)
         {
