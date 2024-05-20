@@ -60,6 +60,8 @@ public class PlayerHealthAndCollision : MonoBehaviour
             case "SpongeC": damage = 45; break;
             case "SwarmerC": damage = 20; break;
             case "Heal": heal = 20; break;
+            case "BossShot": damage = 40; break;
+            case "BossWave": damage = 5; break;
         }
 
         // Apply damage to the shield first, if we have one

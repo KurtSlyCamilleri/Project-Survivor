@@ -45,12 +45,27 @@ public class PlayerMovement : MonoBehaviour
             StartCoroutine(Slowed());
             
         }
+        if (targetObj.gameObject.tag == "BossWave")
+        {
+            StartCoroutine(BossSlowed());
+
+        }
     }
 
     IEnumerator Slowed()
     {
 
             speed = 0.45f;
+            yield return new WaitForSeconds(2.5f);
+            speed = 0.5f;
+            yield return new WaitForSeconds(0.5f);
+
+    }
+
+    IEnumerator BossSlowed()
+    {
+
+            speed = 0.40f;
             yield return new WaitForSeconds(2.5f);
             speed = 0.5f;
             yield return new WaitForSeconds(0.5f);
