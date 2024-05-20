@@ -24,6 +24,8 @@ public class PlayerHealthAndCollision : MonoBehaviour
 
     void Update()
     {
+
+
         if(PlayerHealth <= 0)
         {
             SceneManager.LoadScene("Coding_Testing_Grounds");
@@ -43,8 +45,9 @@ public class PlayerHealthAndCollision : MonoBehaviour
         var damage = 0;
         switch (targetObj.gameObject.tag)
         {
-            case "BossShot": damage = 40; break;
+            case "BossShot": damage = 30; break;
             case "BossWave": damage = 5; break;
+            case "BossFire": damage = 15; break;
         }
 
         if (ShieldG != null)

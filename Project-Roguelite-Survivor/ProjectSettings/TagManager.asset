@@ -37,6 +37,7 @@ TagManager:
   - Boss
   - BossShot
   - BossWave
+  - BossFire
   layers:
   - Default
   - TransparentFX

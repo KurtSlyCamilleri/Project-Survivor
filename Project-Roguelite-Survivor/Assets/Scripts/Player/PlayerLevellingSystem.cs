@@ -8,6 +8,7 @@ public class PlayerLevellingSystem : MonoBehaviour
     public int PlayerLevel = 0;
     public int PlayerExp = 0;
     public int LevelUpReq = 100;
+    public GameObject TheBoss;
     public TextMeshProUGUI PlayerLevelUI;
     public TextMeshProUGUI PlayerExpUI;
 
@@ -113,6 +114,23 @@ public class PlayerLevellingSystem : MonoBehaviour
         // Update is called once per frame
         void Update()
     {
+
+        //cheat
+        if (Input.GetKey(KeyCode.LeftControl) && Input.GetKeyDown(KeyCode.F2))
+        {
+
+            PlayerExp += LevelUpReq;
+
+        }
+
+        if (Input.GetKey(KeyCode.LeftControl) && Input.GetKeyDown(KeyCode.F4))
+        {
+
+            Instantiate(TheBoss, new Vector3 (0f, 0.52f, 0f), Quaternion.identity);
+
+        }
+
+
         PlayerLevelUI.SetText("Level: " + PlayerLevel.ToString());
         PlayerExpUI.SetText("Exp: " + PlayerExp.ToString() + "/" + LevelUpReq.ToString());
         if (PlayerExp >= LevelUpReq)

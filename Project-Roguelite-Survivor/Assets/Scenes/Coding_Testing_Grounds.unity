@@ -10983,6 +10983,12 @@ PrefabInstance:
         type: 3}
     - target: {fileID: 1973825544452381983, guid: ec33fe569f71a3c44afdf806ba4eea70,
         type: 3}
+      propertyPath: TheBoss
+      value: 
+      objectReference: {fileID: 3118283262083069432, guid: 16b1f63f839e217428e2071847d62e5f,
+        type: 3}
+    - target: {fileID: 1973825544452381983, guid: ec33fe569f71a3c44afdf806ba4eea70,
+        type: 3}
       propertyPath: ChargerB
       value: 
       objectReference: {fileID: 1541801139107317211, guid: 22b3617ffcd44d349a1da203bedd0e7a,
@@ -11010,6 +11016,11 @@ PrefabInstance:
       propertyPath: NullPanel
       value: 
       objectReference: {fileID: 718446046}
+    - target: {fileID: 1973825544452381983, guid: ec33fe569f71a3c44afdf806ba4eea70,
+        type: 3}
+      propertyPath: PlayerExp
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1973825544452381983, guid: ec33fe569f71a3c44afdf806ba4eea70,
         type: 3}
       propertyPath: Play_Panel

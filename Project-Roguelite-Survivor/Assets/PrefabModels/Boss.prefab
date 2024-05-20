@@ -143,8 +143,12 @@ MonoBehaviour:
     type: 3}
   BossSlam: {fileID: 5549358616617165081, guid: be8037c3ce2809946bb2bd3b2668bd10,
     type: 3}
+  BossFire: {fileID: 3596835832843486319, guid: abfd1aa48d5abdb4eb6fff43b93607b7,
+    type: 3}
   fireRate: 6
   fireRateB: 14
+  fireCooldown: 10
+  fireHolder: 0
 --- !u!1001 &1907298298059287663
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -24,10 +24,7 @@ public class PlayerMovement : MonoBehaviour
 
 
 
-        //if (Input.GetKeyDown("escape"))
-        //{
-        //Pause.SetActive(true);
-        //}
+        
 
 
     }
