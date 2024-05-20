@@ -110,7 +110,7 @@ public class PlayerHealthAndCollision : MonoBehaviour
                     HealingDiff = 0;
                 }
             }
-            
+            SetHealth(PlayerHealth - damage);
         }
         else
         {

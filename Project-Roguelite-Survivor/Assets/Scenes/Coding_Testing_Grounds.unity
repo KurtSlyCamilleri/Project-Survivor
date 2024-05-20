@@ -1885,6 +1885,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerCyan: {fileID: 1486504831}
   PlayerRed: {fileID: 1289921388}
+--- !u!114 &288914101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 288914082}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c69960e76759d94c864a4919840f6d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Bullet: {fileID: 1391773517823530072, guid: 0bc5902ddc9d6f140ab99c6431d4329d, type: 3}
+  fireRate: 0.5
+  Player: {fileID: 288914082}
 --- !u!1 &355380963
 GameObject:
   m_ObjectHideFlags: 0
@@ -2604,7 +2619,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &462243928
 Transform:
   m_ObjectHideFlags: 0
@@ -11260,6 +11275,10 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1161791256}
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2773772075713081776, guid: ec33fe569f71a3c44afdf806ba4eea70,
+        type: 3}
+      insertIndex: 6
+      addedObject: {fileID: 288914101}
     - targetCorrespondingSourceObject: {fileID: 2773772075713081776, guid: ec33fe569f71a3c44afdf806ba4eea70,
         type: 3}
       insertIndex: -1
