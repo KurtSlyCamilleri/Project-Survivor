@@ -10,6 +10,7 @@ public class PlayerHealthAndCollision : MonoBehaviour
     public int PlayerHealth = 100;
     public int MaximumPlayerHealth = 100;
     public int HealingDiff = 0;
+    public int HealthDiff = 0;
     public TextMeshProUGUI PlayerHealthUI;
     public TextMeshProUGUI PlayerShieldUI;
     ShieldGen ShieldG;
@@ -33,6 +34,8 @@ public class PlayerHealthAndCollision : MonoBehaviour
             PlayerShieldUI.SetText("Shield: " + ShieldG.ShieldLevel);
         }
         PlayerHealthUI.SetText("Health: " + PlayerHealth);
+
+        HealthDiff = MaximumPlayerHealth - 20;
     }
 
 
@@ -65,30 +68,44 @@ public class PlayerHealthAndCollision : MonoBehaviour
 
             // Deducts points from the shield and returns the leftover
             damage = ShieldG.Damage(damage);
-            if (PlayerHealth < MaximumPlayerHealth -20)
+            
+            if (targetObj.gameObject.tag == "Heal")
+            {
+                
+                if (PlayerHealth < HealthDiff)
+                {
+                    SetHealth(PlayerHealth + heal);
+                    Debug.Log("Healed for" + heal);
+                }
+                else
+                {
+                    HealingDiff = MaximumPlayerHealth - PlayerHealth;
+                    SetHealth(PlayerHealth + HealingDiff);
+                    Debug.Log("Healed for" + HealingDiff);
+                    HealingDiff = 0;
+                }
+            }
+            
+            SetHealth(PlayerHealth - damage);
+        }
+
+        if (targetObj.gameObject.tag == "Heal")
+        {
+            
+            if (PlayerHealth < HealthDiff)
             {
                 SetHealth(PlayerHealth + heal);
+                Debug.Log("Healed for" + heal);
             }
-            else 
+            else
             {
                 HealingDiff = MaximumPlayerHealth - PlayerHealth;
                 SetHealth(PlayerHealth + HealingDiff);
+                Debug.Log("Healed for" + HealingDiff);
                 HealingDiff = 0;
             }
-            
         }
         SetHealth(PlayerHealth - damage);
-        if (PlayerHealth < MaximumPlayerHealth -20)
-        {
-            SetHealth(PlayerHealth + heal);
-        }
-        else
-        {
-            HealingDiff = MaximumPlayerHealth - PlayerHealth;
-            SetHealth(PlayerHealth + HealingDiff);
-            HealingDiff = 0;
-        }
-
 
     }
     

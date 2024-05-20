@@ -3,7 +3,37 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - ShieldGen
+  - SpongeC
+  - Experience
+  - SpongeWave
+  - ChargerB
+  - SwarmerC
+  - BombDrone
+  - DroneExplosion
+  - Drone
+  - DroneBullet
+  - ChargerC
+  - Grenade
+  - NadeExplosion
+  - Charger
+  - Sponge
+  - Swarmer
+  - NadeBelt
+  - CollectRadius
+  - ShotgunBullet
+  - SwarmerB
+  - SpongeB
+  - Ground
+  - BombGearPanel
+  - ShieldUI
+  - ShieldGearPanel
+  - DroneGearPanel
+  - GrenadeGearPanel
+  - UpgradeUI
+  - BombPack
+  - Heal
   layers:
   - Default
   - TransparentFX
