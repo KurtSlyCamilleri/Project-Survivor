@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 public class PlayerLevellingSystem : MonoBehaviour
 {
@@ -151,6 +153,9 @@ public class PlayerLevellingSystem : MonoBehaviour
                 if (upgradeID[chosenIndex] == 1)
                 {
                     ShieldGearPanel.gameObject.SetActive(true);
+                    
+                    var button = ShieldGearPanel.GetComponentInChildren<Button>();
+                    EventSystem.current.SetSelectedGameObject(button.gameObject);
 
                     upgradeID.Remove(1);
                 }
@@ -158,17 +163,26 @@ public class PlayerLevellingSystem : MonoBehaviour
                 {
                     GrenadeGearPanel.gameObject.SetActive(true);
 
+                    var button = ShieldGearPanel.GetComponentInChildren<Button>();
+                    EventSystem.current.SetSelectedGameObject(button.gameObject);
+
                     upgradeID.Remove(2);
                 }
                 else if (upgradeID[chosenIndex] == 3)
                 {
                     DroneGearPanel.gameObject.SetActive(true);
 
+                    var button = ShieldGearPanel.GetComponentInChildren<Button>();
+                    EventSystem.current.SetSelectedGameObject(button.gameObject);
+
                     upgradeID.Remove(3);
                 }
                 else if (upgradeID[chosenIndex] == 4)
                 {
                     BombGearPanel.gameObject.SetActive(true);
+
+                    var button = ShieldGearPanel.GetComponentInChildren<Button>();
+                    EventSystem.current.SetSelectedGameObject(button.gameObject);
 
                     upgradeID.Remove(4);
                 }

@@ -28,7 +28,7 @@ public class Boss : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        StartCoroutine(Abilities());
     }
 
     // Update is called once per frame
@@ -107,32 +107,32 @@ public class Boss : MonoBehaviour
         
         while (Stage1 == true)
         {
-            if (BossHealth >= 2000)
+            if (BossHealth <= 2000)
                 {
                 Vector3 gunPos = TheBoss.transform.position;
                 (Instantiate(BossFire, gunPos + new Vector3(0f, +0.05f, 0f), Quaternion.identity) as GameObject).transform.parent = TheBoss.transform;
                 Stage1 = false;
                 }
+            yield return null;
         }
         while (Stage2 == true)
         {
-            if (BossHealth >= 1500)
+            if (BossHealth <= 1500)
             {
                 fireRate = 4f;
                 fireRateB = 12f;
                 Stage2 = false;
             }
+            yield return null;
         }
         while (Stage3 == true)
         {
-            if (BossHealth >= 1000)
+            if (BossHealth <= 1000)
             {
                 GetComponent<NavMeshAgent>().speed = 0.25f;
                 Stage3 = false;
             }
+            yield return null;
         }
-
-
-        yield return new WaitForSeconds(0);
     }
 }
