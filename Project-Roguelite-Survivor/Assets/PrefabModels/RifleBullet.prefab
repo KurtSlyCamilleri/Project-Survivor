@@ -92,6 +92,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
   shotgunBulletPen: 5
+  Feedback: {fileID: 5890504808766806781, guid: dd787da707130264cbf50b99dc82970a,
+    type: 3}
 --- !u!65 &4691755581544332089
 BoxCollider:
   m_ObjectHideFlags: 0

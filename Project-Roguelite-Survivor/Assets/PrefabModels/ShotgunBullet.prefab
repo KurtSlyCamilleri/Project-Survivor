@@ -225,6 +225,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
   shotgunBulletPen: 5
+  Feedback: {fileID: 160004003993455007, guid: ba3a160047d02fa44bf539055c36931c, type: 3}
 --- !u!23 &6062354334882898691
 MeshRenderer:
   m_ObjectHideFlags: 0

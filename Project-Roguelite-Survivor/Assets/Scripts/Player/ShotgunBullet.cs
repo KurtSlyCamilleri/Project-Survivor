@@ -7,6 +7,8 @@ public class ShotgunBullet : MonoBehaviour
     public GameObject Player;
     public int shotgunBulletPen = 5;
     public static float bulletVelocity = 4.0f;
+    public GameObject Feedback;
+    Vector3 areaZero;
 
     void OnBecameInvisible()
     {
@@ -24,6 +26,7 @@ public class ShotgunBullet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        areaZero = gameObject.transform.position;
         transform.position += transform.forward * bulletVelocity * Time.deltaTime;
         if (shotgunBulletPen <= 0)
         {
@@ -48,7 +51,14 @@ public class ShotgunBullet : MonoBehaviour
         {
             shotgunBulletPen -= 8;
         }
+        if (targetObj.gameObject.tag == "Player")
+        {
 
+        }
+        else
+        {
+            Instantiate(Feedback, areaZero, Quaternion.identity);
+        }
     }
 }
 

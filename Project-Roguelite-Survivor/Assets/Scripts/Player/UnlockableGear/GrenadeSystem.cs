@@ -23,7 +23,7 @@ public class GrenadeSystem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        areaZero = gameObject.transform.position;
     }
 
     void OnCollisionEnter(Collision targetObj)
@@ -31,7 +31,6 @@ public class GrenadeSystem : MonoBehaviour
         if (targetObj.gameObject.tag == "Ground")
         {
             StartCoroutine(TickTickBoom());
-            areaZero = gameObject.transform.position;
         }
     }
 
