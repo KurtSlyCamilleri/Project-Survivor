@@ -9,6 +9,7 @@ public class PlayerHealthAndCollision : MonoBehaviour
 {
     public int PlayerHealth = 100;
     public int MaximumPlayerHealth = 100;
+    public int HealingDiff = 0;
     public TextMeshProUGUI PlayerHealthUI;
     public TextMeshProUGUI PlayerShieldUI;
     ShieldGen ShieldG;
@@ -43,6 +44,7 @@ public class PlayerHealthAndCollision : MonoBehaviour
         // Each character has a specific amount of damage to make.
         // Consider moving these to a dedicated script instead.
         var damage = 0;
+        var heal = 0;
         switch (targetObj.gameObject.tag)
         {
             case "Charger": damage = 5; break;
@@ -54,6 +56,7 @@ public class PlayerHealthAndCollision : MonoBehaviour
             case "ChargerC": damage = 10; break;
             case "SpongeC": damage = 45; break;
             case "SwarmerC": damage = 20; break;
+            case "Heal": heal = 20; break;
         }
 
         // Apply damage to the shield first, if we have one
@@ -62,10 +65,29 @@ public class PlayerHealthAndCollision : MonoBehaviour
 
             // Deducts points from the shield and returns the leftover
             damage = ShieldG.Damage(damage);
+            if (PlayerHealth < MaximumPlayerHealth -20)
+            {
+                SetHealth(PlayerHealth + heal);
+            }
+            else 
+            {
+                HealingDiff = MaximumPlayerHealth - PlayerHealth;
+                SetHealth(PlayerHealth + HealingDiff);
+                HealingDiff = 0;
+            }
             
         }
         SetHealth(PlayerHealth - damage);
-
+        if (PlayerHealth < MaximumPlayerHealth -20)
+        {
+            SetHealth(PlayerHealth + heal);
+        }
+        else
+        {
+            HealingDiff = MaximumPlayerHealth - PlayerHealth;
+            SetHealth(PlayerHealth + HealingDiff);
+            HealingDiff = 0;
+        }
 
 
     }
