@@ -43,7 +43,7 @@ public class Boss : MonoBehaviour
         if (Time.time > fireRateB + lastShotB)
         {
 
-            Instantiate(BossSlam, gunPos + new Vector3(0f, 0f, 0f), Quaternion.identity);
+            Instantiate(BossSlam, gunPos - new Vector3(0f, 0f, 0.5f), Quaternion.identity);
 
             lastShotB = Time.time;
         }

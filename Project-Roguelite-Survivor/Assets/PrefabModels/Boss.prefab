@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: -7557187274450128379}
   m_Layer: 0
   m_Name: Boss
-  m_TagString: Untagged
+  m_TagString: Boss
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -186,7 +186,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a3c63e8d908cb8546a9e3819378f9c53,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a3c63e8d908cb8546a9e3819378f9c53,
         type: 3}
@@ -196,7 +196,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a3c63e8d908cb8546a9e3819378f9c53,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a3c63e8d908cb8546a9e3819378f9c53,
         type: 3}
@@ -211,7 +211,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a3c63e8d908cb8546a9e3819378f9c53,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a3c63e8d908cb8546a9e3819378f9c53,
         type: 3}

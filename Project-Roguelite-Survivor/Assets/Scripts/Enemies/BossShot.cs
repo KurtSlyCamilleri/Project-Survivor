@@ -13,7 +13,7 @@ public class BossShot : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        TheBoss = GameObject.FindWithTag("Sponge");
+        TheBoss = GameObject.FindWithTag("Boss");
         transform.rotation = TheBoss.transform.rotation;
     }
 

@@ -38,8 +38,29 @@ public class PlayerHealthAndCollision : MonoBehaviour
         HealthDiff = MaximumPlayerHealth - 20;
     }
 
+    void OnTriggerEnter(Collider targetObj)
+    {
+        var damage = 0;
+        switch (targetObj.gameObject.tag)
+        {
+            case "BossShot": damage = 40; break;
+            case "BossWave": damage = 5; break;
+        }
 
-    void OnCollisionEnter(Collision targetObj)
+        if (ShieldG != null)
+        {
+
+            // Deducts points from the shield and returns the leftover
+            damage = ShieldG.Damage(damage);
+        }
+        else
+        {
+            SetHealth(PlayerHealth - damage);
+        }
+        
+    }
+
+        void OnCollisionEnter(Collision targetObj)
     {
         // Might as well 
         Debug.Log("Hit by " + targetObj.gameObject.tag);
@@ -88,6 +109,9 @@ public class PlayerHealthAndCollision : MonoBehaviour
                 }
             }
             
+        }
+        else
+        {
             SetHealth(PlayerHealth - damage);
         }
 
@@ -107,7 +131,6 @@ public class PlayerHealthAndCollision : MonoBehaviour
                 HealingDiff = 0;
             }
         }
-        SetHealth(PlayerHealth - damage);
 
     }
     
