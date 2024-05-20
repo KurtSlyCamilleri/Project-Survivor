@@ -111,6 +111,7 @@ public class Boss : MonoBehaviour
                 {
                 Vector3 gunPos = TheBoss.transform.position;
                 (Instantiate(BossFire, gunPos + new Vector3(0f, +0.05f, 0f), Quaternion.identity) as GameObject).transform.parent = TheBoss.transform;
+                GetComponent<NavMeshAgent>().speed = 0.25f;
                 Stage1 = false;
                 }
             yield return null;
@@ -121,6 +122,7 @@ public class Boss : MonoBehaviour
             {
                 fireRate = 4f;
                 fireRateB = 12f;
+                GetComponent<NavMeshAgent>().speed = 0.35f;
                 Stage2 = false;
             }
             yield return null;
@@ -129,7 +131,7 @@ public class Boss : MonoBehaviour
         {
             if (BossHealth <= 1000)
             {
-                GetComponent<NavMeshAgent>().speed = 0.25f;
+                GetComponent<NavMeshAgent>().speed = 0.50f;
                 Stage3 = false;
             }
             yield return null;
