@@ -334,7 +334,7 @@ public class PlayerLevellingSystem : MonoBehaviour
     {
         if (targetObj.gameObject.tag == "Experience")
         {
-            PlayerExp += 25;
+            PlayerExp += 15;
             Destroy(targetObj.gameObject);
         }
     }

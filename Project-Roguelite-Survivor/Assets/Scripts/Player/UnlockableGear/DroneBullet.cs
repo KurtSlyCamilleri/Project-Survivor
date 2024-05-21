@@ -7,7 +7,8 @@ public class DroneBullet : MonoBehaviour
     public GameObject Drone;
     public int droneBulletPen = 2;
     public static float bulletVelocity = 2.0f;
-
+    public GameObject Feedback;
+    Vector3 areaZero;
 
     void OnBecameInvisible()
     {
@@ -25,6 +26,7 @@ public class DroneBullet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        areaZero = gameObject.transform.position;
         transform.position += transform.forward * bulletVelocity * Time.deltaTime;
         if (droneBulletPen <= 0)
         {
@@ -53,7 +55,18 @@ public class DroneBullet : MonoBehaviour
         {
             droneBulletPen -= 8;
         }
-
+        if (targetObj.gameObject.tag == "Player")
+        {
+            Debug.Log("Player");
+        }
+        else if (targetObj.gameObject.tag == "CollectRadius")
+        {
+            Debug.Log("CollectRadius");
+        }
+        else
+        {
+            Instantiate(Feedback, areaZero, Quaternion.identity);
+        }
     }
 }
 

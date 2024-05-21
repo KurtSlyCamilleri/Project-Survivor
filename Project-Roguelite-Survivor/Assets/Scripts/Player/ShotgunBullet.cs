@@ -53,7 +53,11 @@ public class ShotgunBullet : MonoBehaviour
         }
         if (targetObj.gameObject.tag == "Player")
         {
-
+            Debug.Log("Player");
+        }
+        else if (targetObj.gameObject.tag == "CollectRadius")
+        {
+            Debug.Log("CollectRadius");
         }
         else
         {

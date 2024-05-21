@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BossWave : MonoBehaviour
+public class BossRage : MonoBehaviour
 {
-    public static float bulletVelocity = 0.2f;
+    public static float bulletVelocity = 0.6f;
     //public GameObject TheBoss;
 
 
@@ -33,5 +33,6 @@ public class BossWave : MonoBehaviour
             transform.position += transform.forward * bulletVelocity * Time.deltaTime;
             yield return null;
         }
+        
     }
 }

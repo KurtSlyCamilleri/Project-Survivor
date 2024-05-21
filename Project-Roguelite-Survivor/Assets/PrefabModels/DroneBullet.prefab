@@ -142,6 +142,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Drone: {fileID: 0}
   droneBulletPen: 2
+  Feedback: {fileID: 5890504808766806781, guid: 5074429c9875ca443826ad9d541618f1,
+    type: 3}
 --- !u!1 &5737007843581395835
 GameObject:
   m_ObjectHideFlags: 0

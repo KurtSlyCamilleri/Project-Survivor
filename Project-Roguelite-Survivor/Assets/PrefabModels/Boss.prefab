@@ -268,8 +268,11 @@ MonoBehaviour:
     type: 3}
   BossFire: {fileID: 3596835832843486319, guid: abfd1aa48d5abdb4eb6fff43b93607b7,
     type: 3}
+  BossRage: {fileID: 5549358616617165081, guid: d92614a2636eb5c4c9882e4bbb2ce566,
+    type: 3}
   fireRate: 6
   fireRateB: 14
+  fireRateC: 12
 --- !u!1 &4105812560516158856
 GameObject:
   m_ObjectHideFlags: 0

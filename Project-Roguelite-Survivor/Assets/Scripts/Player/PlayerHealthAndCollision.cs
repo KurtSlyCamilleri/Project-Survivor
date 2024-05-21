@@ -46,8 +46,9 @@ public class PlayerHealthAndCollision : MonoBehaviour
         switch (targetObj.gameObject.tag)
         {
             case "BossShot": damage = 30; break;
-            case "BossWave": damage = 5; break;
+            case "BossWave": damage = 2; break;
             case "BossFire": damage = 15; break;
+            case "BossRage": damage = 10; break;
         }
 
         if (ShieldG != null)
