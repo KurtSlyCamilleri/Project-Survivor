@@ -39,6 +39,7 @@ TagManager:
   - BossWave
   - BossFire
   - BossRage
+  - UiCanvas
   layers:
   - Default
   - TransparentFX
