@@ -652,6 +652,7 @@ GameObject:
   - component: {fileID: 140832026}
   - component: {fileID: 140832028}
   - component: {fileID: 140832027}
+  - component: {fileID: 140832029}
   m_Layer: 5
   m_Name: SpraySpread_Pannel
   m_TagString: Untagged
@@ -692,7 +693,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.4490565, g: 0.4490565, b: 0.4490565, a: 1}
+  m_Color: {r: 0.05882353, g: 0.05882353, b: 0.12941177, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -717,6 +718,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 140832025}
   m_CullTransparentMesh: 1
+--- !u!114 &140832029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 140832025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0.9547169, g: 0.49537194, b: 0.8298065, a: 1}
+  m_EffectDistance: {x: 6.93, y: -6.93}
+  m_UseGraphicAlpha: 1
 --- !u!1 &143924853
 GameObject:
   m_ObjectHideFlags: 0
@@ -729,6 +745,7 @@ GameObject:
   - component: {fileID: 143924857}
   - component: {fileID: 143924856}
   - component: {fileID: 143924855}
+  - component: {fileID: 143924858}
   m_Layer: 5
   m_Name: FireRate_Button
   m_TagString: Untagged
@@ -777,9 +794,9 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.96981126, g: 0.96981126, b: 0.96981126, a: 0}
-    m_HighlightedColor: {r: 0.5396226, g: 0.25148448, b: 0.25148448, a: 1}
-    m_PressedColor: {r: 0.8037735, g: 0.14407252, b: 0.14407252, a: 1}
+    m_NormalColor: {r: 0.96981126, g: 0.96981126, b: 0.96981126, a: 1}
+    m_HighlightedColor: {r: 0.9843137, g: 0.48235294, b: 0.27450982, a: 1}
+    m_PressedColor: {r: 0.84313726, g: 0.3372549, b: 0.1254902, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -837,7 +854,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.4509804, g: 0.4509804, b: 0.4509804, a: 1}
+  m_Color: {r: 0.05882353, g: 0.05882353, b: 0.12941177, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -862,6 +879,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 143924853}
   m_CullTransparentMesh: 1
+--- !u!114 &143924858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 143924853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0.9547169, g: 0.49537194, b: 0.8298065, a: 1}
+  m_EffectDistance: {x: 6.93, y: -6.93}
+  m_UseGraphicAlpha: 1
 --- !u!1 &144956563
 GameObject:
   m_ObjectHideFlags: 0
@@ -1082,6 +1114,7 @@ GameObject:
   - component: {fileID: 158672024}
   - component: {fileID: 158672026}
   - component: {fileID: 158672025}
+  - component: {fileID: 158672027}
   m_Layer: 5
   m_Name: Damage_Pannel2
   m_TagString: Untagged
@@ -1122,7 +1155,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.4490565, g: 0.4490565, b: 0.4490565, a: 1}
+  m_Color: {r: 0.05882353, g: 0.05882353, b: 0.12941177, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1147,6 +1180,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 158672023}
   m_CullTransparentMesh: 1
+--- !u!114 &158672027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 158672023}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0.9547169, g: 0.49537194, b: 0.8298065, a: 1}
+  m_EffectDistance: {x: 6.93, y: -6.93}
+  m_UseGraphicAlpha: 1
 --- !u!1 &192129375
 GameObject:
   m_ObjectHideFlags: 0
@@ -1158,6 +1206,7 @@ GameObject:
   - component: {fileID: 192129376}
   - component: {fileID: 192129378}
   - component: {fileID: 192129377}
+  - component: {fileID: 192129379}
   m_Layer: 5
   m_Name: HealthUpgrade_Pannel2
   m_TagString: Untagged
@@ -1198,7 +1247,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.4490565, g: 0.4490565, b: 0.4490565, a: 1}
+  m_Color: {r: 0.05882353, g: 0.05882353, b: 0.12941177, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1223,6 +1272,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 192129375}
   m_CullTransparentMesh: 1
+--- !u!114 &192129379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 192129375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0.9547169, g: 0.49537194, b: 0.8298065, a: 1}
+  m_EffectDistance: {x: 6.93, y: -6.93}
+  m_UseGraphicAlpha: 1
 --- !u!1 &208221179
 GameObject:
   m_ObjectHideFlags: 0
@@ -1282,15 +1346,16 @@ MonoBehaviour:
       m_Calls: []
   m_text: Increase Maximum Health
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: b688c304144c0a642aeef7ac8b1a2153, type: 2}
+  m_sharedMaterial: {fileID: -6987533636334994718, guid: b688c304144c0a642aeef7ac8b1a2153,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278913803
-  m_fontColor: {r: 0.04150939, g: 0.04150939, b: 0.04150939, a: 1}
+    rgba: 4293260144
+  m_fontColor: {r: 0.4392157, g: 0.9529412, b: 0.8980392, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1346,7 +1411,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &208221182
@@ -1416,15 +1481,16 @@ MonoBehaviour:
       m_Calls: []
   m_text: Shield Gear
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: b688c304144c0a642aeef7ac8b1a2153, type: 2}
+  m_sharedMaterial: {fileID: -6987533636334994718, guid: b688c304144c0a642aeef7ac8b1a2153,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278913803
-  m_fontColor: {r: 0.04150939, g: 0.04150939, b: 0.04150939, a: 1}
+    rgba: 4293260144
+  m_fontColor: {r: 0.4392157, g: 0.9529412, b: 0.8980392, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1636,6 +1702,7 @@ GameObject:
   - component: {fileID: 245823552}
   - component: {fileID: 245823554}
   - component: {fileID: 245823553}
+  - component: {fileID: 245823555}
   m_Layer: 5
   m_Name: PickUp_Pannel2
   m_TagString: Untagged
@@ -1676,7 +1743,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.4490565, g: 0.4490565, b: 0.4490565, a: 1}
+  m_Color: {r: 0.05882353, g: 0.05882353, b: 0.12941177, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1701,6 +1768,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 245823551}
   m_CullTransparentMesh: 1
+--- !u!114 &245823555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 245823551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0.9547169, g: 0.49537194, b: 0.8298065, a: 1}
+  m_EffectDistance: {x: 6.93, y: -6.93}
+  m_UseGraphicAlpha: 1
 --- !u!1 &254914439
 GameObject:
   m_ObjectHideFlags: 0
@@ -1712,6 +1794,7 @@ GameObject:
   - component: {fileID: 254914440}
   - component: {fileID: 254914442}
   - component: {fileID: 254914441}
+  - component: {fileID: 254914443}
   m_Layer: 5
   m_Name: MovementUpgrade_Pannel2
   m_TagString: Untagged
@@ -1752,7 +1835,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.4490565, g: 0.4490565, b: 0.4490565, a: 1}
+  m_Color: {r: 0.05882353, g: 0.05882353, b: 0.12941177, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1777,6 +1860,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 254914439}
   m_CullTransparentMesh: 1
+--- !u!114 &254914443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 254914439}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0.9547169, g: 0.49537194, b: 0.8298065, a: 1}
+  m_EffectDistance: {x: 6.93, y: -6.93}
+  m_UseGraphicAlpha: 1
 --- !u!1 &274830112
 GameObject:
   m_ObjectHideFlags: 0
@@ -1789,6 +1887,7 @@ GameObject:
   - component: {fileID: 274830116}
   - component: {fileID: 274830115}
   - component: {fileID: 274830114}
+  - component: {fileID: 274830117}
   m_Layer: 5
   m_Name: PickUp_Button
   m_TagString: Untagged
@@ -1837,9 +1936,9 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.96981126, g: 0.96981126, b: 0.96981126, a: 0}
-    m_HighlightedColor: {r: 0.5396226, g: 0.25148448, b: 0.25148448, a: 1}
-    m_PressedColor: {r: 0.8037735, g: 0.14407252, b: 0.14407252, a: 1}
+    m_NormalColor: {r: 0.96981126, g: 0.96981126, b: 0.96981126, a: 1}
+    m_HighlightedColor: {r: 0.9843137, g: 0.48235294, b: 0.27450982, a: 1}
+    m_PressedColor: {r: 0.84313726, g: 0.3372549, b: 0.1254902, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -1885,7 +1984,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.4509804, g: 0.4509804, b: 0.4509804, a: 1}
+  m_Color: {r: 0.05882353, g: 0.05882353, b: 0.12941177, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1910,6 +2009,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 274830112}
   m_CullTransparentMesh: 1
+--- !u!114 &274830117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 274830112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0.9547169, g: 0.49537194, b: 0.8298065, a: 1}
+  m_EffectDistance: {x: 6.93, y: -6.93}
+  m_UseGraphicAlpha: 1
 --- !u!1 &288914082 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2773772075713081776, guid: ec33fe569f71a3c44afdf806ba4eea70,
@@ -1986,6 +2100,7 @@ GameObject:
   - component: {fileID: 355380964}
   - component: {fileID: 355380966}
   - component: {fileID: 355380965}
+  - component: {fileID: 355380967}
   m_Layer: 5
   m_Name: BombGear_Pannel
   m_TagString: BombGearPanel
@@ -2026,7 +2141,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.4490565, g: 0.4490565, b: 0.4490565, a: 1}
+  m_Color: {r: 0.05882353, g: 0.05882353, b: 0.12941177, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2051,6 +2166,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 355380963}
   m_CullTransparentMesh: 1
+--- !u!114 &355380967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 355380963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0.9547169, g: 0.49537194, b: 0.8298065, a: 1}
+  m_EffectDistance: {x: 6.93, y: -6.93}
+  m_UseGraphicAlpha: 1
 --- !u!1 &410046072
 GameObject:
   m_ObjectHideFlags: 0
@@ -2214,6 +2344,7 @@ GameObject:
   - component: {fileID: 425116839}
   - component: {fileID: 425116838}
   - component: {fileID: 425116837}
+  - component: {fileID: 425116840}
   m_Layer: 5
   m_Name: BombGear_Button
   m_TagString: Untagged
@@ -2262,9 +2393,9 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.96981126, g: 0.96981126, b: 0.96981126, a: 0}
-    m_HighlightedColor: {r: 0.5396226, g: 0.25148448, b: 0.25148448, a: 1}
-    m_PressedColor: {r: 0.8037735, g: 0.14407252, b: 0.14407252, a: 1}
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9843137, g: 0.48235294, b: 0.27450982, a: 1}
+    m_PressedColor: {r: 0.84313726, g: 0.3372549, b: 0.1254902, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -2310,7 +2441,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.4509804, g: 0.4509804, b: 0.4509804, a: 1}
+  m_Color: {r: 0.05882353, g: 0.05882353, b: 0.12941177, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2335,6 +2466,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 425116835}
   m_CullTransparentMesh: 1
+--- !u!114 &425116840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 425116835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0.9547169, g: 0.49537194, b: 0.8298065, a: 1}
+  m_EffectDistance: {x: 6.93, y: -6.93}
+  m_UseGraphicAlpha: 1
 --- !u!1 &430917636
 GameObject:
   m_ObjectHideFlags: 0
@@ -2394,15 +2540,16 @@ MonoBehaviour:
       m_Calls: []
   m_text: Increase Movement Speed
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: b688c304144c0a642aeef7ac8b1a2153, type: 2}
+  m_sharedMaterial: {fileID: -6987533636334994718, guid: b688c304144c0a642aeef7ac8b1a2153,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278913803
-  m_fontColor: {r: 0.04150939, g: 0.04150939, b: 0.04150939, a: 1}
+    rgba: 4293260144
+  m_fontColor: {r: 0.4392157, g: 0.9529412, b: 0.8980392, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2458,7 +2605,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &430917639
@@ -2481,6 +2628,7 @@ GameObject:
   - component: {fileID: 441213265}
   - component: {fileID: 441213264}
   - component: {fileID: 441213263}
+  - component: {fileID: 441213266}
   m_Layer: 5
   m_Name: HealthUpgrade_Button
   m_TagString: Untagged
@@ -2529,9 +2677,9 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.96981126, g: 0.96981126, b: 0.96981126, a: 0}
-    m_HighlightedColor: {r: 0.5396226, g: 0.25148448, b: 0.25148448, a: 1}
-    m_PressedColor: {r: 0.8037735, g: 0.14407252, b: 0.14407252, a: 1}
+    m_NormalColor: {r: 0.96981126, g: 0.96981126, b: 0.96981126, a: 1}
+    m_HighlightedColor: {r: 0.9843137, g: 0.48235294, b: 0.27450982, a: 1}
+    m_PressedColor: {r: 0.84313726, g: 0.3372549, b: 0.1254902, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -2577,7 +2725,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.4509804, g: 0.4509804, b: 0.4509804, a: 1}
+  m_Color: {r: 0.05882353, g: 0.05882353, b: 0.12941177, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2602,6 +2750,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 441213261}
   m_CullTransparentMesh: 1
+--- !u!114 &441213266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 441213261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0.9547169, g: 0.49537194, b: 0.8298065, a: 1}
+  m_EffectDistance: {x: 6.93, y: -6.93}
+  m_UseGraphicAlpha: 1
 --- !u!1 &459661473
 GameObject:
   m_ObjectHideFlags: 0
@@ -2613,6 +2776,7 @@ GameObject:
   - component: {fileID: 459661474}
   - component: {fileID: 459661476}
   - component: {fileID: 459661475}
+  - component: {fileID: 459661477}
   m_Layer: 5
   m_Name: Piercing_Pannel
   m_TagString: Untagged
@@ -2653,7 +2817,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.4490565, g: 0.4490565, b: 0.4490565, a: 1}
+  m_Color: {r: 0.05882353, g: 0.05882353, b: 0.12941177, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2678,6 +2842,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 459661473}
   m_CullTransparentMesh: 1
+--- !u!114 &459661477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 459661473}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0.9547169, g: 0.49537194, b: 0.8298065, a: 1}
+  m_EffectDistance: {x: 6.93, y: -6.93}
+  m_UseGraphicAlpha: 1
 --- !u!1 &462243926
 GameObject:
   m_ObjectHideFlags: 0
@@ -3150,15 +3329,16 @@ MonoBehaviour:
       m_Calls: []
   m_text: Shotgun Fully Upgraded
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: b688c304144c0a642aeef7ac8b1a2153, type: 2}
+  m_sharedMaterial: {fileID: -6987533636334994718, guid: b688c304144c0a642aeef7ac8b1a2153,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278913803
-  m_fontColor: {r: 0.04150939, g: 0.04150939, b: 0.04150939, a: 1}
+    rgba: 4293260144
+  m_fontColor: {r: 0.4392157, g: 0.9529412, b: 0.8980392, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -3214,7 +3394,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &517665703
@@ -3284,15 +3464,16 @@ MonoBehaviour:
       m_Calls: []
   m_text: Increased Shotgun Bullet Damage
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: b688c304144c0a642aeef7ac8b1a2153, type: 2}
+  m_sharedMaterial: {fileID: -6987533636334994718, guid: b688c304144c0a642aeef7ac8b1a2153,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278913803
-  m_fontColor: {r: 0.04150939, g: 0.04150939, b: 0.04150939, a: 1}
+    rgba: 4293260144
+  m_fontColor: {r: 0.4392157, g: 0.9529412, b: 0.8980392, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -3348,7 +3529,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &524665437
@@ -3420,15 +3601,16 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: b688c304144c0a642aeef7ac8b1a2153, type: 2}
+  m_sharedMaterial: {fileID: -6987533636334994718, guid: b688c304144c0a642aeef7ac8b1a2153,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278913803
-  m_fontColor: {r: 0.04150939, g: 0.04150939, b: 0.04150939, a: 1}
+    rgba: 4293260144
+  m_fontColor: {r: 0.4392157, g: 0.9529412, b: 0.8980392, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -3484,7 +3666,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &526011834
@@ -3507,6 +3689,7 @@ GameObject:
   - component: {fileID: 550230984}
   - component: {fileID: 550230983}
   - component: {fileID: 550230982}
+  - component: {fileID: 550230985}
   m_Layer: 5
   m_Name: HealthUpgrade_Button
   m_TagString: Untagged
@@ -3555,9 +3738,9 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.96981126, g: 0.96981126, b: 0.96981126, a: 0}
-    m_HighlightedColor: {r: 0.5396226, g: 0.25148448, b: 0.25148448, a: 1}
-    m_PressedColor: {r: 0.8037735, g: 0.14407252, b: 0.14407252, a: 1}
+    m_NormalColor: {r: 0.96981126, g: 0.96981126, b: 0.96981126, a: 1}
+    m_HighlightedColor: {r: 0.9843137, g: 0.48235294, b: 0.27450982, a: 1}
+    m_PressedColor: {r: 0.84313726, g: 0.3372549, b: 0.1254902, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -3603,7 +3786,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.4509804, g: 0.4509804, b: 0.4509804, a: 1}
+  m_Color: {r: 0.05882353, g: 0.05882353, b: 0.12941177, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3628,6 +3811,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 550230980}
   m_CullTransparentMesh: 1
+--- !u!114 &550230985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 550230980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0.9547169, g: 0.49537194, b: 0.8298065, a: 1}
+  m_EffectDistance: {x: 6.93, y: -6.93}
+  m_UseGraphicAlpha: 1
 --- !u!1 &566924040
 GameObject:
   m_ObjectHideFlags: 0
@@ -3640,6 +3838,7 @@ GameObject:
   - component: {fileID: 566924044}
   - component: {fileID: 566924043}
   - component: {fileID: 566924042}
+  - component: {fileID: 566924045}
   m_Layer: 5
   m_Name: SpraySpread_Button
   m_TagString: Untagged
@@ -3688,9 +3887,9 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.96981126, g: 0.96981126, b: 0.96981126, a: 0}
-    m_HighlightedColor: {r: 0.5396226, g: 0.25148448, b: 0.25148448, a: 1}
-    m_PressedColor: {r: 0.8037735, g: 0.14407252, b: 0.14407252, a: 1}
+    m_NormalColor: {r: 0.96981126, g: 0.96981126, b: 0.96981126, a: 1}
+    m_HighlightedColor: {r: 0.9843137, g: 0.48235294, b: 0.27450982, a: 1}
+    m_PressedColor: {r: 0.84313726, g: 0.3372549, b: 0.1254902, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -3736,7 +3935,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.4509804, g: 0.4509804, b: 0.4509804, a: 1}
+  m_Color: {r: 0.05882353, g: 0.05882353, b: 0.12941177, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3761,6 +3960,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 566924040}
   m_CullTransparentMesh: 1
+--- !u!114 &566924045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 566924040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0.9547169, g: 0.49537194, b: 0.8298065, a: 1}
+  m_EffectDistance: {x: 6.93, y: -6.93}
+  m_UseGraphicAlpha: 1
 --- !u!1 &583285384
 GameObject:
   m_ObjectHideFlags: 0
@@ -3810,6 +4024,7 @@ GameObject:
   - component: {fileID: 718446047}
   - component: {fileID: 718446049}
   - component: {fileID: 718446048}
+  - component: {fileID: 718446050}
   m_Layer: 5
   m_Name: Null_Pannel
   m_TagString: ShieldGearPanel
@@ -3850,7 +4065,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.4490565, g: 0.4490565, b: 0.4490565, a: 1}
+  m_Color: {r: 0.05882353, g: 0.05882353, b: 0.12941177, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3875,6 +4090,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 718446046}
   m_CullTransparentMesh: 1
+--- !u!114 &718446050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 718446046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0.9547169, g: 0.49537194, b: 0.8298065, a: 1}
+  m_EffectDistance: {x: 6.93, y: -6.93}
+  m_UseGraphicAlpha: 1
 --- !u!1 &720424917
 GameObject:
   m_ObjectHideFlags: 0
@@ -3934,15 +4164,16 @@ MonoBehaviour:
       m_Calls: []
   m_text: Increase Pickup Radius
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: b688c304144c0a642aeef7ac8b1a2153, type: 2}
+  m_sharedMaterial: {fileID: -6987533636334994718, guid: b688c304144c0a642aeef7ac8b1a2153,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278913803
-  m_fontColor: {r: 0.04150939, g: 0.04150939, b: 0.04150939, a: 1}
+    rgba: 4293260144
+  m_fontColor: {r: 0.4392157, g: 0.9529412, b: 0.8980392, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -3998,7 +4229,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &720424920
@@ -4068,15 +4299,16 @@ MonoBehaviour:
       m_Calls: []
   m_text: Grenade Belt
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: b688c304144c0a642aeef7ac8b1a2153, type: 2}
+  m_sharedMaterial: {fileID: -6987533636334994718, guid: b688c304144c0a642aeef7ac8b1a2153,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278913803
-  m_fontColor: {r: 0.04150939, g: 0.04150939, b: 0.04150939, a: 1}
+    rgba: 4293260144
+  m_fontColor: {r: 0.4392157, g: 0.9529412, b: 0.8980392, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -4155,6 +4387,7 @@ GameObject:
   - component: {fileID: 803538715}
   - component: {fileID: 803538714}
   - component: {fileID: 803538713}
+  - component: {fileID: 803538716}
   m_Layer: 5
   m_Name: Piercing_Button
   m_TagString: Untagged
@@ -4203,9 +4436,9 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.96981126, g: 0.96981126, b: 0.96981126, a: 0}
-    m_HighlightedColor: {r: 0.5396226, g: 0.25148448, b: 0.25148448, a: 1}
-    m_PressedColor: {r: 0.8037735, g: 0.14407252, b: 0.14407252, a: 1}
+    m_NormalColor: {r: 0.96981126, g: 0.96981126, b: 0.96981126, a: 1}
+    m_HighlightedColor: {r: 0.9843137, g: 0.48235294, b: 0.27450982, a: 1}
+    m_PressedColor: {r: 0.84313726, g: 0.3372549, b: 0.1254902, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -4252,7 +4485,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.4509804, g: 0.4509804, b: 0.4509804, a: 1}
+  m_Color: {r: 0.05882353, g: 0.05882353, b: 0.12941177, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -4277,6 +4510,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 803538711}
   m_CullTransparentMesh: 1
+--- !u!114 &803538716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 803538711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0.9547169, g: 0.49537194, b: 0.8298065, a: 1}
+  m_EffectDistance: {x: 6.93, y: -6.93}
+  m_UseGraphicAlpha: 1
 --- !u!1 &847492039
 GameObject:
   m_ObjectHideFlags: 0
@@ -4288,6 +4536,7 @@ GameObject:
   - component: {fileID: 847492040}
   - component: {fileID: 847492042}
   - component: {fileID: 847492041}
+  - component: {fileID: 847492043}
   m_Layer: 5
   m_Name: HealthUpgrade_Pannel
   m_TagString: Untagged
@@ -4328,7 +4577,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.4490565, g: 0.4490565, b: 0.4490565, a: 1}
+  m_Color: {r: 0.05882353, g: 0.05882353, b: 0.12941177, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -4353,6 +4602,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 847492039}
   m_CullTransparentMesh: 1
+--- !u!114 &847492043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 847492039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0.9547169, g: 0.49537194, b: 0.8298065, a: 1}
+  m_EffectDistance: {x: 6.93, y: -6.93}
+  m_UseGraphicAlpha: 1
 --- !u!1 &850255630
 GameObject:
   m_ObjectHideFlags: 0
@@ -4412,15 +4676,16 @@ MonoBehaviour:
       m_Calls: []
   m_text: Increased Shotgun Bullet Damage
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: b688c304144c0a642aeef7ac8b1a2153, type: 2}
+  m_sharedMaterial: {fileID: -6987533636334994718, guid: b688c304144c0a642aeef7ac8b1a2153,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278913803
-  m_fontColor: {r: 0.04150939, g: 0.04150939, b: 0.04150939, a: 1}
+    rgba: 4293260144
+  m_fontColor: {r: 0.4392157, g: 0.9529412, b: 0.8980392, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -4476,7 +4741,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &850255633
@@ -4498,6 +4763,7 @@ GameObject:
   - component: {fileID: 856506629}
   - component: {fileID: 856506631}
   - component: {fileID: 856506630}
+  - component: {fileID: 856506632}
   m_Layer: 5
   m_Name: PickUp_Pannel
   m_TagString: Untagged
@@ -4538,7 +4804,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.4490565, g: 0.4490565, b: 0.4490565, a: 1}
+  m_Color: {r: 0.05882353, g: 0.05882353, b: 0.12941177, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -4563,6 +4829,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 856506628}
   m_CullTransparentMesh: 1
+--- !u!114 &856506632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 856506628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0.9547169, g: 0.49537194, b: 0.8298065, a: 1}
+  m_EffectDistance: {x: 6.93, y: -6.93}
+  m_UseGraphicAlpha: 1
 --- !u!1001 &860859321
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4642,6 +4923,7 @@ GameObject:
   - component: {fileID: 870875228}
   - component: {fileID: 870875230}
   - component: {fileID: 870875229}
+  - component: {fileID: 870875231}
   m_Layer: 5
   m_Name: ShieldGear_Pannel
   m_TagString: ShieldGearPanel
@@ -4682,7 +4964,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.4490565, g: 0.4490565, b: 0.4490565, a: 1}
+  m_Color: {r: 0.05882353, g: 0.05882353, b: 0.12941177, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -4707,6 +4989,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 870875227}
   m_CullTransparentMesh: 1
+--- !u!114 &870875231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 870875227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0.9547169, g: 0.49537194, b: 0.8298065, a: 1}
+  m_EffectDistance: {x: 6.93, y: -6.93}
+  m_UseGraphicAlpha: 1
 --- !u!1 &913957062
 GameObject:
   m_ObjectHideFlags: 0
@@ -4808,6 +5105,7 @@ GameObject:
   - component: {fileID: 942642986}
   - component: {fileID: 942642985}
   - component: {fileID: 942642984}
+  - component: {fileID: 942642987}
   m_Layer: 5
   m_Name: Damage_Button
   m_TagString: Untagged
@@ -4856,9 +5154,9 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.96981126, g: 0.96981126, b: 0.96981126, a: 0}
-    m_HighlightedColor: {r: 0.5396226, g: 0.25148448, b: 0.25148448, a: 1}
-    m_PressedColor: {r: 0.8037735, g: 0.14407252, b: 0.14407252, a: 1}
+    m_NormalColor: {r: 0.96981126, g: 0.96981126, b: 0.96981126, a: 1}
+    m_HighlightedColor: {r: 0.9843137, g: 0.48235294, b: 0.27450982, a: 1}
+    m_PressedColor: {r: 0.84313726, g: 0.3372549, b: 0.1254902, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -5009,7 +5307,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.4509804, g: 0.4509804, b: 0.4509804, a: 1}
+  m_Color: {r: 0.05882353, g: 0.05882353, b: 0.12941177, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -5034,6 +5332,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 942642982}
   m_CullTransparentMesh: 1
+--- !u!114 &942642987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 942642982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0.9547169, g: 0.49537194, b: 0.8298065, a: 1}
+  m_EffectDistance: {x: 6.93, y: -6.93}
+  m_UseGraphicAlpha: 1
 --- !u!1 &972502009
 GameObject:
   m_ObjectHideFlags: 0
@@ -5135,15 +5448,16 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: b688c304144c0a642aeef7ac8b1a2153, type: 2}
+  m_sharedMaterial: {fileID: -6987533636334994718, guid: b688c304144c0a642aeef7ac8b1a2153,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278913803
-  m_fontColor: {r: 0.04150939, g: 0.04150939, b: 0.04150939, a: 1}
+    rgba: 4293260144
+  m_fontColor: {r: 0.4392157, g: 0.9529412, b: 0.8980392, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -5199,7 +5513,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1059738550
@@ -5512,15 +5826,16 @@ MonoBehaviour:
       m_Calls: []
   m_text: Increase Shotgun Bullet Spread
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: b688c304144c0a642aeef7ac8b1a2153, type: 2}
+  m_sharedMaterial: {fileID: -6987533636334994718, guid: b688c304144c0a642aeef7ac8b1a2153,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278913803
-  m_fontColor: {r: 0.04150939, g: 0.04150939, b: 0.04150939, a: 1}
+    rgba: 4293260144
+  m_fontColor: {r: 0.4392157, g: 0.9529412, b: 0.8980392, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -5576,7 +5891,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1106511943
@@ -5598,6 +5913,7 @@ GameObject:
   - component: {fileID: 1122901057}
   - component: {fileID: 1122901059}
   - component: {fileID: 1122901058}
+  - component: {fileID: 1122901060}
   m_Layer: 5
   m_Name: FireRate_Pannel2
   m_TagString: Untagged
@@ -5638,7 +5954,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.4490565, g: 0.4490565, b: 0.4490565, a: 1}
+  m_Color: {r: 0.05882353, g: 0.05882353, b: 0.12941177, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -5663,6 +5979,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1122901056}
   m_CullTransparentMesh: 1
+--- !u!114 &1122901060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1122901056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0.9547169, g: 0.49537194, b: 0.8298065, a: 1}
+  m_EffectDistance: {x: 6.93, y: -6.93}
+  m_UseGraphicAlpha: 1
 --- !u!1 &1129559293
 GameObject:
   m_ObjectHideFlags: 0
@@ -5675,6 +6006,7 @@ GameObject:
   - component: {fileID: 1129559297}
   - component: {fileID: 1129559296}
   - component: {fileID: 1129559295}
+  - component: {fileID: 1129559298}
   m_Layer: 5
   m_Name: FireRate_Button
   m_TagString: Untagged
@@ -5723,9 +6055,9 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.96981126, g: 0.96981126, b: 0.96981126, a: 0}
-    m_HighlightedColor: {r: 0.5396226, g: 0.25148448, b: 0.25148448, a: 1}
-    m_PressedColor: {r: 0.8037735, g: 0.14407252, b: 0.14407252, a: 1}
+    m_NormalColor: {r: 0.96981126, g: 0.96981126, b: 0.96981126, a: 1}
+    m_HighlightedColor: {r: 0.9843137, g: 0.48235294, b: 0.27450982, a: 1}
+    m_PressedColor: {r: 0.84313726, g: 0.3372549, b: 0.1254902, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -5783,7 +6115,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.4509804, g: 0.4509804, b: 0.4509804, a: 1}
+  m_Color: {r: 0.05882353, g: 0.05882353, b: 0.12941177, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -5808,6 +6140,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1129559293}
   m_CullTransparentMesh: 1
+--- !u!114 &1129559298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1129559293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0.9547169, g: 0.49537194, b: 0.8298065, a: 1}
+  m_EffectDistance: {x: 6.93, y: -6.93}
+  m_UseGraphicAlpha: 1
 --- !u!1 &1131521071
 GameObject:
   m_ObjectHideFlags: 0
@@ -5867,15 +6214,16 @@ MonoBehaviour:
       m_Calls: []
   m_text: Increase Shotgun Bullet Spread
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: b688c304144c0a642aeef7ac8b1a2153, type: 2}
+  m_sharedMaterial: {fileID: -6987533636334994718, guid: b688c304144c0a642aeef7ac8b1a2153,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278913803
-  m_fontColor: {r: 0.04150939, g: 0.04150939, b: 0.04150939, a: 1}
+    rgba: 4293260144
+  m_fontColor: {r: 0.4392157, g: 0.9529412, b: 0.8980392, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -5931,7 +6279,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1131521074
@@ -6326,6 +6674,7 @@ GameObject:
   - component: {fileID: 1241275883}
   - component: {fileID: 1241275882}
   - component: {fileID: 1241275881}
+  - component: {fileID: 1241275884}
   m_Layer: 5
   m_Name: PickUp_Button
   m_TagString: Untagged
@@ -6374,9 +6723,9 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.96981126, g: 0.96981126, b: 0.96981126, a: 0}
-    m_HighlightedColor: {r: 0.5396226, g: 0.25148448, b: 0.25148448, a: 1}
-    m_PressedColor: {r: 0.8037735, g: 0.14407252, b: 0.14407252, a: 1}
+    m_NormalColor: {r: 0.96981126, g: 0.96981126, b: 0.96981126, a: 1}
+    m_HighlightedColor: {r: 0.9843137, g: 0.48235294, b: 0.27450982, a: 1}
+    m_PressedColor: {r: 0.84313726, g: 0.3372549, b: 0.1254902, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -6422,7 +6771,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.4509804, g: 0.4509804, b: 0.4509804, a: 1}
+  m_Color: {r: 0.05882353, g: 0.05882353, b: 0.12941177, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -6447,6 +6796,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1241275879}
   m_CullTransparentMesh: 1
+--- !u!114 &1241275884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1241275879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0.9547169, g: 0.49537194, b: 0.8298065, a: 1}
+  m_EffectDistance: {x: 6.93, y: -6.93}
+  m_UseGraphicAlpha: 1
 --- !u!1 &1255659077
 GameObject:
   m_ObjectHideFlags: 0
@@ -6459,6 +6823,7 @@ GameObject:
   - component: {fileID: 1255659081}
   - component: {fileID: 1255659080}
   - component: {fileID: 1255659079}
+  - component: {fileID: 1255659082}
   m_Layer: 5
   m_Name: ShieldGear_Button
   m_TagString: Untagged
@@ -6507,9 +6872,9 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.96981126, g: 0.96981126, b: 0.96981126, a: 0}
-    m_HighlightedColor: {r: 0.5396226, g: 0.25148448, b: 0.25148448, a: 1}
-    m_PressedColor: {r: 0.8037735, g: 0.14407252, b: 0.14407252, a: 1}
+    m_NormalColor: {r: 0.96981126, g: 0.96981126, b: 0.96981126, a: 1}
+    m_HighlightedColor: {r: 0.9843137, g: 0.48235294, b: 0.27450982, a: 1}
+    m_PressedColor: {r: 0.84313726, g: 0.3372549, b: 0.1254902, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -6555,7 +6920,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.4509804, g: 0.4509804, b: 0.4509804, a: 1}
+  m_Color: {r: 0.05882353, g: 0.05882353, b: 0.12941177, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -6580,6 +6945,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1255659077}
   m_CullTransparentMesh: 1
+--- !u!114 &1255659082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1255659077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0.9547169, g: 0.49537194, b: 0.8298065, a: 1}
+  m_EffectDistance: {x: 6.93, y: -6.93}
+  m_UseGraphicAlpha: 1
 --- !u!1 &1269784632
 GameObject:
   m_ObjectHideFlags: 0
@@ -6725,6 +7105,7 @@ GameObject:
   - component: {fileID: 1277223573}
   - component: {fileID: 1277223575}
   - component: {fileID: 1277223574}
+  - component: {fileID: 1277223576}
   m_Layer: 5
   m_Name: DroneGear_Pannel
   m_TagString: DroneGearPanel
@@ -6765,7 +7146,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.4490565, g: 0.4490565, b: 0.4490565, a: 1}
+  m_Color: {r: 0.05882353, g: 0.05882353, b: 0.12941177, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -6790,6 +7171,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1277223572}
   m_CullTransparentMesh: 1
+--- !u!114 &1277223576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1277223572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0.9547169, g: 0.49537194, b: 0.8298065, a: 1}
+  m_EffectDistance: {x: 6.93, y: -6.93}
+  m_UseGraphicAlpha: 1
 --- !u!1 &1287007777
 GameObject:
   m_ObjectHideFlags: 0
@@ -6849,15 +7245,16 @@ MonoBehaviour:
       m_Calls: []
   m_text: Gun Drone
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: b688c304144c0a642aeef7ac8b1a2153, type: 2}
+  m_sharedMaterial: {fileID: -6987533636334994718, guid: b688c304144c0a642aeef7ac8b1a2153,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278913803
-  m_fontColor: {r: 0.04150939, g: 0.04150939, b: 0.04150939, a: 1}
+    rgba: 4293260144
+  m_fontColor: {r: 0.4392157, g: 0.9529412, b: 0.8980392, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -6994,6 +7391,7 @@ GameObject:
   - component: {fileID: 1356000001}
   - component: {fileID: 1356000003}
   - component: {fileID: 1356000002}
+  - component: {fileID: 1356000004}
   m_Layer: 5
   m_Name: GrenadeGear_Pannel
   m_TagString: GrenadeGearPanel
@@ -7034,7 +7432,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.4490565, g: 0.4490565, b: 0.4490565, a: 1}
+  m_Color: {r: 0.05882353, g: 0.05882353, b: 0.12941177, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -7059,6 +7457,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1356000000}
   m_CullTransparentMesh: 1
+--- !u!114 &1356000004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1356000000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0.9547169, g: 0.49537194, b: 0.8298065, a: 1}
+  m_EffectDistance: {x: 6.93, y: -6.93}
+  m_UseGraphicAlpha: 1
 --- !u!1 &1361305793
 GameObject:
   m_ObjectHideFlags: 0
@@ -7071,6 +7484,7 @@ GameObject:
   - component: {fileID: 1361305797}
   - component: {fileID: 1361305796}
   - component: {fileID: 1361305795}
+  - component: {fileID: 1361305798}
   m_Layer: 5
   m_Name: GrenadeGear_Button
   m_TagString: Untagged
@@ -7119,9 +7533,9 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.96981126, g: 0.96981126, b: 0.96981126, a: 0}
-    m_HighlightedColor: {r: 0.5396226, g: 0.25148448, b: 0.25148448, a: 1}
-    m_PressedColor: {r: 0.8037735, g: 0.14407252, b: 0.14407252, a: 1}
+    m_NormalColor: {r: 0.96981126, g: 0.96981126, b: 0.96981126, a: 1}
+    m_HighlightedColor: {r: 0.9843137, g: 0.48235294, b: 0.27450982, a: 1}
+    m_PressedColor: {r: 0.84313726, g: 0.3372549, b: 0.1254902, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -7167,7 +7581,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.4509804, g: 0.4509804, b: 0.4509804, a: 1}
+  m_Color: {r: 0.05882353, g: 0.05882353, b: 0.12941177, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -7192,6 +7606,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1361305793}
   m_CullTransparentMesh: 1
+--- !u!114 &1361305798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1361305793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0.9547169, g: 0.49537194, b: 0.8298065, a: 1}
+  m_EffectDistance: {x: 6.93, y: -6.93}
+  m_UseGraphicAlpha: 1
 --- !u!1 &1425086413
 GameObject:
   m_ObjectHideFlags: 0
@@ -7290,7 +7719,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.058034874, g: 0.058779962, b: 0.131, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -7386,6 +7815,7 @@ GameObject:
   - component: {fileID: 1491139442}
   - component: {fileID: 1491139444}
   - component: {fileID: 1491139443}
+  - component: {fileID: 1491139445}
   m_Layer: 5
   m_Name: SpraySpread_Pannel2
   m_TagString: Untagged
@@ -7426,7 +7856,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.4490565, g: 0.4490565, b: 0.4490565, a: 1}
+  m_Color: {r: 0.05882353, g: 0.05882353, b: 0.12941177, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -7451,6 +7881,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1491139441}
   m_CullTransparentMesh: 1
+--- !u!114 &1491139445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1491139441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0.9547169, g: 0.49537194, b: 0.8298065, a: 1}
+  m_EffectDistance: {x: 6.93, y: -6.93}
+  m_UseGraphicAlpha: 1
 --- !u!115 &1505819824
 MonoScript:
   m_ObjectHideFlags: 0
@@ -7615,6 +8060,7 @@ GameObject:
   - component: {fileID: 1536393690}
   - component: {fileID: 1536393689}
   - component: {fileID: 1536393688}
+  - component: {fileID: 1536393691}
   m_Layer: 5
   m_Name: MovementUpgrade_Button
   m_TagString: Untagged
@@ -7663,9 +8109,9 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.96981126, g: 0.96981126, b: 0.96981126, a: 0}
-    m_HighlightedColor: {r: 0.5396226, g: 0.25148448, b: 0.25148448, a: 1}
-    m_PressedColor: {r: 0.8037735, g: 0.14407252, b: 0.14407252, a: 1}
+    m_NormalColor: {r: 0.96981126, g: 0.96981126, b: 0.96981126, a: 1}
+    m_HighlightedColor: {r: 0.9843137, g: 0.48235294, b: 0.27450982, a: 1}
+    m_PressedColor: {r: 0.84313726, g: 0.3372549, b: 0.1254902, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -7723,7 +8169,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.4509804, g: 0.4509804, b: 0.4509804, a: 1}
+  m_Color: {r: 0.05882353, g: 0.05882353, b: 0.12941177, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -7748,6 +8194,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1536393686}
   m_CullTransparentMesh: 1
+--- !u!114 &1536393691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1536393686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0.9547169, g: 0.49537194, b: 0.8298065, a: 1}
+  m_EffectDistance: {x: 6.93, y: -6.93}
+  m_UseGraphicAlpha: 1
 --- !u!1001 &1589269127
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7828,6 +8289,7 @@ GameObject:
   - component: {fileID: 1606062642}
   - component: {fileID: 1606062641}
   - component: {fileID: 1606062640}
+  - component: {fileID: 1606062643}
   m_Layer: 5
   m_Name: SpraySpread_Button
   m_TagString: Untagged
@@ -7876,9 +8338,9 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.96981126, g: 0.96981126, b: 0.96981126, a: 0}
-    m_HighlightedColor: {r: 0.5396226, g: 0.25148448, b: 0.25148448, a: 1}
-    m_PressedColor: {r: 0.8037735, g: 0.14407252, b: 0.14407252, a: 1}
+    m_NormalColor: {r: 0.96981126, g: 0.96981126, b: 0.96981126, a: 1}
+    m_HighlightedColor: {r: 0.9843137, g: 0.48235294, b: 0.27450982, a: 1}
+    m_PressedColor: {r: 0.84313726, g: 0.3372549, b: 0.1254902, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -7924,7 +8386,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.4509804, g: 0.4509804, b: 0.4509804, a: 1}
+  m_Color: {r: 0.05882353, g: 0.05882353, b: 0.12941177, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -7949,6 +8411,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1606062638}
   m_CullTransparentMesh: 1
+--- !u!114 &1606062643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1606062638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0.9547169, g: 0.49537194, b: 0.8298065, a: 1}
+  m_EffectDistance: {x: 6.93, y: -6.93}
+  m_UseGraphicAlpha: 1
 --- !u!1 &1633900808
 GameObject:
   m_ObjectHideFlags: 0
@@ -8299,15 +8776,16 @@ MonoBehaviour:
       m_Calls: []
   m_text: Increased Shotgun Bullet Penetration
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: b688c304144c0a642aeef7ac8b1a2153, type: 2}
+  m_sharedMaterial: {fileID: -6987533636334994718, guid: b688c304144c0a642aeef7ac8b1a2153,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278913803
-  m_fontColor: {r: 0.04150939, g: 0.04150939, b: 0.04150939, a: 1}
+    rgba: 4293260144
+  m_fontColor: {r: 0.4392157, g: 0.9529412, b: 0.8980392, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -8363,7 +8841,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1646250265
@@ -8422,6 +8900,7 @@ GameObject:
   - component: {fileID: 1669087624}
   - component: {fileID: 1669087623}
   - component: {fileID: 1669087622}
+  - component: {fileID: 1669087625}
   m_Layer: 5
   m_Name: DroneGear_Button
   m_TagString: Untagged
@@ -8470,9 +8949,9 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.96981126, g: 0.96981126, b: 0.96981126, a: 0}
-    m_HighlightedColor: {r: 0.5396226, g: 0.25148448, b: 0.25148448, a: 1}
-    m_PressedColor: {r: 0.8037735, g: 0.14407252, b: 0.14407252, a: 1}
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.98490566, g: 0.4811461, b: 0.27317193, a: 1}
+    m_PressedColor: {r: 0.84313726, g: 0.3372549, b: 0.1254902, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -8518,7 +8997,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.4509804, g: 0.4509804, b: 0.4509804, a: 1}
+  m_Color: {r: 0.05882353, g: 0.05882353, b: 0.12941177, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -8543,6 +9022,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1669087620}
   m_CullTransparentMesh: 1
+--- !u!114 &1669087625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1669087620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0.9547169, g: 0.49537194, b: 0.8298065, a: 1}
+  m_EffectDistance: {x: 6.93, y: -6.93}
+  m_UseGraphicAlpha: 1
 --- !u!1 &1717346418
 GameObject:
   m_ObjectHideFlags: 0
@@ -8602,15 +9096,16 @@ MonoBehaviour:
       m_Calls: []
   m_text: Increase Movement Speed
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: b688c304144c0a642aeef7ac8b1a2153, type: 2}
+  m_sharedMaterial: {fileID: -6987533636334994718, guid: b688c304144c0a642aeef7ac8b1a2153,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278913803
-  m_fontColor: {r: 0.04150939, g: 0.04150939, b: 0.04150939, a: 1}
+    rgba: 4293260144
+  m_fontColor: {r: 0.4392157, g: 0.9529412, b: 0.8980392, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -8688,6 +9183,7 @@ GameObject:
   - component: {fileID: 1720399337}
   - component: {fileID: 1720399339}
   - component: {fileID: 1720399338}
+  - component: {fileID: 1720399340}
   m_Layer: 5
   m_Name: FireRate_Pannel
   m_TagString: Untagged
@@ -8728,7 +9224,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.4490565, g: 0.4490565, b: 0.4490565, a: 1}
+  m_Color: {r: 0.05882353, g: 0.05882353, b: 0.12941177, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -8753,6 +9249,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1720399336}
   m_CullTransparentMesh: 1
+--- !u!114 &1720399340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1720399336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0.9547169, g: 0.49537194, b: 0.8298065, a: 1}
+  m_EffectDistance: {x: 6.93, y: -6.93}
+  m_UseGraphicAlpha: 1
 --- !u!1 &1736189650
 GameObject:
   m_ObjectHideFlags: 0
@@ -8765,6 +9276,7 @@ GameObject:
   - component: {fileID: 1736189654}
   - component: {fileID: 1736189653}
   - component: {fileID: 1736189652}
+  - component: {fileID: 1736189655}
   m_Layer: 5
   m_Name: MovementUpgrade_Button
   m_TagString: Untagged
@@ -8813,9 +9325,9 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.96981126, g: 0.96981126, b: 0.96981126, a: 0}
-    m_HighlightedColor: {r: 0.5396226, g: 0.25148448, b: 0.25148448, a: 1}
-    m_PressedColor: {r: 0.8037735, g: 0.14407252, b: 0.14407252, a: 1}
+    m_NormalColor: {r: 0.96981126, g: 0.96981126, b: 0.96981126, a: 1}
+    m_HighlightedColor: {r: 0.9843137, g: 0.48235294, b: 0.27450982, a: 1}
+    m_PressedColor: {r: 0.84313726, g: 0.3372549, b: 0.1254902, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -8873,7 +9385,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.4509804, g: 0.4509804, b: 0.4509804, a: 1}
+  m_Color: {r: 0.05882353, g: 0.05882353, b: 0.12941177, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -8898,6 +9410,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1736189650}
   m_CullTransparentMesh: 1
+--- !u!114 &1736189655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1736189650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0.9547169, g: 0.49537194, b: 0.8298065, a: 1}
+  m_EffectDistance: {x: 6.93, y: -6.93}
+  m_UseGraphicAlpha: 1
 --- !u!1 &1739179461
 GameObject:
   m_ObjectHideFlags: 0
@@ -8910,6 +9437,7 @@ GameObject:
   - component: {fileID: 1739179465}
   - component: {fileID: 1739179464}
   - component: {fileID: 1739179463}
+  - component: {fileID: 1739179466}
   m_Layer: 5
   m_Name: Piercing_Button
   m_TagString: Untagged
@@ -8958,9 +9486,9 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.96981126, g: 0.96981126, b: 0.96981126, a: 0}
-    m_HighlightedColor: {r: 0.5396226, g: 0.25148448, b: 0.25148448, a: 1}
-    m_PressedColor: {r: 0.8037735, g: 0.14407252, b: 0.14407252, a: 1}
+    m_NormalColor: {r: 0.96981126, g: 0.96981126, b: 0.96981126, a: 1}
+    m_HighlightedColor: {r: 0.9843137, g: 0.48235294, b: 0.27450982, a: 1}
+    m_PressedColor: {r: 0.84313726, g: 0.3372549, b: 0.1254902, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -9007,7 +9535,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.4509804, g: 0.4509804, b: 0.4509804, a: 1}
+  m_Color: {r: 0.05882353, g: 0.05882353, b: 0.12941177, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -9032,6 +9560,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1739179461}
   m_CullTransparentMesh: 1
+--- !u!114 &1739179466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1739179461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0.9547169, g: 0.49537194, b: 0.8298065, a: 1}
+  m_EffectDistance: {x: 6.93, y: -6.93}
+  m_UseGraphicAlpha: 1
 --- !u!1 &1741182877
 GameObject:
   m_ObjectHideFlags: 0
@@ -9106,6 +9649,7 @@ GameObject:
   - component: {fileID: 1742235655}
   - component: {fileID: 1742235654}
   - component: {fileID: 1742235653}
+  - component: {fileID: 1742235656}
   m_Layer: 5
   m_Name: Damage_Pannel
   m_TagString: Untagged
@@ -9126,7 +9670,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.4490565, g: 0.4490565, b: 0.4490565, a: 1}
+  m_Color: {r: 0.05882353, g: 0.05882353, b: 0.12941177, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -9171,6 +9715,21 @@ RectTransform:
   m_AnchoredPosition: {x: 155, y: -122.00012}
   m_SizeDelta: {x: 850, y: 101.16504}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1742235656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1742235652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0.9547169, g: 0.49537194, b: 0.8298065, a: 1}
+  m_EffectDistance: {x: 6.93, y: -6.93}
+  m_UseGraphicAlpha: 1
 --- !u!1001 &1763143447
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9434,15 +9993,16 @@ MonoBehaviour:
       m_Calls: []
   m_text: Bomb Drone
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: b688c304144c0a642aeef7ac8b1a2153, type: 2}
+  m_sharedMaterial: {fileID: -6987533636334994718, guid: b688c304144c0a642aeef7ac8b1a2153,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278913803
-  m_fontColor: {r: 0.04150939, g: 0.04150939, b: 0.04150939, a: 1}
+    rgba: 4293260144
+  m_fontColor: {r: 0.4392157, g: 0.9529412, b: 0.8980392, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -9582,6 +10142,7 @@ GameObject:
   - component: {fileID: 1909439051}
   - component: {fileID: 1909439053}
   - component: {fileID: 1909439052}
+  - component: {fileID: 1909439054}
   m_Layer: 5
   m_Name: Piercing_Pannel2
   m_TagString: Untagged
@@ -9622,7 +10183,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.4490565, g: 0.4490565, b: 0.4490565, a: 1}
+  m_Color: {r: 0.05882353, g: 0.05882353, b: 0.12941177, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -9647,6 +10208,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1909439050}
   m_CullTransparentMesh: 1
+--- !u!114 &1909439054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1909439050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0.9547169, g: 0.49537194, b: 0.8298065, a: 1}
+  m_EffectDistance: {x: 6.93, y: -6.93}
+  m_UseGraphicAlpha: 1
 --- !u!1 &1947116606
 GameObject:
   m_ObjectHideFlags: 0
@@ -9734,6 +10310,7 @@ GameObject:
   - component: {fileID: 1950222227}
   - component: {fileID: 1950222229}
   - component: {fileID: 1950222228}
+  - component: {fileID: 1950222230}
   m_Layer: 5
   m_Name: FullShot_Pannel
   m_TagString: Untagged
@@ -9774,7 +10351,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.4490565, g: 0.4490565, b: 0.4490565, a: 1}
+  m_Color: {r: 0.05882353, g: 0.05882353, b: 0.12941177, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -9799,6 +10376,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1950222226}
   m_CullTransparentMesh: 1
+--- !u!114 &1950222230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1950222226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0.9547169, g: 0.49537194, b: 0.8298065, a: 1}
+  m_EffectDistance: {x: 6.93, y: -6.93}
+  m_UseGraphicAlpha: 1
 --- !u!1 &1989028963
 GameObject:
   m_ObjectHideFlags: 0
@@ -9885,6 +10477,7 @@ GameObject:
   - component: {fileID: 1998505039}
   - component: {fileID: 1998505038}
   - component: {fileID: 1998505037}
+  - component: {fileID: 1998505040}
   m_Layer: 5
   m_Name: Damage_Button
   m_TagString: Untagged
@@ -9933,9 +10526,9 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.96981126, g: 0.96981126, b: 0.96981126, a: 0}
-    m_HighlightedColor: {r: 0.5396226, g: 0.25148448, b: 0.25148448, a: 1}
-    m_PressedColor: {r: 0.8037735, g: 0.14407252, b: 0.14407252, a: 1}
+    m_NormalColor: {r: 0.96981126, g: 0.96981126, b: 0.96981126, a: 1}
+    m_HighlightedColor: {r: 0.9843137, g: 0.48235294, b: 0.27450982, a: 1}
+    m_PressedColor: {r: 0.84313726, g: 0.3372549, b: 0.1254902, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -10086,7 +10679,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.4509804, g: 0.4509804, b: 0.4509804, a: 1}
+  m_Color: {r: 0.05882353, g: 0.05882353, b: 0.12941177, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -10111,6 +10704,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1998505035}
   m_CullTransparentMesh: 1
+--- !u!114 &1998505040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1998505035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0.9547169, g: 0.49537194, b: 0.8298065, a: 1}
+  m_EffectDistance: {x: 6.93, y: -6.93}
+  m_UseGraphicAlpha: 1
 --- !u!1 &2006324167
 GameObject:
   m_ObjectHideFlags: 0
@@ -10170,15 +10778,16 @@ MonoBehaviour:
       m_Calls: []
   m_text: Increase Maximum Health
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: b688c304144c0a642aeef7ac8b1a2153, type: 2}
+  m_sharedMaterial: {fileID: -6987533636334994718, guid: b688c304144c0a642aeef7ac8b1a2153,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278913803
-  m_fontColor: {r: 0.04150939, g: 0.04150939, b: 0.04150939, a: 1}
+    rgba: 4293260144
+  m_fontColor: {r: 0.4392157, g: 0.9529412, b: 0.8980392, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -10372,15 +10981,16 @@ MonoBehaviour:
       m_Calls: []
   m_text: Increase Pickup Radius
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: b688c304144c0a642aeef7ac8b1a2153, type: 2}
+  m_sharedMaterial: {fileID: -6987533636334994718, guid: b688c304144c0a642aeef7ac8b1a2153,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278913803
-  m_fontColor: {r: 0.04150939, g: 0.04150939, b: 0.04150939, a: 1}
+    rgba: 4293260144
+  m_fontColor: {r: 0.4392157, g: 0.9529412, b: 0.8980392, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -10436,7 +11046,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &2029992915
@@ -10506,15 +11116,16 @@ MonoBehaviour:
       m_Calls: []
   m_text: All Gear Unlocked
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: b688c304144c0a642aeef7ac8b1a2153, type: 2}
+  m_sharedMaterial: {fileID: -6987533636334994718, guid: b688c304144c0a642aeef7ac8b1a2153,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278913803
-  m_fontColor: {r: 0.04150939, g: 0.04150939, b: 0.04150939, a: 1}
+    rgba: 4293260144
+  m_fontColor: {r: 0.4392157, g: 0.9529412, b: 0.8980392, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -10592,6 +11203,7 @@ GameObject:
   - component: {fileID: 2065191311}
   - component: {fileID: 2065191313}
   - component: {fileID: 2065191312}
+  - component: {fileID: 2065191314}
   m_Layer: 5
   m_Name: MovementUpgrade_Pannel
   m_TagString: Untagged
@@ -10632,7 +11244,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.4490565, g: 0.4490565, b: 0.4490565, a: 1}
+  m_Color: {r: 0.05882353, g: 0.05882353, b: 0.12941177, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -10657,6 +11269,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2065191310}
   m_CullTransparentMesh: 1
+--- !u!114 &2065191314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2065191310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0.9547169, g: 0.49537194, b: 0.8298065, a: 1}
+  m_EffectDistance: {x: 6.93, y: -6.93}
+  m_UseGraphicAlpha: 1
 --- !u!1 &2072381122
 GameObject:
   m_ObjectHideFlags: 0
@@ -11095,15 +11722,16 @@ MonoBehaviour:
       m_Calls: []
   m_text: Increased Shotgun Bullet Penetration
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: b688c304144c0a642aeef7ac8b1a2153, type: 2}
+  m_sharedMaterial: {fileID: -6987533636334994718, guid: b688c304144c0a642aeef7ac8b1a2153,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278913803
-  m_fontColor: {r: 0.04150939, g: 0.04150939, b: 0.04150939, a: 1}
+    rgba: 4293260144
+  m_fontColor: {r: 0.4392157, g: 0.9529412, b: 0.8980392, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -11159,7 +11787,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &2104731058
