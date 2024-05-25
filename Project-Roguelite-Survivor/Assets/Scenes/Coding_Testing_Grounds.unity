@@ -383,7 +383,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -16.299927}
+  m_AnchoredPosition: {x: 0, y: -16.300049}
   m_SizeDelta: {x: -1650, y: -975}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &30368554
@@ -6671,6 +6671,7 @@ GameObject:
   - component: {fileID: 952828208}
   - component: {fileID: 952828210}
   - component: {fileID: 952828209}
+  - component: {fileID: 952828211}
   m_Layer: 5
   m_Name: HealthProgressBar_Panel
   m_TagString: Untagged
@@ -6736,6 +6737,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 952828207}
   m_CullTransparentMesh: 1
+--- !u!114 &952828211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 952828207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41c5b9f0db28d314b8d0bcd543f6cb0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxhp: 100
+  currenthp: 100
+  slider: {fileID: 294462333}
 --- !u!1 &972502009
 GameObject:
   m_ObjectHideFlags: 0
@@ -9242,7 +9258,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -81.30005, y: -15.099976}
+  m_AnchoredPosition: {x: -81.30005, y: -15.100098}
   m_SizeDelta: {x: -1740, y: -965}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1400908228
