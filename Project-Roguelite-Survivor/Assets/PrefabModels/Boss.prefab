@@ -132,6 +132,7 @@ GameObject:
   - component: {fileID: 4145422170801678861}
   - component: {fileID: 8184781514551275947}
   - component: {fileID: -7557187274450128379}
+  - component: {fileID: 953268430503260533}
   m_Layer: 0
   m_Name: Boss
   m_TagString: Boss
@@ -273,6 +274,27 @@ MonoBehaviour:
   fireRate: 6
   fireRateB: 14
   fireRateC: 12
+--- !u!95 &953268430503260533
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3118283262083069432}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6e082c8d4c2fdf3448906be32bf70750, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &4105812560516158856
 GameObject:
   m_ObjectHideFlags: 0
