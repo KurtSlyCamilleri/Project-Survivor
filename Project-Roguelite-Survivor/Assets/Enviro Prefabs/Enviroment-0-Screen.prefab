@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 178335008699927475}
   - component: {fileID: 2710434663192838009}
   - component: {fileID: 8682378244314751129}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Enviroment-0-Screen
   m_TagString: Untagged
   m_Icon: {fileID: 0}

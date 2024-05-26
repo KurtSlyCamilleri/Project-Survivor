@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4526080480665342035}
   - component: {fileID: 1813588897715971225}
   - component: {fileID: 6641518233852941161}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Enviroment-3-Magnet
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4650027013450771515}
   - component: {fileID: 5766735590247923103}
   - component: {fileID: 9039183963952589783}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Enviroment-4-CornerFence
   m_TagString: Untagged
   m_Icon: {fileID: 0}

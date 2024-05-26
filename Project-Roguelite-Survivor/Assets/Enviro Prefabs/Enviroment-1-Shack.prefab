@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2121692104672012113}
   - component: {fileID: 4221338447092716443}
   - component: {fileID: 6554056966982522304}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Enviroment-1-Shack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
