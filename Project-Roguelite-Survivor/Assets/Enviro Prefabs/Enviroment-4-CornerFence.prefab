@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 5819523946091632468}
   - component: {fileID: 7452544408117106929}
   - component: {fileID: 4650027013450771515}
+  - component: {fileID: 5766735590247923103}
+  - component: {fileID: 9039183963952589783}
   m_Layer: 0
   m_Name: Enviroment-4-CornerFence
   m_TagString: Untagged
@@ -83,3 +85,45 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &5766735590247923103
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6595744437360102894}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.9999999, y: 1.4999999, z: 0.111865}
+  m_Center: {x: 0, y: 0, z: 0.94406754}
+--- !u!65 &9039183963952589783
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6595744437360102894}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.10758797, y: 1.4999999, z: 1.9999999}
+  m_Center: {x: 0.94620585, y: 0, z: 0}
