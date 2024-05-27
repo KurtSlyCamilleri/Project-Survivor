@@ -4,6 +4,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
 using Unity.VisualScripting;
+using UnityEngine.UI;
 
 public class PlayerHealthAndCollision : MonoBehaviour
 {
@@ -14,11 +15,12 @@ public class PlayerHealthAndCollision : MonoBehaviour
     public TextMeshProUGUI PlayerHealthUI;
     public TextMeshProUGUI PlayerShieldUI;
     ShieldGen ShieldG;
+    public Slider healthSlider;
 
 
     void Start()
     {
-        PlayerHealth = 100;
+        SetHealth(MaximumPlayerHealth);
     }
 
 
@@ -144,6 +146,7 @@ public class PlayerHealthAndCollision : MonoBehaviour
     {
         PlayerHealth = value;
         PlayerHealthUI.SetText("Health: " + PlayerHealth);
+        healthSlider.value = PlayerHealth / (float)MaximumPlayerHealth;
     }
 
     // Stores a reference to the ShieldGen script 
