@@ -8,6 +8,7 @@ public class Boss : MonoBehaviour
     public GameObject TheBoss;
     public int BossHealth = 2500;
     public GameObject ExpDrop;
+    public Vector3 BossPos;
     public int shotgunBulletDMG = 25;
 
     public GameObject BossShot;
@@ -36,13 +37,15 @@ public class Boss : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector3 BossPos = TheBoss.transform.position;
+        BossPos = TheBoss.transform.position;
+
+        Vector3 gunPos = TheBoss.transform.position;
 
 
         if (Time.time > fireRate + lastShot)
         {
 
-            Instantiate(BossShot, BossPos + new Vector3(0f, +0.05f, 0f), Quaternion.identity);
+            Instantiate(BossShot, gunPos + new Vector3(0f, +0.05f, 0f), Quaternion.identity);
 
             lastShot = Time.time;
         }
@@ -50,7 +53,7 @@ public class Boss : MonoBehaviour
         if (Time.time > fireRateB + lastShotB)
         {
 
-            Instantiate(BossSlam, BossPos - new Vector3(0f, 0f, 0.5f), Quaternion.identity);
+            Instantiate(BossSlam, gunPos - new Vector3(0f, 0f, 0.5f), Quaternion.identity);
 
             lastShotB = Time.time;
         }
@@ -109,8 +112,8 @@ public class Boss : MonoBehaviour
         {
             if (Time.time > fireRateC + lastShotC)
             {
-                Vector3 tankPos = TheBoss.transform.position;
-                Instantiate(BossRage, tankPos, Quaternion.identity);
+                Vector3 gunPos = TheBoss.transform.position;
+                Instantiate(BossRage, gunPos, Quaternion.identity);
 
                 lastShotC = Time.time;
             }
