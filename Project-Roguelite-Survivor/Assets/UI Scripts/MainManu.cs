@@ -5,10 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class MainManu : MonoBehaviour
 {
+    public AudioClip Click;
+    public AudioClip Hover;
 
 
-// This loads a new scene
-public void LoadScene(string sceneName) //so we can use it for multiple scenes
+
+    // This loads a new scene
+    public void LoadScene(string sceneName) //so we can use it for multiple scenes
 {
     SceneManager.LoadScene(sceneName);
 }
@@ -18,7 +21,18 @@ public void LoadScene(string sceneName) //so we can use it for multiple scenes
         SceneManager.LoadScene("Rifle_Grounds");
     }
 
+    
 
+    public void ButtonClick()
+    {
+        GetComponent<AudioSource>().clip = Click;
+        GetComponent<AudioSource>().Play();
+    }
+    public void ButtonHover()
+    {
+        GetComponent<AudioSource>().clip = Hover;
+        GetComponent<AudioSource>().Play();
+    }
 
     public void Quit()
 {
@@ -33,11 +47,7 @@ public void ClosePanel(GameObject selected)
 
 public void SwapPannel(GameObject selected)
 {
-    GameObject[] canvasList = GameObject.FindGameObjectsWithTag("UiCanvas");
-    foreach(GameObject canvas in canvasList)
-    {
-        canvas.SetActive(false);
-    }
+
 
     selected.SetActive(true);
 }

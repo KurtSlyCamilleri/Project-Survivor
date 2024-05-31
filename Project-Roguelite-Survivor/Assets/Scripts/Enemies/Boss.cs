@@ -29,6 +29,11 @@ public class Boss : MonoBehaviour
     private bool Stage3 = true; 
     private bool Stage4 = true;
 
+    public AudioClip Death;
+    public AudioClip Rage;
+    public AudioClip Shot;
+    public AudioClip Wave;
+
 
     // Start is called before the first frame update
     void Start()
@@ -48,13 +53,16 @@ public class Boss : MonoBehaviour
         if (BossHealth <= 0)
         {
             cutSceneEnd.gameObject.SetActive(true);
+            GetComponent<AudioSource>().clip = Death;
+            GetComponent<AudioSource>().Play();
         }
 
         if (Time.time > fireRate + lastShot)
         {
 
             Instantiate(BossShot, gunPos + new Vector3(0f, +0.05f, 0f), Quaternion.identity);
-
+            GetComponent<AudioSource>().clip = Shot;
+            GetComponent<AudioSource>().Play();
             lastShot = Time.time;
         }
 
@@ -62,7 +70,8 @@ public class Boss : MonoBehaviour
         {
 
             Instantiate(BossSlam, gunPos - new Vector3(0f, 0f, 0.5f), Quaternion.identity);
-
+            GetComponent<AudioSource>().clip = Wave;
+            GetComponent<AudioSource>().Play();
             lastShotB = Time.time;
         }
 
@@ -132,7 +141,8 @@ public class Boss : MonoBehaviour
             {
                 Vector3 gunPos = TheBoss.transform.position;
                 Instantiate(BossRage, gunPos, Quaternion.identity);
-
+                GetComponent<AudioSource>().clip = Rage;
+                GetComponent<AudioSource>().Play();
                 lastShotC = Time.time;
             }
             yield return null;
