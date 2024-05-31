@@ -18,6 +18,11 @@ public void Quit()
     Debug.Log("Application has quit");
 }
 
+public void ClosePanel(GameObject selected)
+{
+        selected.SetActive(false);
+}
+
 public void SwapPannel(GameObject selected)
 {
     GameObject[] canvasList = GameObject.FindGameObjectsWithTag("UiCanvas");
