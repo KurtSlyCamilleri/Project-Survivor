@@ -33,6 +33,10 @@ public class RandomSpawnSys : MonoBehaviour
     public GameObject BossDoor;
     public GameObject Convo;
     public bool BossSpawned = false;
+    public AudioClip Floor2;
+    public AudioClip BossFight;
+    public AudioSource aSource;
+
 
 
     void Update()
@@ -481,10 +485,14 @@ public class RandomSpawnSys : MonoBehaviour
         if (targetObj.gameObject.tag == "Player" && PlayerPower >= 10 && PlayerPower < 14)
         {
             LabEntered = true;
+            aSource.clip = Floor2;
+            aSource.Play();
         }
         if (targetObj.gameObject.tag == "Player" && PlayerPower >= 15)
         {
             BossRoom = true;
+            aSource.clip = BossFight;
+            aSource.Play();
         }
     }
 
