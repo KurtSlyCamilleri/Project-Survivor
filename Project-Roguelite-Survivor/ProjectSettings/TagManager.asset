@@ -40,6 +40,8 @@ TagManager:
   - BossFire
   - BossRage
   - UiCanvas
+  - Teleporter
+  - LabCheck
   layers:
   - Default
   - TransparentFX

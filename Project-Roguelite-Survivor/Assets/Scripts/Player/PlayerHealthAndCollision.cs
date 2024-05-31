@@ -72,8 +72,14 @@ public class PlayerHealthAndCollision : MonoBehaviour
 
         void OnCollisionEnter(Collision targetObj)
     {
-        // Might as well 
-        Debug.Log("Hit by " + targetObj.gameObject.tag);
+        if (targetObj.gameObject.tag == "Teleporter")
+        {
+            transform.position = new Vector3(-17.18f, 0.2f, -40.347f);
+        }
+
+
+            // Might as well 
+            Debug.Log("Hit by " + targetObj.gameObject.tag);
         
         // Each character has a specific amount of damage to make.
         // Consider moving these to a dedicated script instead.
