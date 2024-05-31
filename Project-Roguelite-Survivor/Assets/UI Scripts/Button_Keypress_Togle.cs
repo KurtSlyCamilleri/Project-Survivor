@@ -32,8 +32,36 @@ public class Button_Keypress_Togle : MonoBehaviour
         }
 
     }
+
+    public void Unpause()
+    {
+        Time.timeScale = 1;
+    }
+    public void Pause()
+    {
+        Time.timeScale = 0;
+    }
+    public void DelayedPause()
+    {
+        Debug.Log("PauseClicked");
+        StartCoroutine(DelayedPausing());
+    }
+
     public void Quit()
     {
-        SceneManager.LoadScene("Coding_Testing_Grounds");
+        Application.Quit();
+        Debug.Log("Application has quit");
+    }
+
+    public void LoadScene(string sceneName) //so we can use it for multiple scenes
+    {
+        SceneManager.LoadScene(sceneName);
+    }
+
+    IEnumerator DelayedPausing()
+    {
+        yield return new WaitForSeconds(2);
+        Debug.Log("Paused");
+        Time.timeScale = 0;
     }
 }

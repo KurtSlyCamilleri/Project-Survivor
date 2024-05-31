@@ -31,6 +31,7 @@ public class RandomSpawnSys : MonoBehaviour
     public bool BossRoom = false;
     public GameObject Teleporter;
     public GameObject BossDoor;
+    public GameObject Convo;
 
 
     void Update()
@@ -248,6 +249,7 @@ public class RandomSpawnSys : MonoBehaviour
                 spawnRate2 = 25;
                 spawnRate3 = 40;
                 Teleporter.gameObject.SetActive(true);
+                Convo.gameObject.SetActive(true);
             }
         }
         else if (Difficulty == 3)

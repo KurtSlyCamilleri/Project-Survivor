@@ -12,6 +12,8 @@ public void LoadScene(string sceneName) //so we can use it for multiple scenes
     SceneManager.LoadScene(sceneName);
 }
 
+
+
 public void Quit()
 {
     Application.Quit();
