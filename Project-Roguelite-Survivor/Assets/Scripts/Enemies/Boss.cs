@@ -21,6 +21,7 @@ public class Boss : MonoBehaviour
     private float lastShotB = 0.0f;
     public float fireRateC = 4f;
     private float lastShotC = 0.0f;
+    public GameObject cutSceneEnd;
 
     private bool Stage1 = true;
     private bool Stage2 = true;
@@ -32,6 +33,7 @@ public class Boss : MonoBehaviour
     void Start()
     {
         StartCoroutine(Abilities());
+        cutSceneEnd = GameObject.FindWithTag("EndScene");
     }
 
     // Update is called once per frame
@@ -41,6 +43,11 @@ public class Boss : MonoBehaviour
 
         Vector3 gunPos = TheBoss.transform.position;
 
+        
+        if (BossHealth <= 0)
+        {
+            cutSceneEnd.gameObject.SetActive(true);
+        }
 
         if (Time.time > fireRate + lastShot)
         {

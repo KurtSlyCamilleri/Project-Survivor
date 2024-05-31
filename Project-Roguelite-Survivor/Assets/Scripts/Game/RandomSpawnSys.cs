@@ -28,15 +28,31 @@ public class RandomSpawnSys : MonoBehaviour
     public int spawnRate2 = 25;
     public int spawnRate3 = 40;
     public bool LabEntered = false;
-    public bool BossRoom = false;
+    public bool BossRoom = false; 
     public GameObject Teleporter;
     public GameObject BossDoor;
     public GameObject Convo;
+    public bool BossSpawned = false;
 
 
     void Update()
     {
         PlayerPower = PlayerLevelSys.PlayerLevel;
+
+        if(BossSpawned == false)
+        {
+            if (BossRoom == true)
+            {
+                Debug.Log("BossRoomEntered");
+                BossDoor.gameObject.SetActive(true);
+                Debug.Log("BossDoorSpawned");
+                Instantiate(TheBoss, new Vector3(18.142f, 0.52f, -40.125f), Quaternion.identity);
+                Debug.Log("BossSpawned");
+                BossRoom = false;
+                BossSpawned = true;
+            }
+        }
+        
 
         if (Difficulty == 1)
         {
@@ -256,60 +272,66 @@ public class RandomSpawnSys : MonoBehaviour
         {
             if (LabEntered == true)
             {
-                StartCoroutine(SpawnRoutine(enemyOneC, new List<Vector3>()
-                    {
-                        new Vector3(0, 0, -4),
-                        new Vector3(-4, 0, 0),
-                        new Vector3(-4, 0, -4),
-                        new Vector3(0, 0, 4),
-                        new Vector3(4, 0, 0),
-                        new Vector3(4, 0, 4),
-                        new Vector3(4, 0, -4),
-                        new Vector3(-4, 0, 4),
-                        new Vector3(6, 0, 0),
-                        new Vector3(-6, 0, -4)
-                    }, spawnRate1));
-                StartCoroutine(SpawnRoutine2(enemyOneC, new List<Vector3>()
-                    {
-                        new Vector3(0, 0, -4),
-                        new Vector3(-4, 0, 0),
-                        new Vector3(-4, 0, -4),
-                        new Vector3(0, 0, 4),
-                        new Vector3(4, 0, 0),
-                        new Vector3(4, 0, 4),
-                        new Vector3(4, 0, -4),
-                        new Vector3(-4, 0, 4),
-                        new Vector3(6, 0, 0),
-                        new Vector3(-6, 0, -4)
-                    }, spawnRate1));
+                
+                    Debug.Log("New Difficulty" + Difficulty);
+                    Debug.Log("LabEntered");
+                    StartCoroutine(SpawnRoutine(enemyOneC, new List<Vector3>()
+                        {
+                            new Vector3(0, 0, -4),
+                            new Vector3(-4, 0, 0),
+                            new Vector3(-4, 0, -4),
+                            new Vector3(0, 0, 4),
+                            new Vector3(4, 0, 0),
+                            new Vector3(4, 0, 4),
+                            new Vector3(4, 0, -4),
+                            new Vector3(-4, 0, 4),
+                            new Vector3(6, 0, 0),
+                            new Vector3(-6, 0, -4)
+                        }, spawnRate1));
+                    StartCoroutine(SpawnRoutine2(enemyOneC, new List<Vector3>()
+                        {
+                            new Vector3(0, 0, -4),
+                            new Vector3(-4, 0, 0),
+                            new Vector3(-4, 0, -4),
+                            new Vector3(0, 0, 4),
+                            new Vector3(4, 0, 0),
+                            new Vector3(4, 0, 4),
+                            new Vector3(4, 0, -4),
+                            new Vector3(-4, 0, 4),
+                            new Vector3(6, 0, 0),
+                            new Vector3(-6, 0, -4)
+                        }, spawnRate1));
 
-                StartCoroutine(SpawnRoutine(enemyTwoC, new List<Vector3>()
-                    {
-                        new Vector3(0, 0, -5),
-                        new Vector3(-5, 0, 0),
-                        new Vector3(-3, 0, -5),
-                        new Vector3(0, 0, 5),
-                        new Vector3(5, 0, 0),
-                        new Vector3(5, 0, 3),
-                        new Vector3(5, 0, -3),
-                        new Vector3(-5, 0, 3),
-                        new Vector3(-5, 0, -3),
-                        new Vector3(3, 0, 5)
-                    }, spawnRate2));
+                    StartCoroutine(SpawnRoutine(enemyTwoC, new List<Vector3>()
+                        {
+                            new Vector3(0, 0, -5),
+                            new Vector3(-5, 0, 0),
+                            new Vector3(-3, 0, -5),
+                            new Vector3(0, 0, 5),
+                            new Vector3(5, 0, 0),
+                            new Vector3(5, 0, 3),
+                            new Vector3(5, 0, -3),
+                            new Vector3(-5, 0, 3),
+                            new Vector3(-5, 0, -3),
+                            new Vector3(3, 0, 5)
+                        }, spawnRate2));
 
-                StartCoroutine(SpawnRoutine(enemyThreeC, new List<Vector3>()
-                    {
-                        new Vector3(0, 0, -4),
-                        new Vector3(-4, 0, 0),
-                        new Vector3(-4, 0, -4),
-                        new Vector3(0, 0, 4),
-                        new Vector3(4, 0, 0),
-                        new Vector3(4, 0, 4),
-                        new Vector3(4, 0, -4),
-                        new Vector3(-4, 0, 4),
-                        new Vector3(6, 0, 0),
-                        new Vector3(-6, 0, -4)
-                    }, spawnRate3));
+                    StartCoroutine(SpawnRoutine(enemyThreeC, new List<Vector3>()
+                        {
+                            new Vector3(0, 0, -4),
+                            new Vector3(-4, 0, 0),
+                            new Vector3(-4, 0, -4),
+                            new Vector3(0, 0, 4),
+                            new Vector3(4, 0, 0),
+                            new Vector3(4, 0, 4),
+                            new Vector3(4, 0, -4),
+                            new Vector3(-4, 0, 4),
+                            new Vector3(6, 0, 0),
+                            new Vector3(-6, 0, -4)
+                        }, spawnRate3));
+                    
+                    LabEntered = false;
+                    Debug.Log("LabStopped");
             }
 
             if (PlayerPower == Stage && spawnRate1 > 1)
@@ -321,7 +343,7 @@ public class RandomSpawnSys : MonoBehaviour
                 Debug.Log("New Stage" + Stage);
             }
 
-            if (PlayerPower <= 15)
+            if (PlayerPower >= 15)
             {
                 StopCoroutine(SpawnRoutine(enemyOneC, new List<Vector3>()
                 {
@@ -377,11 +399,8 @@ public class RandomSpawnSys : MonoBehaviour
                     new Vector3(6, 0, 0),
                     new Vector3(-6, 0, -4)
                 }, spawnRate3));
-                if(BossRoom == true)
-                {
-                    BossDoor.gameObject.SetActive(true);
-                    Instantiate(TheBoss, new Vector3(18.142f, 0.52f, -40.125f), Quaternion.identity);
-                }
+
+
                 
             }
         }
@@ -459,11 +478,11 @@ public class RandomSpawnSys : MonoBehaviour
 
     void OnCollisionEnter(Collision targetObj)
     {
-        if (targetObj.gameObject.tag == "Player")
+        if (targetObj.gameObject.tag == "Player" && PlayerPower >= 10 && PlayerPower < 14)
         {
             LabEntered = true;
         }
-        else if (targetObj.gameObject.tag == "Player" && PlayerPower >= 15)
+        if (targetObj.gameObject.tag == "Player" && PlayerPower >= 15)
         {
             BossRoom = true;
         }

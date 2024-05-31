@@ -42,6 +42,7 @@ TagManager:
   - UiCanvas
   - Teleporter
   - LabCheck
+  - EndScene
   layers:
   - Default
   - TransparentFX

@@ -9,7 +9,6 @@ public class Feedback : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("FeedbackSpawned");
         Player = GameObject.FindWithTag("Player");
         transform.rotation = Player.transform.rotation;
         StartCoroutine(Fade());
