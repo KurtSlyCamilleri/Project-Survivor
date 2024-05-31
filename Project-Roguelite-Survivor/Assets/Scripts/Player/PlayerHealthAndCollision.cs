@@ -18,6 +18,7 @@ public class PlayerHealthAndCollision : MonoBehaviour
     ShieldGen ShieldG;
     public Slider healthSlider;
     public Slider shieldSlider;
+    public AudioClip Death;
 
 
     void Start()
@@ -30,12 +31,15 @@ public class PlayerHealthAndCollision : MonoBehaviour
     void Update()
     {
 
-        SetUpShield();
+        
         if (PlayerHealth <= 0)
         {
-            SceneManager.LoadScene("Coding_Testing_Grounds");
+            GetComponent<AudioSource>().clip = Death;
+            GetComponent<AudioSource>().Play();
+            Scene scene = SceneManager.GetActiveScene(); SceneManager.LoadScene(scene.name);
         }
 
+        SetUpShield();
         if (ShieldG != null)
         {
             PlayerShieldUI.SetText("Shield: " + ShieldG.ShieldLevel);

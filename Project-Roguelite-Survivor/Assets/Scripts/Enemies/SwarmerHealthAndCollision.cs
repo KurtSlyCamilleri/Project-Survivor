@@ -11,6 +11,8 @@ public class SwarmerHealthAndCollision : MonoBehaviour
     public int shotgunBulletDMG = 25;
     public int rifleBulletDMG = 10;
 
+    public AudioClip Death;
+
     void OnTriggerEnter(Collider targetObj)
     {
         if (targetObj.gameObject.tag == "ShotgunBullet")
@@ -19,6 +21,8 @@ public class SwarmerHealthAndCollision : MonoBehaviour
             if (SwarmerHealth <= 0)
             {
                 Instantiate(ExpDrop, SwarmerPos, Quaternion.identity);
+                GetComponent<AudioSource>().clip = Death;
+                GetComponent<AudioSource>().Play();
                 Swarmer.GetComponent<BoxCollider>().enabled = false;
                 Destroy(gameObject);
             }
@@ -30,6 +34,8 @@ public class SwarmerHealthAndCollision : MonoBehaviour
             if (SwarmerHealth <= 0)
             {
                 Instantiate(ExpDrop, SwarmerPos, Quaternion.identity);
+                GetComponent<AudioSource>().clip = Death;
+                GetComponent<AudioSource>().Play();
                 Swarmer.GetComponent<BoxCollider>().enabled = false;
                 Destroy(gameObject);
             }
@@ -41,6 +47,8 @@ public class SwarmerHealthAndCollision : MonoBehaviour
             if (SwarmerHealth <= 0)
             {
                 Instantiate(ExpDrop, SwarmerPos, Quaternion.identity);
+                GetComponent<AudioSource>().clip = Death;
+                GetComponent<AudioSource>().Play();
                 Swarmer.GetComponent<BoxCollider>().enabled = false;
                 Destroy(gameObject);
             }
@@ -52,6 +60,8 @@ public class SwarmerHealthAndCollision : MonoBehaviour
             if (SwarmerHealth <= 0)
             {
                 Instantiate(ExpDrop, SwarmerPos, Quaternion.identity);
+                GetComponent<AudioSource>().clip = Death;
+                GetComponent<AudioSource>().Play();
                 Swarmer.GetComponent<BoxCollider>().enabled = false;
                 Destroy(gameObject);
             }
@@ -63,6 +73,8 @@ public class SwarmerHealthAndCollision : MonoBehaviour
             if (SwarmerHealth <= 0)
             {
                 Instantiate(ExpDrop, SwarmerPos, Quaternion.identity);
+                GetComponent<AudioSource>().clip = Death;
+                GetComponent<AudioSource>().Play();
                 Swarmer.GetComponent<BoxCollider>().enabled = false;
                 Destroy(gameObject);
             }

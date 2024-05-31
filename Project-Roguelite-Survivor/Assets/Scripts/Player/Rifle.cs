@@ -7,6 +7,7 @@ public class Rifle : MonoBehaviour
     public GameObject Bullet;
     public float fireRate = 0.5f;
     private float lastShot = 0.0f;
+    public AudioClip Shoot;
 
 
     public GameObject Player;
@@ -26,7 +27,8 @@ public class Rifle : MonoBehaviour
         {
 
             Instantiate(Bullet, gunPos, Quaternion.identity);
-
+            GetComponent<AudioSource>().clip = Shoot;
+            GetComponent<AudioSource>().Play();
             lastShot = Time.time;
         }
     }

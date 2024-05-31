@@ -12,6 +12,8 @@ public class ChargerHealthAndCollision : MonoBehaviour
     public int shotgunBulletDMG = 25;
     public int rifleBulletDMG = 10;
 
+    public AudioClip Death;
+
     void OnTriggerEnter(Collider targetObj)
     {
         if (targetObj.gameObject.tag == "ShotgunBullet")
@@ -21,6 +23,8 @@ public class ChargerHealthAndCollision : MonoBehaviour
             {
                 Instantiate(ExpDrop, ChargerPos, Quaternion.identity);
                 Instantiate(ExpDrop, ChargerPos, Quaternion.identity);
+                GetComponent<AudioSource>().clip = Death;
+                GetComponent<AudioSource>().Play();
                 Charger.GetComponent<BoxCollider>().enabled = false;
                 Destroy(gameObject);
             }
@@ -33,6 +37,8 @@ public class ChargerHealthAndCollision : MonoBehaviour
             {
                 Instantiate(ExpDrop, ChargerPos, Quaternion.identity);
                 Instantiate(ExpDrop, ChargerPos, Quaternion.identity);
+                GetComponent<AudioSource>().clip = Death;
+                GetComponent<AudioSource>().Play();
                 Charger.GetComponent<BoxCollider>().enabled = false;
                 Destroy(gameObject);
             }
@@ -45,6 +51,8 @@ public class ChargerHealthAndCollision : MonoBehaviour
             {
                 Instantiate(ExpDrop, ChargerPos, Quaternion.identity);
                 Instantiate(ExpDrop, ChargerPos, Quaternion.identity);
+                GetComponent<AudioSource>().clip = Death;
+                GetComponent<AudioSource>().Play();
                 Charger.GetComponent<BoxCollider>().enabled = false;
                 Destroy(gameObject);
             }
@@ -57,6 +65,8 @@ public class ChargerHealthAndCollision : MonoBehaviour
             {
                 Instantiate(ExpDrop, ChargerPos, Quaternion.identity);
                 Instantiate(ExpDrop, ChargerPos, Quaternion.identity);
+                GetComponent<AudioSource>().clip = Death;
+                GetComponent<AudioSource>().Play();
                 Charger.GetComponent<BoxCollider>().enabled = false;
                 Destroy(gameObject);
             }
@@ -69,6 +79,8 @@ public class ChargerHealthAndCollision : MonoBehaviour
             {
                 Instantiate(ExpDrop, ChargerPos, Quaternion.identity);
                 Instantiate(ExpDrop, ChargerPos, Quaternion.identity);
+                GetComponent<AudioSource>().clip = Death;
+                GetComponent<AudioSource>().Play();
                 Charger.GetComponent<BoxCollider>().enabled = false;
                 Destroy(gameObject);
             }

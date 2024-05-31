@@ -9,6 +9,8 @@ using UnityEngine.EventSystems;
 
 public class PlayerLevellingSystem : MonoBehaviour
 {
+    public AudioClip Up;
+    public AudioClip LevelUp;
     public int PlayerLevel = 0;
     public int PlayerExp = 0;
     public int LevelUpReq = 100;
@@ -142,6 +144,8 @@ public class PlayerLevellingSystem : MonoBehaviour
         if (PlayerExp >= LevelUpReq)
         {
             PlayerLevel++;
+            GetComponent<AudioSource>().clip = LevelUp;
+            GetComponent<AudioSource>().Play();
             LevelUpReq += 50;
             PlayerExp = 0;
             Upgrade_Basic_Pannel.gameObject.SetActive(true);
@@ -339,6 +343,8 @@ public class PlayerLevellingSystem : MonoBehaviour
         if (targetObj.gameObject.tag == "Experience")
         {
             PlayerExp += 15;
+            GetComponent<AudioSource>().clip = Up;
+            GetComponent<AudioSource>().Play();
             Destroy(targetObj.gameObject);
         }
     }

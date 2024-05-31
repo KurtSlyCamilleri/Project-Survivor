@@ -35,6 +35,7 @@ public class Boss : MonoBehaviour
     public AudioClip Wave;
 
 
+
     // Start is called before the first frame update
     void Start()
     {

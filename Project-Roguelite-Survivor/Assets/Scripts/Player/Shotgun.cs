@@ -7,6 +7,7 @@ public class Shotgun : MonoBehaviour
     public GameObject Bullet;
     public float fireRate = 2f;
     private float lastShot = 0.0f;
+    public AudioClip Shoot;
 
     public GameObject Player;
     // Start is called before the first frame update
@@ -25,8 +26,9 @@ public class Shotgun : MonoBehaviour
             {
                 
                 Instantiate(Bullet, gunPos, Quaternion.identity);
-                
-                lastShot = Time.time;
+            GetComponent<AudioSource>().clip = Shoot;
+            GetComponent<AudioSource>().Play();
+            lastShot = Time.time;
             }
         
     }

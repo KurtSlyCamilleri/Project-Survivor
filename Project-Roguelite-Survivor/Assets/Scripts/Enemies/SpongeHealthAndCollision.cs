@@ -14,6 +14,8 @@ public class SpongeHealthAndCollision : MonoBehaviour
     public float fireRate = 10f;
     private float lastShot = 0.0f;
     public int rifleBulletDMG = 10;
+ 
+    public AudioClip Death;
 
     void OnTriggerEnter(Collider targetObj)
     {
@@ -26,6 +28,8 @@ public class SpongeHealthAndCollision : MonoBehaviour
                 Instantiate(ExpDrop, SpongePos, Quaternion.identity);
                 Instantiate(ExpDrop, SpongePos, Quaternion.identity);
                 Instantiate(ExpDrop, SpongePos, Quaternion.identity);
+                GetComponent<AudioSource>().clip = Death;
+                GetComponent<AudioSource>().Play();
                 Sponge.GetComponent<BoxCollider>().enabled = false;
                 Destroy(gameObject);
             }
@@ -40,6 +44,8 @@ public class SpongeHealthAndCollision : MonoBehaviour
                 Instantiate(ExpDrop, SpongePos, Quaternion.identity);
                 Instantiate(ExpDrop, SpongePos, Quaternion.identity);
                 Instantiate(ExpDrop, SpongePos, Quaternion.identity);
+                GetComponent<AudioSource>().clip = Death;
+                GetComponent<AudioSource>().Play();
                 Sponge.GetComponent<BoxCollider>().enabled = false;
                 Destroy(gameObject);
             }
@@ -54,6 +60,8 @@ public class SpongeHealthAndCollision : MonoBehaviour
                 Instantiate(ExpDrop, SpongePos, Quaternion.identity);
                 Instantiate(ExpDrop, SpongePos, Quaternion.identity);
                 Instantiate(ExpDrop, SpongePos, Quaternion.identity);
+                GetComponent<AudioSource>().clip = Death;
+                GetComponent<AudioSource>().Play();
                 Sponge.GetComponent<BoxCollider>().enabled = false;
                 Destroy(gameObject);
             }
@@ -68,6 +76,8 @@ public class SpongeHealthAndCollision : MonoBehaviour
                 Instantiate(ExpDrop, SpongePos, Quaternion.identity);
                 Instantiate(ExpDrop, SpongePos, Quaternion.identity);
                 Instantiate(ExpDrop, SpongePos, Quaternion.identity);
+                GetComponent<AudioSource>().clip = Death;
+                GetComponent<AudioSource>().Play();
                 Sponge.GetComponent<BoxCollider>().enabled = false;
                 Destroy(gameObject);
             }
@@ -82,6 +92,8 @@ public class SpongeHealthAndCollision : MonoBehaviour
                 Instantiate(ExpDrop, SpongePos, Quaternion.identity);
                 Instantiate(ExpDrop, SpongePos, Quaternion.identity);
                 Instantiate(ExpDrop, SpongePos, Quaternion.identity);
+                GetComponent<AudioSource>().clip = Death;
+                GetComponent<AudioSource>().Play();
                 Sponge.GetComponent<BoxCollider>().enabled = false;
                 Destroy(gameObject);
             }
