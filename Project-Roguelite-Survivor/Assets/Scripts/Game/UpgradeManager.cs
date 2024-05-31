@@ -30,7 +30,8 @@ public class UpgradeManager : MonoBehaviour
     public GameObject Piercing_Panel;
     public GameObject Damage_Panel;
 
-    public GameObject shotgunBullet;
+    public GameObject shotgunBullet; 
+    public GameObject rifleBullet;
 
     public GameObject HealthUpgrade_Panel2;
     public GameObject MovementUpgrade_Panel2;
@@ -46,11 +47,13 @@ public class UpgradeManager : MonoBehaviour
     Shotgun ShotgunScript;
     Rifle RifleScript;
     ShotgunBullet ShotgunBulletScript;
+    RifleBullet RifleBulletScript;
     public float shotgunSpreadInc = 0.05f;
 
     ChargerHealthAndCollision ChargerScript;
     SwarmerHealthAndCollision SwarmerScript;
     SpongeHealthAndCollision SpongeScript;
+    Boss BossScript;
 
 
 
@@ -251,6 +254,22 @@ public class UpgradeManager : MonoBehaviour
         Piercing_Panel.gameObject.SetActive(false);
     }
 
+    public void BossDamage(Boss bossScript)
+    {
+        BossScript = bossScript;
+
+
+        BossScript.shotgunBulletDMG += 5;
+
+        GameObject[] canvasList = GameObject.FindGameObjectsWithTag("UpgradeUI");
+        foreach (GameObject canvas in canvasList)
+        {
+            canvas.SetActive(false);
+        }
+        Time.timeScale = 1;
+        Damage_Panel.gameObject.SetActive(false);
+    }
+
     public void ChargerDamage(ChargerHealthAndCollision chargerScript)
     {
         ChargerScript = chargerScript;
@@ -287,6 +306,22 @@ public class UpgradeManager : MonoBehaviour
     }
 
     //Rifle Upgrades
+
+    public void RifleBossDamage(Boss bossScript)
+    {
+        BossScript = bossScript;
+
+
+        BossScript.rifleBulletDMG += 5;
+
+        GameObject[] canvasList = GameObject.FindGameObjectsWithTag("UpgradeUI");
+        foreach (GameObject canvas in canvasList)
+        {
+            canvas.SetActive(false);
+        }
+        Time.timeScale = 1;
+        Damage_Panel.gameObject.SetActive(false);
+    }
     public void RifleFireRate(Rifle firerate)
     {
         RifleScript = firerate;
@@ -324,10 +359,10 @@ public class UpgradeManager : MonoBehaviour
         SpraySpread_Panel.gameObject.SetActive(false);
     }
 
-    public void RiflePiercing(ShotgunBullet pierce)
+    public void RiflePiercing(RifleBullet pierce)
     {
-        ShotgunBulletScript = pierce;
-        ShotgunBulletScript.shotgunBulletPen += 2;
+        RifleBulletScript = pierce;
+        RifleBulletScript.shotgunBulletPen += 2;
 
         GameObject[] canvasList = GameObject.FindGameObjectsWithTag("UpgradeUI");
         foreach (GameObject canvas in canvasList)
@@ -343,7 +378,7 @@ public class UpgradeManager : MonoBehaviour
         ChargerScript = chargerScript;
 
 
-        ChargerScript.shotgunBulletDMG += 10;
+        ChargerScript.rifleBulletDMG += 10;
 
         GameObject[] canvasList = GameObject.FindGameObjectsWithTag("UpgradeUI");
         foreach (GameObject canvas in canvasList)
@@ -360,7 +395,7 @@ public class UpgradeManager : MonoBehaviour
 
 
 
-        SwarmerScript.shotgunBulletDMG += 10;
+        SwarmerScript.rifleBulletDMG += 10;
 
     }
     public void RifleSpongeDamage(SpongeHealthAndCollision spongeScript)
@@ -369,11 +404,26 @@ public class UpgradeManager : MonoBehaviour
         SpongeScript = spongeScript;
 
 
-        SpongeScript.shotgunBulletDMG += 10;
+        SpongeScript.rifleBulletDMG += 10;
 
     }
 
     //Rifle Upgrades 2
+    public void RifleBossDamage2(Boss bossScript)
+    {
+        BossScript = bossScript;
+
+
+        BossScript.rifleBulletDMG += 5;
+
+        GameObject[] canvasList = GameObject.FindGameObjectsWithTag("UpgradeUI");
+        foreach (GameObject canvas in canvasList)
+        {
+            canvas.SetActive(false);
+        }
+        Time.timeScale = 1;
+        Damage_Panel.gameObject.SetActive(false);
+    }
     public void RifleFireRate2(Rifle firerate)
     {
         RifleScript = firerate;
@@ -401,7 +451,7 @@ public class UpgradeManager : MonoBehaviour
 
     public void RifleSpraySpread2()
     {
-        shotgunBullet.transform.localScale += new Vector3(0.02f, 0.02f, 0.02f);
+        rifleBullet.transform.localScale += new Vector3(0.02f, 0.02f, 0.02f);
         GameObject[] canvasList = GameObject.FindGameObjectsWithTag("UpgradeUI");
         foreach (GameObject canvas in canvasList)
         {
@@ -411,10 +461,10 @@ public class UpgradeManager : MonoBehaviour
         SpraySpread_Panel.gameObject.SetActive(false);
     }
 
-    public void RiflePiercing2(ShotgunBullet pierce)
+    public void RiflePiercing2(RifleBullet pierce)
     {
-        ShotgunBulletScript = pierce;
-        ShotgunBulletScript.shotgunBulletPen += 2;
+        RifleBulletScript = pierce;
+        RifleBulletScript.shotgunBulletPen += 2;
 
         GameObject[] canvasList = GameObject.FindGameObjectsWithTag("UpgradeUI");
         foreach (GameObject canvas in canvasList)
@@ -430,7 +480,7 @@ public class UpgradeManager : MonoBehaviour
         ChargerScript = chargerScript;
 
 
-        ChargerScript.shotgunBulletDMG += 10;
+        ChargerScript.rifleBulletDMG += 10;
 
         GameObject[] canvasList = GameObject.FindGameObjectsWithTag("UpgradeUI");
         foreach (GameObject canvas in canvasList)
@@ -447,7 +497,7 @@ public class UpgradeManager : MonoBehaviour
 
 
 
-        SwarmerScript.shotgunBulletDMG += 10;
+        SwarmerScript.rifleBulletDMG += 10;
 
     }
     public void RifleSpongeDamage2(SpongeHealthAndCollision spongeScript)
@@ -456,7 +506,7 @@ public class UpgradeManager : MonoBehaviour
         SpongeScript = spongeScript;
 
 
-        SpongeScript.shotgunBulletDMG += 10;
+        SpongeScript.rifleBulletDMG += 10;
 
     }
 
@@ -505,6 +555,21 @@ public class UpgradeManager : MonoBehaviour
     }
 
     //Shotgun Upgrades2
+    public void BossDamage2(Boss bossScript)
+    {
+        BossScript = bossScript;
+
+
+        BossScript.shotgunBulletDMG += 5;
+
+        GameObject[] canvasList = GameObject.FindGameObjectsWithTag("UpgradeUI");
+        foreach (GameObject canvas in canvasList)
+        {
+            canvas.SetActive(false);
+        }
+        Time.timeScale = 1;
+        Damage_Panel.gameObject.SetActive(false);
+    }
     public void FireRate2(Shotgun firerate)
     {
         ShotgunScript = firerate;
