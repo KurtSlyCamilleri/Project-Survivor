@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
+using Unity.VisualScripting;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
@@ -10,6 +12,7 @@ public class PlayerLevellingSystem : MonoBehaviour
     public int PlayerLevel = 0;
     public int PlayerExp = 0;
     public int LevelUpReq = 100;
+    public Slider expSlider;
     public GameObject TheBoss;
     public TextMeshProUGUI PlayerLevelUI;
     public TextMeshProUGUI PlayerExpUI;
@@ -116,6 +119,7 @@ public class PlayerLevellingSystem : MonoBehaviour
         // Update is called once per frame
         void Update()
     {
+        SetEXP();
 
         //cheat
         if (Input.GetKey(KeyCode.LeftControl) && Input.GetKeyDown(KeyCode.F2))
@@ -337,6 +341,11 @@ public class PlayerLevellingSystem : MonoBehaviour
             PlayerExp += 15;
             Destroy(targetObj.gameObject);
         }
+    }
+
+    private void SetEXP()
+    {
+        expSlider.value = PlayerExp / (float)LevelUpReq;
     }
 
 }

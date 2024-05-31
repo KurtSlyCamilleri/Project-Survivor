@@ -14,21 +14,24 @@ public class PlayerHealthAndCollision : MonoBehaviour
     public int HealthDiff = 0;
     public TextMeshProUGUI PlayerHealthUI;
     public TextMeshProUGUI PlayerShieldUI;
+    public GameObject PlayerShieldBar;
     ShieldGen ShieldG;
     public Slider healthSlider;
+    public Slider shieldSlider;
 
 
     void Start()
     {
         SetHealth(MaximumPlayerHealth);
+        SetUpShield();
     }
 
 
     void Update()
     {
 
-
-        if(PlayerHealth <= 0)
+        SetUpShield();
+        if (PlayerHealth <= 0)
         {
             SceneManager.LoadScene("Coding_Testing_Grounds");
         }
@@ -58,6 +61,7 @@ public class PlayerHealthAndCollision : MonoBehaviour
 
             // Deducts points from the shield and returns the leftover
             damage = ShieldG.Damage(damage);
+            SetUpShield();
         }
         else
         {
@@ -70,7 +74,7 @@ public class PlayerHealthAndCollision : MonoBehaviour
     {
         // Might as well 
         Debug.Log("Hit by " + targetObj.gameObject.tag);
-
+        
         // Each character has a specific amount of damage to make.
         // Consider moving these to a dedicated script instead.
         var damage = 0;
@@ -153,7 +157,13 @@ public class PlayerHealthAndCollision : MonoBehaviour
     public void SetShield(ShieldGen shield)
     {
         ShieldG = shield;
-        PlayerShieldUI.gameObject.SetActive(true);
+        PlayerShieldBar.gameObject.SetActive(true);
         PlayerShieldUI.SetText("Shield: " + ShieldG.ShieldLevel);
+    }
+
+    public void SetUpShield()
+    {
+        
+        shieldSlider.value = ShieldG.ShieldLevel / (float)ShieldG.ShieldCapacity;
     }
 }
