@@ -13,12 +13,27 @@ public class SpongeHealthAndCollision : MonoBehaviour
     public GameObject Wave;
     public float fireRate = 10f;
     private float lastShot = 0.0f;
+    public int rifleBulletDMG = 10;
 
     void OnTriggerEnter(Collider targetObj)
     {
         if (targetObj.gameObject.tag == "ShotgunBullet")
         {
             SpongeHealth -= shotgunBulletDMG;
+            if (SpongeHealth <= 0)
+            {
+                Instantiate(ExpDrop, SpongePos, Quaternion.identity);
+                Instantiate(ExpDrop, SpongePos, Quaternion.identity);
+                Instantiate(ExpDrop, SpongePos, Quaternion.identity);
+                Instantiate(ExpDrop, SpongePos, Quaternion.identity);
+                Sponge.GetComponent<BoxCollider>().enabled = false;
+                Destroy(gameObject);
+            }
+
+        }
+        if(targetObj.gameObject.tag == "RifleBullet")
+        {
+            SpongeHealth -= rifleBulletDMG;
             if (SpongeHealth <= 0)
             {
                 Instantiate(ExpDrop, SpongePos, Quaternion.identity);

@@ -6,15 +6,21 @@ using UnityEngine.SceneManagement;
 public class MainManu : MonoBehaviour
 {
 
+
 // This loads a new scene
 public void LoadScene(string sceneName) //so we can use it for multiple scenes
 {
     SceneManager.LoadScene(sceneName);
 }
 
+    public void LoadSpecificScene(string sceneName) //so we can use it for multiple scenes
+    {
+        SceneManager.LoadScene("Rifle_Grounds");
+    }
 
 
-public void Quit()
+
+    public void Quit()
 {
     Application.Quit();
     Debug.Log("Application has quit");

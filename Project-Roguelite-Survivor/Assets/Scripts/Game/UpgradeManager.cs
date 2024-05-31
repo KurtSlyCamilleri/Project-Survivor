@@ -44,6 +44,7 @@ public class UpgradeManager : MonoBehaviour
     PlayerMovement PlayerSpeedScript;
     PlayerMovement PlayerSpeedScript2;
     Shotgun ShotgunScript;
+    Rifle RifleScript;
     ShotgunBullet ShotgunBulletScript;
     public float shotgunSpreadInc = 0.05f;
 
@@ -276,6 +277,180 @@ public class UpgradeManager : MonoBehaviour
 
     }
     public void SpongeDamage(SpongeHealthAndCollision spongeScript)
+    {
+
+        SpongeScript = spongeScript;
+
+
+        SpongeScript.shotgunBulletDMG += 10;
+
+    }
+
+    //Rifle Upgrades
+    public void RifleFireRate(Rifle firerate)
+    {
+        RifleScript = firerate;
+        RifleScript.fireRate -= 0.1f;
+        GameObject[] canvasList = GameObject.FindGameObjectsWithTag("UpgradeUI");
+        foreach (GameObject canvas in canvasList)
+        {
+            canvas.SetActive(false);
+        }
+        Time.timeScale = 1;
+        FireRate_Panel.gameObject.SetActive(false);
+    }
+
+    public void RifleFireRateChecking(PlayerLevellingSystem limiter)
+    {
+        PlayerLevellingScript = limiter;
+        fireRateChecker -= 0.1f;
+        if (fireRateChecker == fireRateMax)
+        {
+            PlayerLevellingScript.fireRateLimiter += 1;
+        }
+    }
+
+
+
+    public void RifleSpraySpread()
+    {
+        shotgunBullet.transform.localScale += new Vector3(0.02f, 0.02f, 0.02f);
+        GameObject[] canvasList = GameObject.FindGameObjectsWithTag("UpgradeUI");
+        foreach (GameObject canvas in canvasList)
+        {
+            canvas.SetActive(false);
+        }
+        Time.timeScale = 1;
+        SpraySpread_Panel.gameObject.SetActive(false);
+    }
+
+    public void RiflePiercing(ShotgunBullet pierce)
+    {
+        ShotgunBulletScript = pierce;
+        ShotgunBulletScript.shotgunBulletPen += 2;
+
+        GameObject[] canvasList = GameObject.FindGameObjectsWithTag("UpgradeUI");
+        foreach (GameObject canvas in canvasList)
+        {
+            canvas.SetActive(false);
+        }
+        Time.timeScale = 1;
+        Piercing_Panel.gameObject.SetActive(false);
+    }
+
+    public void RifleChargerDamage(ChargerHealthAndCollision chargerScript)
+    {
+        ChargerScript = chargerScript;
+
+
+        ChargerScript.shotgunBulletDMG += 10;
+
+        GameObject[] canvasList = GameObject.FindGameObjectsWithTag("UpgradeUI");
+        foreach (GameObject canvas in canvasList)
+        {
+            canvas.SetActive(false);
+        }
+        Time.timeScale = 1;
+        Damage_Panel.gameObject.SetActive(false);
+    }
+    public void RifleSwarmerDamage(SwarmerHealthAndCollision swarmerScript)
+    {
+
+        SwarmerScript = swarmerScript;
+
+
+
+        SwarmerScript.shotgunBulletDMG += 10;
+
+    }
+    public void RifleSpongeDamage(SpongeHealthAndCollision spongeScript)
+    {
+
+        SpongeScript = spongeScript;
+
+
+        SpongeScript.shotgunBulletDMG += 10;
+
+    }
+
+    //Rifle Upgrades 2
+    public void RifleFireRate2(Rifle firerate)
+    {
+        RifleScript = firerate;
+        RifleScript.fireRate -= 0.1f;
+        GameObject[] canvasList = GameObject.FindGameObjectsWithTag("UpgradeUI");
+        foreach (GameObject canvas in canvasList)
+        {
+            canvas.SetActive(false);
+        }
+        Time.timeScale = 1;
+        FireRate_Panel.gameObject.SetActive(false);
+    }
+
+    public void RifleFireRateChecking2(PlayerLevellingSystem limiter)
+    {
+        PlayerLevellingScript = limiter;
+        fireRateChecker -= 0.1f;
+        if (fireRateChecker == fireRateMax)
+        {
+            PlayerLevellingScript.fireRateLimiter += 1;
+        }
+    }
+
+
+
+    public void RifleSpraySpread2()
+    {
+        shotgunBullet.transform.localScale += new Vector3(0.02f, 0.02f, 0.02f);
+        GameObject[] canvasList = GameObject.FindGameObjectsWithTag("UpgradeUI");
+        foreach (GameObject canvas in canvasList)
+        {
+            canvas.SetActive(false);
+        }
+        Time.timeScale = 1;
+        SpraySpread_Panel.gameObject.SetActive(false);
+    }
+
+    public void RiflePiercing2(ShotgunBullet pierce)
+    {
+        ShotgunBulletScript = pierce;
+        ShotgunBulletScript.shotgunBulletPen += 2;
+
+        GameObject[] canvasList = GameObject.FindGameObjectsWithTag("UpgradeUI");
+        foreach (GameObject canvas in canvasList)
+        {
+            canvas.SetActive(false);
+        }
+        Time.timeScale = 1;
+        Piercing_Panel.gameObject.SetActive(false);
+    }
+
+    public void RifleChargerDamage2(ChargerHealthAndCollision chargerScript)
+    {
+        ChargerScript = chargerScript;
+
+
+        ChargerScript.shotgunBulletDMG += 10;
+
+        GameObject[] canvasList = GameObject.FindGameObjectsWithTag("UpgradeUI");
+        foreach (GameObject canvas in canvasList)
+        {
+            canvas.SetActive(false);
+        }
+        Time.timeScale = 1;
+        Damage_Panel.gameObject.SetActive(false);
+    }
+    public void RifleSwarmerDamage2(SwarmerHealthAndCollision swarmerScript)
+    {
+
+        SwarmerScript = swarmerScript;
+
+
+
+        SwarmerScript.shotgunBulletDMG += 10;
+
+    }
+    public void RifleSpongeDamage2(SpongeHealthAndCollision spongeScript)
     {
 
         SpongeScript = spongeScript;

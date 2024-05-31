@@ -22,6 +22,7 @@ public class Boss : MonoBehaviour
     public float fireRateC = 4f;
     private float lastShotC = 0.0f;
     public GameObject cutSceneEnd;
+    public int rifleBulletDMG = 10;
 
     private bool Stage1 = true;
     private bool Stage2 = true;
@@ -74,6 +75,16 @@ public class Boss : MonoBehaviour
         if (targetObj.gameObject.tag == "ShotgunBullet")
         {
             BossHealth -= shotgunBulletDMG;
+            if (BossHealth <= 0)
+            {
+                TheBoss.GetComponent<BoxCollider>().enabled = false;
+                Destroy(gameObject);
+            }
+
+        }
+        if (targetObj.gameObject.tag == "RifleBullet")
+        {
+            BossHealth -= rifleBulletDMG;
             if (BossHealth <= 0)
             {
                 TheBoss.GetComponent<BoxCollider>().enabled = false;

@@ -9,12 +9,24 @@ public class SwarmerHealthAndCollision : MonoBehaviour
     public GameObject ExpDrop;
     public Vector3 SwarmerPos;
     public int shotgunBulletDMG = 25;
+    public int rifleBulletDMG = 10;
 
     void OnTriggerEnter(Collider targetObj)
     {
         if (targetObj.gameObject.tag == "ShotgunBullet")
         {
             SwarmerHealth -= shotgunBulletDMG;
+            if (SwarmerHealth <= 0)
+            {
+                Instantiate(ExpDrop, SwarmerPos, Quaternion.identity);
+                Swarmer.GetComponent<BoxCollider>().enabled = false;
+                Destroy(gameObject);
+            }
+
+        }
+        if (targetObj.gameObject.tag == "RifleBullet")
+        {
+            SwarmerHealth -= rifleBulletDMG;
             if (SwarmerHealth <= 0)
             {
                 Instantiate(ExpDrop, SwarmerPos, Quaternion.identity);

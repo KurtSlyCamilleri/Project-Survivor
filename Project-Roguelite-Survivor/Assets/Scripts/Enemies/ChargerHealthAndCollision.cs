@@ -10,12 +10,25 @@ public class ChargerHealthAndCollision : MonoBehaviour
     public GameObject ExpDrop;
     public Vector3 ChargerPos;
     public int shotgunBulletDMG = 25;
+    public int rifleBulletDMG = 10;
 
     void OnTriggerEnter(Collider targetObj)
     {
         if (targetObj.gameObject.tag == "ShotgunBullet")
         {
             ChargerHealth -= shotgunBulletDMG;
+            if (ChargerHealth <= 0)
+            {
+                Instantiate(ExpDrop, ChargerPos, Quaternion.identity);
+                Instantiate(ExpDrop, ChargerPos, Quaternion.identity);
+                Charger.GetComponent<BoxCollider>().enabled = false;
+                Destroy(gameObject);
+            }
+
+        }
+        if (targetObj.gameObject.tag == "RifleBullet")
+        {
+            ChargerHealth -= rifleBulletDMG;
             if (ChargerHealth <= 0)
             {
                 Instantiate(ExpDrop, ChargerPos, Quaternion.identity);
