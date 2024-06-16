@@ -205,7 +205,6 @@ public class PlayerLevellingSystem : MonoBehaviour
             {
 
                 chosenIndex2 = Random.Range(0, playerupgradeID.Count);
-                Debug.Log(playerupgradeID[chosenIndex2]);
 
                 if (playerupgradeID[chosenIndex2] == 1)
                 {
@@ -233,7 +232,6 @@ public class PlayerLevellingSystem : MonoBehaviour
             {
 
                 chosenIndex3 = Random.Range(0, shotgunupgradeID.Count);
-                Debug.Log(shotgunupgradeID[chosenIndex3]);
 
                 if (shotgunupgradeID[chosenIndex3] == 1)
                 {
@@ -271,7 +269,6 @@ public class PlayerLevellingSystem : MonoBehaviour
             {
 
                 chosenIndex4 = Random.Range(0, otherID.Count);
-                Debug.Log(otherID[chosenIndex4]);
 
                 if (otherID[chosenIndex4] == 1)
                 {

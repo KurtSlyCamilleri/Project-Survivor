@@ -81,9 +81,6 @@ public class PlayerHealthAndCollision : MonoBehaviour
             transform.position = new Vector3(-17.18f, 0.2f, -40.347f);
         }
 
-
-            // Might as well 
-            Debug.Log("Hit by " + targetObj.gameObject.tag);
         
         // Each character has a specific amount of damage to make.
         // Consider moving these to a dedicated script instead.
@@ -117,13 +114,11 @@ public class PlayerHealthAndCollision : MonoBehaviour
                 if (PlayerHealth < HealthDiff)
                 {
                     SetHealth(PlayerHealth + heal);
-                    Debug.Log("Healed for" + heal);
                 }
                 else
                 {
                     HealingDiff = MaximumPlayerHealth - PlayerHealth;
                     SetHealth(PlayerHealth + HealingDiff);
-                    Debug.Log("Healed for" + HealingDiff);
                     HealingDiff = 0;
                 }
             }
@@ -140,13 +135,11 @@ public class PlayerHealthAndCollision : MonoBehaviour
             if (PlayerHealth < HealthDiff)
             {
                 SetHealth(PlayerHealth + heal);
-                Debug.Log("Healed for" + heal);
             }
             else
             {
                 HealingDiff = MaximumPlayerHealth - PlayerHealth;
                 SetHealth(PlayerHealth + HealingDiff);
-                Debug.Log("Healed for" + HealingDiff);
                 HealingDiff = 0;
             }
         }

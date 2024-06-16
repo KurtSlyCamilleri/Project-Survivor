@@ -32,16 +32,52 @@ public class RandomSpawnSys : MonoBehaviour
     public GameObject Teleporter;
     public GameObject BossDoor;
     public GameObject Convo;
+    public GameObject Convo2;
     public bool BossSpawned = false;
     public AudioClip Floor2;
     public AudioClip BossFight;
     public AudioSource aSource;
+    public bool mid1Played = false;
+    public bool mid2Played = false;
+    public GameObject UpgradePanel;
 
 
 
     void Update()
     {
         PlayerPower = PlayerLevelSys.PlayerLevel;
+
+        if ( PlayerPower >= 10)
+        {
+
+            if (UpgradePanel.gameObject.activeInHierarchy == false)
+            {
+                Debug.Log("Level 10 Upgraded");
+                if (mid1Played == false)
+                {
+                    Debug.Log("Check Checked");
+                    StartCoroutine(MidConvo1());
+                    mid1Played = true;
+                }
+            }
+        }
+
+
+        if (PlayerPower >= 15)
+        {
+
+            if (UpgradePanel.gameObject.activeInHierarchy == false)
+            {
+
+                if (mid2Played == false)
+                {
+                    StartCoroutine(MidConvo2());
+                    mid2Played = true;
+                }
+            }
+        }
+
+
 
         if(BossSpawned == false)
         {
@@ -269,8 +305,12 @@ public class RandomSpawnSys : MonoBehaviour
                 spawnRate2 = 25;
                 spawnRate3 = 40;
                 Teleporter.gameObject.SetActive(true);
-                Convo.gameObject.SetActive(true);
+                //convo1
+
+                
+                
             }
+
         }
         else if (Difficulty == 3)
         {
@@ -404,7 +444,9 @@ public class RandomSpawnSys : MonoBehaviour
                     new Vector3(-6, 0, -4)
                 }, spawnRate3));
 
+                //convo2
 
+                
                 
             }
         }
@@ -523,5 +565,17 @@ public class RandomSpawnSys : MonoBehaviour
             yield return new WaitForSeconds(spawnDelay);
 
         }
+    }
+    IEnumerator MidConvo1()
+    {
+        yield return new WaitForSeconds(2);
+        Time.timeScale = 0;
+        Convo.gameObject.SetActive(true);
+    }
+    IEnumerator MidConvo2()
+    {
+        yield return new WaitForSeconds(2);
+        Time.timeScale = 0;
+        Convo2.gameObject.SetActive(true);
     }
 }
