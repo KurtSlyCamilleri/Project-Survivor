@@ -56,6 +56,8 @@ public class Boss : MonoBehaviour
             cutSceneEnd.gameObject.SetActive(true);
             GetComponent<AudioSource>().clip = Death;
             GetComponent<AudioSource>().Play();
+            TheBoss.GetComponent<BoxCollider>().enabled = false;
+            Destroy(gameObject);
         }
 
         if (Time.time > fireRate + lastShot)
@@ -85,51 +87,31 @@ public class Boss : MonoBehaviour
         if (targetObj.gameObject.tag == "ShotgunBullet")
         {
             BossHealth -= shotgunBulletDMG;
-            if (BossHealth <= 0)
-            {
-                TheBoss.GetComponent<BoxCollider>().enabled = false;
-                Destroy(gameObject);
-            }
+
 
         }
         if (targetObj.gameObject.tag == "RifleBullet")
         {
             BossHealth -= rifleBulletDMG;
-            if (BossHealth <= 0)
-            {
-                TheBoss.GetComponent<BoxCollider>().enabled = false;
-                Destroy(gameObject);
-            }
+
 
         }
         if (targetObj.gameObject.tag == "NadeExplosion")
         {
             BossHealth -= 100;
-            if (BossHealth <= 0)
-            {
-                TheBoss.GetComponent<BoxCollider>().enabled = false;
-                Destroy(gameObject);
-            }
+
 
         }
         if (targetObj.gameObject.tag == "DroneBullet")
         {
             BossHealth -= 8;
-            if (BossHealth <= 0)
-            {
-                TheBoss.GetComponent<BoxCollider>().enabled = false;
-                Destroy(gameObject);
-            }
+
 
         }
         if (targetObj.gameObject.tag == "DroneExplosion")
         {
             BossHealth -= 75;
-            if (BossHealth <= 0)
-            {
-                TheBoss.GetComponent<BoxCollider>().enabled = false;
-                Destroy(gameObject);
-            }
+
 
         }
     }
